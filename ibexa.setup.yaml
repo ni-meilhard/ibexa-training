@@ -1,0 +1,1233 @@
+
+Current configuration for extension with alias "ibexa"
+======================================================
+
+ibexa:
+    system:
+        corporate_group:
+            design: corporate
+            admin_ui_forms:
+                content_edit:
+                    form_templates:
+                        -
+                            template: '@ibexadesign/content/form_fields.html.twig'
+                            priority: 0
+                        -
+                            template: '@ibexadesign/ibexa_workflow/admin/content_edit/form_fields.html.twig'
+                            priority: 0
+                    fieldtypes: {  }
+            user:
+                login_template: '@ibexadesign/customer_portal/account/login/index.html.twig'
+            languages:
+                - eng-GB
+            content_view: {  }
+            location_view: {  }
+            api_keys: {  }
+            field_templates: {  }
+            field_edit_templates: {  }
+            fielddefinition_settings_templates: {  }
+            fielddefinition_edit_templates: {  }
+            image_variations: {  }
+            translation_siteaccesses: {  }
+            twig_variables: {  }
+            user_content_type_identifier: {  }
+            content_edit_view: {  }
+            content_create_view: {  }
+            user_group_content_type_identifier: {  }
+            notifications: {  }
+            content_translate_view: {  }
+            content_type: {  }
+            subtree_paths:
+                content: /1/2/
+                media: /1/43/
+            limitation_value_templates: {  }
+            user_settings_update_view: {  }
+            search_view: {  }
+            workflows: {  }
+            field_comparison_templates: {  }
+            image_asset_view: {  }
+        default:
+            limitation_value_templates:
+                -
+                    template: '@ibexadesign/corporate_account/limitation/limitation_values.html.twig'
+                    priority: 10
+                -
+                    template: '@ibexadesign/segmentation/admin/limitation/limitation_values.html.twig'
+                    priority: 20
+                -
+                    template: '@ibexadesign/ezplatform_permissions/limitation/field_group_limitation_values.html.twig'
+                    priority: 10
+                -
+                    template: '@ibexadesign/product_catalog/product_type/limitation/limitation_values.html.twig'
+                    priority: 10
+                -
+                    template: '@ibexadesign/personalization/limitation/limitation_values.html.twig'
+                    priority: 10
+                -
+                    template: '@ibexadesign/ibexa_workflow/limitation/limitation_values.html.twig'
+                    priority: 10
+            fielddefinition_edit_templates:
+                -
+                    template: '@ibexadesign/address/field_type/field_types.html.twig'
+                    priority: 1
+                -
+                    template: '@IbexaFieldTypePage/fields/fielddefinition_edit.html.twig'
+                    priority: 0
+                -
+                    template: '@ibexadesign/Admin/fieldtypes/field_types.html.twig'
+                    priority: 0
+                -
+                    template: '@ibexadesign/ContentType/field_types.html.twig'
+                    priority: 0
+                -
+                    template: '@ibexadesign/measurement/field_type/field_types.html.twig'
+                    priority: 1
+                -
+                    template: '@IbexaFieldTypeQuery/fieldtype/fielddefinition_edit.html.twig'
+                    priority: 0
+                -
+                    template: '@ibexadesign/matrix_fieldtype/field_types.html.twig'
+                    priority: 1
+                -
+                    template: '@ibexadesign/content_type/field_types.html.twig'
+                    priority: 0
+            field_templates:
+                -
+                    template: '@ibexadesign/address/field_type/content_fields.html.twig'
+                    priority: 1
+                -
+                    template: '@ibexadesign/fields/ezform_field.html.twig'
+                    priority: 0
+                -
+                    template: '@IbexaFieldTypePage/fields/ezlandingpage.html.twig'
+                    priority: 0
+                -
+                    template: '@ibexadesign/ibexa/taxonomy/fieldtypes.html.twig'
+                    priority: 50
+                -
+                    template: '@ibexadesign/product_catalog/field_type/product.html.twig'
+                    priority: 1
+                -
+                    template: '@ibexadesign/product_catalog/field_type/customer_group.html.twig'
+                    priority: 1
+                -
+                    template: '@IbexaCommerceFieldTypes/sesprofiledatatype_content_field.html.twig'
+                    priority: 10
+                -
+                    template: '@IbexaCommerceFieldTypes/sesselectiontype_content_field.html.twig'
+                    priority: 10
+                -
+                    template: '@IbexaCommerceFieldTypes/sesexternaldata_content_field.html.twig'
+                    priority: 10
+                -
+                    template: '@ibexadesign/Admin/fieldtypes/content_fields.html.twig'
+                    priority: 0
+                -
+                    template: '@ibexadesign/measurement/field_type/content_fields.html.twig'
+                    priority: 0
+                -
+                    template: '@ibexadesign/ibexa/seo/field_type/content_fields.html.twig'
+                    priority: 0
+                -
+                    template: '@ibexadesign/ui/field_type/preview/ezdam.html.twig'
+                    priority: 40
+                -
+                    template: '@IbexaFieldTypeQuery/fieldtype/field_view.html.twig'
+                    priority: 0
+                -
+                    template: '@ibexadesign/matrix_fieldtype/content_fields.html.twig'
+                    priority: 1
+                -
+                    template: '@IbexaFieldTypeRichText/RichText/content_fields.html.twig'
+                    priority: 0
+                -
+                    template: '@IbexaHttpCache/fields/content_fields.html.twig'
+                    priority: 5
+            universal_discovery_widget_module:
+                configuration:
+                    form_block:
+                        multiple: false
+                        allowed_content_types:
+                            - form
+                    block_banner:
+                        multiple: false
+                        allowed_content_types:
+                            - image
+                    block_gallery:
+                        multiple: false
+                        containers_only: true
+                    block_content_list:
+                        multiple: false
+                        containers_only: true
+                    embed_video:
+                        multiple: false
+                    products:
+                        multiple: true
+                        root_location_id: 130
+                    editorial_list:
+                        multiple: true
+                    context_items:
+                        multiple: true
+                    category_path:
+                        multiple: false
+                    _default:
+                        multiple: false
+                        multiple_items_limit: 0
+                        root_location_id: 1
+                        starting_location_id: 1
+                        containers_only: false
+                        allowed_content_types: null
+                        active_sort_clause: DatePublished
+                        active_sort_order: ascending
+                        active_tab: browse
+                        active_view: finder
+                        allow_redirects: false
+                        allow_confirmation: true
+                        content_on_the_fly:
+                            allowed_languages: null
+                            allowed_locations: null
+                            preselected_language: null
+                            preselected_content_type: null
+                            hidden: false
+                            auto_confirm_after_publish: true
+                        tabs_config:
+                            search:
+                                items_per_page: 50
+                                priority: 10
+                                hidden: false
+                            bookmarks:
+                                items_per_page: 50
+                                priority: 20
+                                hidden: false
+                            browse:
+                                items_per_page: 50
+                                priority: 30
+                    create:
+                        tabs:
+                            search:
+                                hidden: true
+                            bookmarks:
+                                hidden: true
+                        multiple: false
+                        allow_confirmation: false
+                    browse:
+                        allow_redirects: true
+                        allow_confirmation: false
+                    single:
+                        multiple: false
+                    multiple:
+                        multiple: true
+                    single_container:
+                        multiple: false
+                        containers_only: true
+                    richtext_embed:
+                        multiple: false
+                    richtext_embed_image:
+                        multiple: false
+                        allowed_content_types:
+                            - image
+                    image_asset:
+                        multiple: false
+                    single_user:
+                        multiple: false
+                    multiple_user:
+                        multiple: true
+                    single_user_group:
+                        multiple: false
+                        allowed_content_types:
+                            - user_group
+                    multiple_user_group:
+                        multiple: true
+                        allowed_content_types:
+                            - user_group
+                    add_location:
+                        multiple: false
+                    subtree_search:
+                        multiple: false
+            content_view:
+                ezplatform_form_builder_content_name:
+                    content_name:
+                        template: '@ibexadesign/content/content_name.html.twig'
+                        match: {  }
+                        params: {  }
+                embed:
+                    form:
+                        template: '@ibexadesign/form_builder/default_form_view.html.twig'
+                        match:
+                            \Ibexa\PageBuilder\Matcher\ContentBased\Identifier\FieldType:
+                                - ezform
+                        params: {  }
+            image_variations:
+                gallery:
+                    reference: null
+                    filters: {  }
+                    post_processors: {  }
+                ezplatform_admin_ui_profile_picture_user_menu:
+                    reference: reference
+                    filters:
+                        geometry/scaledownonly:
+                            - 30
+                            - 30
+                        geometry/crop:
+                            - 30
+                            - 30
+                            - 0
+                            - 0
+                    post_processors: {  }
+            fielddefinition_settings_templates:
+                -
+                    template: '@IbexaFieldTypePage/fields/fielddefinition_settings.html.twig'
+                    priority: 0
+                -
+                    template: '@IbexaFieldTypeQuery/fieldtype/fielddefinition_settings.html.twig'
+                    priority: 0
+                -
+                    template: '@IbexaFieldTypeRichText/RichText/fielddefinition_settings.html.twig'
+                    priority: 0
+            product_catalog:
+                assets:
+                    templates:
+                        -
+                            template: '@ibexadesign/product_catalog/assets_preview.html.twig'
+                            priority: 0
+                completeness:
+                    tasks:
+                        -
+                            template: '@ibexadesign/product_catalog/product/tab/completeness/content_completeness_task.html.twig'
+                            priority: 0
+                        -
+                            template: '@ibexadesign/product_catalog/product/tab/completeness/attributes_completeness_task.html.twig'
+                            priority: 0
+                        -
+                            template: '@ibexadesign/product_catalog/product/tab/completeness/assets_completeness_task.html.twig'
+                            priority: 0
+                        -
+                            template: '@ibexadesign/product_catalog/product/tab/completeness/availability_completeness_task.html.twig'
+                            priority: 0
+                        -
+                            template: '@ibexadesign/product_catalog/product/tab/completeness/variants_completeness_task.html.twig'
+                            priority: 0
+                        -
+                            template: '@ibexadesign/product_catalog/product/tab/completeness/prices_completeness_task.html.twig'
+                            priority: 0
+                        -
+                            template: '@ibexadesign/product_catalog/product/tab/completeness/translations_completeness_task.html.twig'
+                            priority: 0
+                catalogs:
+                    filter_preview_templates:
+                        -
+                            template: '@ibexadesign/product_catalog/catalog/edit/filter_preview_blocks.html.twig'
+                            priority: 0
+                    default_filters:
+                        - product_category
+                        - product_type
+                        - product_price
+                currencies: {  }
+                regions: {  }
+            fieldtypes:
+                ezrichtext:
+                    custom_tags:
+                        - product_card_list
+                    custom_styles: {  }
+                    toolbar: {  }
+                    classes: {  }
+                    attributes: {  }
+            image_editor:
+                image_quality: 0.92
+                action_groups:
+                    default:
+                        label: Default
+                        actions:
+                            crop:
+                                priority: 300
+                                buttons:
+                                    '1_1': { label: '1:1', ratio: { x: 1, 'y': 1 }, priority: 0, visible: true }
+                                    '3_4': { label: '3:4', ratio: { x: 3, 'y': 4 }, priority: 0, visible: true }
+                                    '4_3': { label: '4:3', ratio: { x: 4, 'y': 3 }, priority: 0, visible: true }
+                                    '16_9': { label: '16:9', ratio: { x: 16, 'y': 9 }, priority: 0, visible: true }
+                                    custom: { label: Custom, priority: 0, visible: true }
+                                visible: true
+                            flip:
+                                priority: 200
+                                visible: true
+                                buttons: {  }
+                            focal-point:
+                                priority: 100
+                                visible: true
+                                buttons: {  }
+            measurement:
+                types:
+                    length:
+                        - centimeter
+                        - foot
+                        - inch
+                        - meter
+                        - millimeter
+                        - yard
+                    area:
+                        - acre
+                        - hectare
+                        - 'square foot'
+                        - 'square inch'
+                        - 'square meter'
+                        - 'square mile'
+                        - 'square yard'
+                    mass:
+                        - gram
+                        - 'imperial ton'
+                        - kilogram
+                        - microgram
+                        - milligram
+                        - ounce
+                        - pound
+                        - stone
+                        - tonne
+                        - 'US ton'
+                    pressure:
+                        - bar
+                        - pascal
+                        - 'pound per square inch'
+                    speed:
+                        - 'foot per second'
+                        - 'kilometer per hour'
+                        - knot
+                        - 'meter per second'
+                        - 'miles per hour'
+                    temperature:
+                        - celsius
+                        - fahrenheit
+                        - kelvin
+                    time:
+                        - day
+                        - hour
+                        - millisecond
+                        - minute
+                        - month
+                        - second
+                        - week
+                    volume:
+                        - 'cubic meter'
+                        - 'fluid ounce'
+                        - liter
+                        - milliliter
+                        - 'US legal cup'
+                        - 'US liquid gallon'
+                        - 'US liquid pint'
+                        - 'US liquid quart'
+                        - 'US tablespoon'
+                        - 'US teaspoon'
+                    'data transfer rate':
+                        - 'gibibit per second'
+                        - 'gibibyte per second'
+                        - 'gigabit per second'
+                        - 'mebibit per second'
+                        - 'megabit per second'
+                        - 'megabyte per second'
+                        - 'terabit per second'
+                        - 'terabyte per second'
+                    energy:
+                        - 'British thermal unit'
+                        - electronvolt
+                        - 'gram calorie'
+                        - joule
+                        - kilocalorie
+                        - kilojoule
+                        - 'kilowatt hour'
+                        - 'US therm'
+                        - 'watt hour'
+            seo:
+                types:
+                    - meta_tags
+                    - open_graph
+                    - twitter
+            field_comparison_templates:
+                -
+                    template: '@ibexadesign/version_comparison/comparison_result_blocks.html.twig'
+                    priority: 10
+            workflows:
+                quick_review:
+                    name: 'Quick Review'
+                    matchers:
+                        content_status:
+                            - draft
+                    stages:
+                        draft:
+                            label: Draft
+                            color: null
+                            actions: {  }
+                            last_stage: false
+                        review:
+                            label: 'Quick review'
+                            actions:
+                                notify_reviewer:
+                                    condition: {  }
+                            color: null
+                            last_stage: false
+                    initial_stage: draft
+                    transitions:
+                        to_review:
+                            from:
+                                - draft
+                            to:
+                                - review
+                            label: 'Send to review'
+                            icon: '/bundles/ibexaicons/img/all-icons.svg#comment'
+                            reviewers:
+                                required: true
+                                enabled: true
+                                user_group: null
+                            color: null
+                            reverse: null
+                            actions: {  }
+                            validate: false
+                        re_review:
+                            from:
+                                - review
+                            to:
+                                - review
+                            label: 'Send to review'
+                            icon: '/bundles/ibexaicons/img/all-icons.svg#comment'
+                            reviewers:
+                                required: true
+                                enabled: true
+                                user_group: null
+                            color: null
+                            reverse: null
+                            actions: {  }
+                            validate: false
+            workflows_config:
+                timeline_entry_templates:
+                    -
+                        template: '@ibexadesign/ibexa_workflow/timeline/entries.html.twig'
+                        priority: 10
+                matcher_value_templates:
+                    -
+                        template: '@ibexadesign/ibexa_workflow/matcher/matcher_values.html.twig'
+                        priority: 10
+            cache_service_name: '%env(CACHE_POOL)%'
+            var_dir: var/site
+            content:
+                default_ttl: '%env(HTTPCACHE_DEFAULT_TTL)%'
+                dam: {  }
+            http_cache:
+                purge_servers:
+                    - '%env(HTTPCACHE_PURGE_SERVER)%'
+                varnish_invalidate_token: '%env(resolve:default::HTTPCACHE_VARNISH_INVALIDATE_TOKEN)%'
+                fastly:
+                    service_id: '%env(FASTLY_SERVICE_ID)%'
+                    key: '%env(FASTLY_KEY)%'
+            assets:
+                icon_sets:
+                    public_icons: /bundles/ibexaadminui/img/ibexa-icons.svg
+                    streamlineicons: /bundles/ibexaicons/img/all-icons.svg
+                default_icon_set: streamlineicons
+            page_layout: '@ibexadesign/pagelayout.html.twig'
+            user_content_type_identifier:
+                - user
+            location_view: {  }
+            api_keys: {  }
+            field_edit_templates: {  }
+            languages: {  }
+            translation_siteaccesses: {  }
+            twig_variables: {  }
+            content_edit_view: {  }
+            content_create_view: {  }
+            user_group_content_type_identifier: {  }
+            notifications: {  }
+            content_translate_view: {  }
+            content_type: {  }
+            subtree_paths:
+                content: /1/2/
+                media: /1/43/
+            user_settings_update_view: {  }
+            search_view: {  }
+            image_asset_view: {  }
+        admin_group:
+            admin_ui_forms:
+                content_edit:
+                    form_templates:
+                        -
+                            template: '@ibexadesign/address/field_type/content_edit_form_fields.html.twig'
+                            priority: 1
+                        -
+                            template: '@ibexadesign/form_builder/content_edit_form_fields.html.twig'
+                            priority: 1
+                        -
+                            template: '@IbexaPageBuilder/content_edit/form_fields.html.twig'
+                            priority: 1
+                        -
+                            template: '@ibexadesign/ibexa/taxonomy/forms/content_edit/fieldtypes.html.twig'
+                            priority: 50
+                        -
+                            template: '@ibexadesign/product_catalog/product/taxonomy_fieldtypes.html.twig'
+                            priority: 50
+                        -
+                            template: '@IbexaImageEditor/themes/admin/ibexa_image_editor/ui/field_type/edit/ezimage.html.twig'
+                            priority: -20
+                        -
+                            template: '@ibexadesign/measurement/field_type/content_edit_form_fields.html.twig'
+                            priority: 1
+                        -
+                            template: '@ibexadesign/ui/field_type/edit/ezdam.html.twig'
+                            priority: -10
+                        -
+                            template: '@ibexadesign/ibexa_workflow/admin/content_edit/form_fields.html.twig'
+                            priority: 0
+                        -
+                            template: '@ibexadesign/matrix_fieldtype/content_edit_form_fields.html.twig'
+                            priority: 1
+                        -
+                            template: '@ibexadesign/content/form_fields.html.twig'
+                            priority: 0
+                    fieldtypes:
+                        ibexa_taxonomy_entry_assignment:
+                            meta: true
+                content_type_edit:
+                    field_types:
+                        ibexa_seo:
+                            meta: true
+                            position: 100
+            page_builder_forms:
+                block_edit_form_templates:
+                    -
+                        template: '@ibexadesign/segmentation/page_builder/block_edit_form_types.html.twig'
+                        priority: 100
+                    -
+                        template: '@ibexadesign/page_builder/block/form_fields.html.twig'
+                        priority: -10
+                    -
+                        template: '@IbexaPageBuilder/page_builder/block/form_fields.html.twig'
+                        priority: 0
+                    -
+                        template: '@ibexadesign/personalization/page_builder/block/block_edit_form_template.html.twig'
+                        priority: -100
+            field_templates:
+                -
+                    template: '@ibexadesign/fields/ezform_preview.html.twig'
+                    priority: 10
+                -
+                    template: '@IbexaFieldTypePage/fields/admin_ezlandingpage.html.twig'
+                    priority: 10
+                -
+                    template: '@ibexadesign/ibexa/taxonomy/forms/content_view/fieldtypes.html.twig'
+                    priority: 50
+                -
+                    template: '@ibexadesign/ibexa/seo/field_type/content_fields.html.twig'
+                    priority: 5
+                -
+                    template: '@ibexadesign/ui/field_type/preview/content_fields.html.twig'
+                    priority: 20
+            calendar:
+                event_types:
+                    page_block_reveal:
+                        color: '#47BEDB'
+                        icon: null
+                        actions: {  }
+                    page_block_hide:
+                        color: '#F18A6B'
+                        icon: null
+                        actions: {  }
+                    future_publication:
+                        color: '#00A42B'
+                        actions:
+                            reschedule:
+                                icon: '/bundles/ibexaicons/img/all-icons.svg#schedule'
+                            unschedule:
+                                icon: '/bundles/ibexaicons/img/all-icons.svg#publish-later-cancel'
+                        icon: null
+                    future_hide:
+                        color: '#FCAE42'
+                        actions:
+                            reschedule:
+                                icon: '/bundles/ibexaicons/img/all-icons.svg#schedule'
+                            unschedule:
+                                icon: '/bundles/ibexaicons/img/all-icons.svg#publish-later-cancel'
+                        icon: null
+            fielddefinition_settings_templates:
+                -
+                    template: '@IbexaFieldTypePage/fields/fielddefinition_settings.html.twig'
+                    priority: 0
+            content_edit_view:
+                full:
+                    page_builder:
+                        controller: 'Ibexa\Bundle\PageBuilder\Controller\PageController::editAction'
+                        template: '@IbexaPageBuilder/page_builder/edit.html.twig'
+                        match:
+                            \Ibexa\PageBuilder\Matcher\ContentBased\Identifier\FieldType:
+                                - ezlandingpage
+                        params:
+                            view_base_layout: '@IbexaPageBuilder/content_edit:content_wrapper.html.twig'
+                    taxonomy:
+                        controller: 'Ibexa\Bundle\Taxonomy\Controller\ContentEditController::contentEditAction'
+                        template: '@ibexadesign/ibexa/taxonomy/taxonomy_entry/edit.html.twig'
+                        params:
+                            view_base_layout: '@ibexadesign/ui/layout.html.twig'
+                        match:
+                            '@Ibexa\Taxonomy\View\Matcher\IsTaxonomy': true
+                    product:
+                        template: '@ibexadesign/product_catalog/product/edit.html.twig'
+                        match:
+                            '@Ibexa\Contracts\ProductCatalog\ViewMatcher\ProductTypeBased\IsProduct': true
+                        params:
+                            view_base_layout: '@ibexadesign/ui/layout.html.twig'
+                    ezplatform_admin_ui:
+                        template: '@ibexadesign/content/edit/edit.html.twig'
+                        match: {  }
+                        params:
+                            view_base_layout: '@ibexadesign/ui/layout.html.twig'
+            content_create_view:
+                full:
+                    page_builder:
+                        controller: 'Ibexa\Bundle\PageBuilder\Controller\PageController::createAction'
+                        template: '@IbexaPageBuilder/page_builder/create.html.twig'
+                        match:
+                            \Ibexa\PageBuilder\Matcher\ContentTypeBased\Identifier\FieldType:
+                                - ezlandingpage
+                        params:
+                            view_base_layout: '@IbexaPageBuilder/content_edit/content_wrapper.html.twig'
+                    product:
+                        template: '@ibexadesign/product_catalog/product/create.html.twig'
+                        match:
+                            '@Ibexa\Contracts\ProductCatalog\ViewMatcher\ProductTypeBased\IsProduct': true
+                        params:
+                            view_base_layout: '@ibexadesign/ui/layout.html.twig'
+                    ezplatform_admin_ui:
+                        template: '@ibexadesign/content/create/create.html.twig'
+                        match: {  }
+                        params:
+                            view_base_layout: '@ibexadesign/ui/layout.html.twig'
+            content_translate_view:
+                full:
+                    page_builder:
+                        controller: 'Ibexa\Bundle\PageBuilder\Controller\PageController::translateAction'
+                        template: '@IbexaPageBuilder/page_builder/translate.html.twig'
+                        match:
+                            \Ibexa\PageBuilder\Matcher\ContentTypeBased\Identifier\FieldType:
+                                - ezlandingpage
+                        params:
+                            view_base_layout: '@IbexaPageBuilder/content_edit/content_wrapper.html.twig'
+                    product:
+                        template: '@ibexadesign/product_catalog/product/edit.html.twig'
+                        match:
+                            '@Ibexa\Contracts\ProductCatalog\ViewMatcher\ProductTypeBased\IsProduct': true
+                        params:
+                            view_base_layout: '@ibexadesign/ui/layout.html.twig'
+                    ezplatform_admin_ui:
+                        template: '@ibexadesign/content/edit/edit.html.twig'
+                        match: {  }
+                        params:
+                            view_base_layout: '@ibexadesign/ui/layout.html.twig'
+            limitation_value_templates:
+                -
+                    template: '@ibexadesign/ibexa/taxonomy/limitation/limitation_values.html.twig'
+                    priority: 10
+            content_view:
+                full:
+                    taxonomy:
+                        controller: 'Ibexa\Bundle\Taxonomy\Controller\ContentViewController::locationViewAction'
+                        template: '@ibexadesign/ibexa/taxonomy/taxonomy_entry/show.html.twig'
+                        match:
+                            '@Ibexa\Taxonomy\View\Matcher\IsTaxonomy': true
+                        params: {  }
+                    product:
+                        controller: 'Ibexa\Bundle\ProductCatalog\Controller\Product\RedirectController::execute'
+                        match:
+                            '@Ibexa\Contracts\ProductCatalog\ViewMatcher\ProductBased\IsProduct': true
+                        params: {  }
+                    default:
+                        controller: 'Ibexa\Bundle\AdminUi\Controller\ContentViewController::locationViewAction'
+                        template: '@ibexadesign/content/location_view.html.twig'
+                        match: {  }
+                        params: {  }
+                preview_ezobjectrelationlist_row:
+                    default:
+                        controller: 'Ibexa\Bundle\AdminUi\Controller\ContentViewController::locationViewAction'
+                        template: '@ibexadesign/ui/field_type/preview/ezobjectrelationlist_row.html.twig'
+                        match: {  }
+                        params: {  }
+                preview_ezimageasset:
+                    default:
+                        controller: 'Ibexa\Bundle\AdminUi\Controller\ContentViewController::locationViewAction'
+                        template: '@ibexadesign/ui/field_type/preview/ezimageasset.html.twig'
+                        match: {  }
+                        params: {  }
+            design: admin
+            user:
+                login_template: '@ibexadesign/account/login/index.html.twig'
+            user_settings_update_view:
+                full:
+                    ezplatform_admin_ui_datetime_format:
+                        template: '@ibexadesign/account/settings/update_datetime_format.html.twig'
+                        match:
+                            Identifier:
+                                - full_datetime_format
+                                - short_datetime_format
+                        params: {  }
+            search_view:
+                full:
+                    ezplatform_admin_ui:
+                        template: '@ibexadesign/ui/search/index.html.twig'
+                        match: {  }
+                        params: {  }
+            fieldtypes:
+                ezrichtext:
+                    custom_tags:
+                        - ezyoutube
+                        - eztwitter
+                        - ezfacebook
+                        - cta-button
+                    toolbar:
+                        group1:
+                            priority: 60
+                            buttons:
+                                ibexaMoveUp:
+                                    priority: 30
+                                    visible: true
+                                ibexaMoveDown:
+                                    priority: 20
+                                    visible: true
+                                heading:
+                                    priority: 10
+                                    visible: true
+                            visible: true
+                        group2:
+                            priority: 50
+                            buttons:
+                                alignment:
+                                    priority: 10
+                                    visible: true
+                            visible: true
+                        group3:
+                            priority: 40
+                            buttons:
+                                bulletedList:
+                                    priority: 30
+                                    visible: true
+                                numberedList:
+                                    priority: 20
+                                    visible: true
+                                insertTable:
+                                    priority: 10
+                                    visible: true
+                            visible: true
+                        group4:
+                            priority: 30
+                            buttons:
+                                bold:
+                                    priority: 120
+                                    visible: true
+                                italic:
+                                    priority: 110
+                                    visible: true
+                                underline:
+                                    priority: 100
+                                    visible: true
+                                subscript:
+                                    priority: 90
+                                    visible: true
+                                superscript:
+                                    priority: 80
+                                    visible: true
+                                strikethrough:
+                                    priority: 70
+                                    visible: true
+                                blockQuote:
+                                    priority: 60
+                                    visible: true
+                                ibexaLink:
+                                    priority: 50
+                                    visible: true
+                                ibexaAnchor:
+                                    priority: 40
+                                    visible: true
+                                ibexaCustomStyleInline:
+                                    priority: 30
+                                    visible: true
+                                ibexaFormatted:
+                                    priority: 20
+                                    visible: true
+                                ibexaCustomAttributes:
+                                    priority: 10
+                                    visible: true
+                            visible: true
+                        group5:
+                            priority: 20
+                            buttons:
+                                ibexaEmbed:
+                                    priority: 30
+                                    visible: true
+                                ibexaEmbedImage:
+                                    priority: 20
+                                    visible: true
+                                ibexaUploadImage:
+                                    priority: 15
+                                    visible: true
+                                ibexaEmbedInline:
+                                    priority: 10
+                                    visible: true
+                            visible: true
+                        custom_tags_group:
+                            priority: 10
+                            buttons:
+                                ezyoutube:
+                                    priority: 30
+                                    visible: true
+                                eztwitter:
+                                    priority: 20
+                                    visible: true
+                                ezfacebook:
+                                    priority: 10
+                                    visible: true
+                                cta_button:
+                                    priority: 5
+                                    visible: true
+                            visible: true
+                    custom_styles: {  }
+                    classes: {  }
+                    attributes: {  }
+            languages:
+                - eng-GB
+            content_tree_module:
+                contextual_tree_root_location_ids:
+                    - 2
+                    - 5
+                    - 43
+                    - 48
+                    - 55
+                    - 56
+                    - 60
+                load_more_limit: 30
+                children_load_max_limit: 200
+                tree_max_depth: 10
+                tree_root_location_id: null
+                allowed_content_types: {  }
+                ignored_content_types: {  }
+            subtree_paths:
+                content: /1/2/
+                media: /1/43/
+            page_builder:
+                siteaccess_list:
+                    - site
+                siteaccess_hosts: {  }
+                inject_cross_origin_helper: true
+            assets:
+                icon_sets:
+                    streamlineicons: /bundles/ibexaicons/img/all-icons.svg
+                default_icon_set: streamlineicons
+            content_type:
+                about:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#about'
+                article:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#article'
+                blog:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#blog'
+                blog_post:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#blog_post'
+                folder:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#folder'
+                form:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#form'
+                place:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#place'
+                product:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#product'
+                field:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#field'
+                user:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#user'
+                user_group:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#user_group'
+                file:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#file'
+                gallery:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#gallery'
+                image:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#image'
+                video:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#video'
+                landing_page:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#landing_page'
+                default_config:
+                    thumbnail: '/bundles/ibexaicons/img/all-icons.svg#file'
+            user_content_type_identifier:
+                - user
+            location_view: {  }
+            api_keys: {  }
+            field_edit_templates: {  }
+            fielddefinition_edit_templates: {  }
+            image_variations: {  }
+            translation_siteaccesses: {  }
+            twig_variables: {  }
+            user_group_content_type_identifier: {  }
+            notifications: {  }
+            workflows: {  }
+            field_comparison_templates: {  }
+            image_asset_view: {  }
+        site_group:
+            field_templates:
+                -
+                    template: '@IbexaCommerceBaseDesign/fields/content_fields.html.twig'
+                    priority: 10
+                -
+                    template: '@ibexadesign/fields/ezform_field.html.twig'
+                    priority: 10
+                -
+                    template: '@IbexaCommerceBaseDesign/fields/content_fields.html.twig'
+                    priority: 10
+            image_variations:
+                full_width_3_2:
+                    reference: null
+                    filters:
+                        geometry/scale:
+                            - 1170
+                            - 315
+                        background/color:
+                            - '#ffffff'
+                            - 1170
+                            - 315
+                    post_processors: {  }
+                full_width_2_3:
+                    reference: null
+                    filters:
+                        geometry/scale:
+                            - 1170
+                            - 315
+                        background/color:
+                            - '#ffffff'
+                            - 1170
+                            - 315
+                    post_processors: {  }
+                half_width_3_2:
+                    reference: null
+                    filters:
+                        geometry/scale:
+                            - 600
+                            - 400
+                        background/color:
+                            - '#ffffff'
+                            - 600
+                            - 400
+                    post_processors: {  }
+                half_width_2_3:
+                    reference: null
+                    filters:
+                        geometry/scale:
+                            - 400
+                            - 600
+                        background/color:
+                            - '#ffffff'
+                            - 400
+                            - 600
+                    post_processors: {  }
+                third_width_3_2:
+                    reference: null
+                    filters:
+                        geometry/scale:
+                            - 600
+                            - 400
+                        background/color:
+                            - '#ffffff'
+                            - 600
+                            - 400
+                    post_processors: {  }
+                third_width_2_3:
+                    reference: null
+                    filters:
+                        geometry/scale:
+                            - 400
+                            - 600
+                        background/color:
+                            - '#ffffff'
+                            - 400
+                            - 600
+                    post_processors: {  }
+                fourth_width_3_2:
+                    reference: null
+                    filters:
+                        geometry/scale:
+                            - 600
+                            - 400
+                        background/color:
+                            - '#ffffff'
+                            - 600
+                            - 400
+                    post_processors: {  }
+                fourth_width_2_3:
+                    reference: null
+                    filters:
+                        geometry/scale:
+                            - 400
+                            - 600
+                        background/color:
+                            - '#ffffff'
+                            - 400
+                            - 600
+                    post_processors: {  }
+            user:
+                login_template: '@ibexadesign/Security/login.html.twig'
+            design: app_design
+            page_layout: '@ibexadesign/pagelayout.html.twig'
+            content_view: {  }
+            location_view: {  }
+            api_keys: {  }
+            field_edit_templates: {  }
+            fielddefinition_settings_templates: {  }
+            fielddefinition_edit_templates: {  }
+            languages: {  }
+            translation_siteaccesses: {  }
+            twig_variables: {  }
+            user_content_type_identifier: {  }
+            content_edit_view: {  }
+            content_create_view: {  }
+            user_group_content_type_identifier: {  }
+            notifications: {  }
+            content_translate_view: {  }
+            content_type: {  }
+            subtree_paths:
+                content: /1/2/
+                media: /1/43/
+            limitation_value_templates: {  }
+            user_settings_update_view: {  }
+            search_view: {  }
+            workflows: {  }
+            field_comparison_templates: {  }
+            image_asset_view: {  }
+        site:
+            languages:
+                - eng-GB
+            content_view: {  }
+            location_view: {  }
+            api_keys: {  }
+            field_templates: {  }
+            field_edit_templates: {  }
+            fielddefinition_settings_templates: {  }
+            fielddefinition_edit_templates: {  }
+            image_variations: {  }
+            translation_siteaccesses: {  }
+            twig_variables: {  }
+            user_content_type_identifier: {  }
+            content_edit_view: {  }
+            content_create_view: {  }
+            user_group_content_type_identifier: {  }
+            notifications: {  }
+            content_translate_view: {  }
+            content_type: {  }
+            subtree_paths:
+                content: /1/2/
+                media: /1/43/
+            limitation_value_templates: {  }
+            user_settings_update_view: {  }
+            search_view: {  }
+            workflows: {  }
+            field_comparison_templates: {  }
+            image_asset_view: {  }
+    orm:
+        entity_mappings:
+            IbexaTaxonomyBundle:
+                is_bundle: false
+                type: annotation
+                dir: /Users/marc.eilhard/projects/ibexa-training/vendor/ibexa/taxonomy/src/lib/Persistence/Entity
+                prefix: Ibexa\Taxonomy\Persistence\Entity
+                mapping: true
+            gedmo_tree:
+                type: annotation
+                prefix: Gedmo\Tree\Entity
+                dir: /Users/marc.eilhard/projects/ibexa-training/vendor/gedmo/doctrine-extensions/src/Tree/Entity
+                is_bundle: false
+                mapping: true
+            IbexaCommerceCheckoutBundle:
+                is_bundle: true
+                type: annotation
+                dir: Entity
+                prefix: Ibexa\Bundle\Commerce\Checkout\Entity
+                mapping: true
+            IbexaCommercePriceEngineBundle:
+                is_bundle: true
+                type: annotation
+                dir: Entity
+                prefix: Ibexa\Bundle\Commerce\PriceEngine\Entity
+                mapping: true
+            IbexaCommercePaymentBundle:
+                is_bundle: true
+                type: annotation
+                dir: Entity
+                prefix: Ibexa\Bundle\Commerce\Payment\Entity
+                mapping: true
+            JMSPaymentCoreBundle:
+                is_bundle: true
+                type: xml
+                dir: Resources/config/doctrine
+                prefix: JMS\Payment\CoreBundle\Entity
+                mapping: true
+            IbexaCommerceEshopBundle:
+                is_bundle: true
+                type: annotation
+                dir: Entity
+                prefix: Ibexa\Bundle\Commerce\Eshop\Entity
+                mapping: true
+            IbexaCommerceShopToolsBundle:
+                is_bundle: true
+                type: annotation
+                dir: Entity
+                prefix: Ibexa\Bundle\Commerce\ShopTools\Entity
+                mapping: true
+            IbexaCommerceToolsBundle:
+                is_bundle: true
+                type: annotation
+                dir: Entity
+                prefix: Ibexa\Bundle\Commerce\Tools\Entity
+                mapping: true
+            IbexaCommerceSearchBundle:
+                is_bundle: true
+                type: annotation
+                dir: Entity
+                prefix: Ibexa\Bundle\Commerce\Search\Entity
+                mapping: true
+    router:
+        default_router:
+            non_siteaccess_aware_routes:
+                - ibexa.rest.
+    http_cache:
+        purge_type: '%env(HTTPCACHE_PURGE_TYPE)%'
+    repositories:
+        default:
+            storage:
+                engine: legacy
+                connection: null
+                config: {  }
+            search:
+                engine: '%env(SEARCH_ENGINE)%'
+                connection: default
+                config: {  }
+            product_catalog:
+                engine: default
+                regions: {  }
+            fields_groups:
+                list: {  }
+                default: content
+            options:
+                default_version_archive_limit: 5
+                remove_archived_versions_on_publish: true
+    siteaccess:
+        list:
+            - site
+            - corporate
+            - admin
+        groups:
+            site_group:
+                - site
+            corporate_group:
+                - corporate
+            admin_group:
+                - admin
+        default_siteaccess: site
+        match:
+            URIElement:
+                value: 1
+    url_alias:
+        slug_converter:
+            transformation: urlalias_lowercase
+            transformation_groups: {  }
+    locale_conversion: {  }
+    image_placeholder: {  }
+

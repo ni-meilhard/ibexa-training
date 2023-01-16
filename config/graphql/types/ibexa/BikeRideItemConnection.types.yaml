@@ -1,0 +1,9 @@
+BikeRideItemConnection:
+    type: relay-connection
+    config:
+        nodeType: BikeRideItem
+        connectionFields:
+            sliceSize:
+                type: Int!
+            orderBy:
+                type: String

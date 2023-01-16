@@ -1,0 +1,1595 @@
+# Default configuration for extension with alias: "ibexa"
+ibexa:
+
+    # Content repositories configuration
+    repositories:
+
+        # Example:
+        main:                { storage: { engine: legacy, connection: my_doctrine_connection_name } }
+
+        # Prototype
+        alias:
+            storage:
+
+                # The storage engine to use
+                engine:               '%ibexa.api.storage_engine.default%'
+
+                # The connection name, if applicable (e.g. Doctrine connection name). If not set, the default connection will be used.
+                connection:           null
+
+                # Arbitrary configuration options, supported by your storage engine
+                config:
+
+                    # Prototype
+                    key:                  ~
+            search:
+
+                # The search engine to use
+                engine:               '%ibexa.api.search_engine.default%'
+
+                # The connection name, if applicable (e.g. Doctrine connection name). If not set, the default connection will be used.
+                connection:           null
+
+                # Arbitrary configuration options, supported by your search engine
+                config:
+
+                    # Prototype
+                    key:                  ~
+
+            # Definitions of fields groups.
+            fields_groups:
+                list:                 []
+                default:              '%ibexa.site_access.config.default.content.field_groups.default%'
+
+            # Options for repository.
+            options:
+
+                # Default version archive limit (0-50), only enforced on publish, not on un-publish.
+                default_version_archive_limit: 5
+
+                # Enables automatic removal of archived versions when publishing, at the cost of performance. "ezplatform:content:cleanup-versions" command should be used to perform this task instead if this option is set to false.
+                remove_archived_versions_on_publish: true
+            product_catalog:
+
+                # The product catalog engine to use
+                engine:               null
+                regions:
+
+                    # Prototype
+                    name:
+                        vat_categories:
+
+                            # Prototype
+                            name:                 ~
+
+    # SiteAccess configuration
+    siteaccess:
+
+        # Available SiteAccess list
+        list:                 # Required
+
+            # Examples:
+            - ibexa_demo_site
+            - ibexa_demo_site_admin
+
+        # SiteAccess groups. Useful to share settings between Siteaccess
+        groups:
+
+            # Example:
+            ibexa_demo_group:    [ibexa_demo_site, ibexa_demo_site_admin]
+
+            # Prototype
+            key:                  []
+
+        # Name of the default siteaccess
+        default_siteaccess:   ~ # Required
+
+        # Siteaccess match configuration. First key is the matcher class, value is passed to the matcher. Key can be a service identifier (prepended by "@"), or a FQ class name (prepended by "\")
+        match:                # Required
+
+            # Examples:
+            Map\URI:             { foo: ibexa_demo_site, ibexa_demo_site: ibexa_demo_site, ibexa_demo_site_admin: ibexa_demo_site_admin }
+            Map\Host:            { ezpublish.dev: ibexa_demo_site, admin.ezpublish.dev: ibexa_demo_site_admin }
+            \My\Custom\Matcher:  { some: configuration }
+            @my.custom.matcher:  { some: other_configuration }
+
+            # Prototype
+            key:
+
+                # Prototype
+                key:                  ~
+
+    # Locale conversion map between Ibexa format (i.e. fre-FR) to POSIX (i.e. fr_FR). The key is the Ibexa locale. Check locale.yml in IbexaCoreBundle to see natively supported locales.
+    locale_conversion:
+
+        # Example:
+        fre-FR:              fr_FR
+
+        # Prototype
+        key:                  ~
+
+    # ImageMagick configuration
+    imagemagick:
+        enabled:              true
+
+        # Absolute path of ImageMagick / GraphicsMagick "convert" binary.
+        path:                 ~
+
+        # DEPRECATED.
+        # This is only used for legacy injection.
+        # You may use imagick/gmagick liip_imagine bundle drivers.
+        # 
+        # Hash of filters to be used for your image variations config.
+        # #   Key is the filter name, value is an argument passed to "convert" binary.
+        # #   You can use numbered placeholders (aka input variables) that will be replaced by defined parameters in your image variations config
+        filters:
+
+            # Example:
+            geometry/scaledownonly: '"-geometry {1}x{2}>"'
+    http_cache:
+
+        # Http cache purge type.
+        # 
+        # Cache purge for content/locations is triggered when needed (e.g. on publish) and will result in one or several Http PURGE requests.
+        # Can be "local", "http" or a valid symfony service id:
+        # - If "local" is used, an Http PURGE request will be emulated when needed (e.g. when using Symfony internal reverse proxy).
+        # - If "http" is used, a full HTTP PURGE/BAN is done to a real reverse proxy (Varnish, ..) depending on your config
+        # - If custom symfony service id is used, then check documentation on that service for how it behaves and how you need to configure your system for it.
+        # 
+        # If ezplatform-http-cache package is enabled (default as of 1.12 and up), then go to documentation on this package for further
+        # info on how it supports multiple response tagging, purges and allow plugins for custom purge types.
+        # 
+        # If that is not enabled, then the (deprecated as of 1.8) default BAN based system will be used instead.
+        # Where ressponses can be tagged by a single  X-Location-Id header, and for purges a single Http BAN request will be sent,
+        # where X-Location-Id header consists of a Regexp containing locationIds to ban.
+        #   BAN Examples:
+        #    - (123|456|789) => Purge locations #123, #456, #789.
+        #    - .* => Purge all locations.
+        purge_type:           local
+
+        # DEPRECATED
+        timeout:              ~
+
+    # Router related settings
+    router:
+        default_router:
+
+            # Route names that are not supposed to be SiteAccess aware, i.e. Routes pointing to asset generation (like assetic).
+            # Note that you can just specify a prefix to match a selection of routes.
+            # e.g. "_assetic_" will match "_assetic_*"
+            # Defaults to ['_assetic_', '_wdt', '_profiler', '_configurator_']
+            non_siteaccess_aware_routes:
+
+                # Examples:
+                - my_route_name
+                - some_prefix_
+    url_alias:
+        slug_converter:
+            transformation:       ~
+            separator:            ~
+            transformation_groups:
+
+                # Prototype
+                -
+                    commands:             []
+                    cleanup_method:       ~
+
+    # Configuration for strategy of replacing missing images
+    image_placeholder:
+
+        # Prototype
+        name:
+            provider:             ~
+            options:              []
+
+            # Enable additional binary data availability check for source image. Will cause additional IO operation.
+            verify_binary_data_availability: false
+    url_wildcards:
+
+        # Enable UrlWildcards support
+        enabled:              false
+    orm:
+
+        # Entity Mapping configuration compatible with Doctrine ORM bundle
+        entity_mappings:
+
+            # Prototype
+            name:
+                is_bundle:            true
+                mapping:              true
+                type:                 ~ # Required
+                dir:                  ~ # Required
+                prefix:               ~ # Required
+    ui:
+        translations:
+
+            # When enabled UI will be translated based on translations from i18n package
+            enabled:              false
+
+    # System configuration. First key is always a siteaccess or siteaccess group name
+    system:
+
+        # Examples:
+        my_siteaccess:       { preferred_quote: 'Let there be Light!', j_aime: [le_saucisson] }
+        my_siteaccess_group: { j_aime: [la_truite_a_la_vapeur] }
+
+        # Prototype
+        siteaccess_name:
+            fieldtypes:
+                ezimageasset:
+                    content_type_identifier: ~ # Required
+                    content_field_identifier: ~ # Required
+                    name_field_identifier: ~ # Required
+                    parent_location_id:   ~ # Required
+                ezrichtext:
+
+                    # RichText embed tags configuration.
+                    embed:
+
+                        # Configuration for RichText block-level Content embed tags.
+                        content:
+
+                            # Template used for rendering RichText block-level Content embed tags.
+                            template:             ~ # Required, Example: 'MyBundle:FieldType/RichText/embed:content.html.twig'
+
+                            # Embed configuration, arbitrary configuration is allowed here.
+                            config:               ~
+
+                        # Configuration for RichText block-level Content embed tags when embed is not permitted.
+                        content_denied:
+
+                            # Template used for rendering RichText block-level Content embed tags when embed is not permitted.
+                            template:             ~ # Required, Example: 'MyBundle:FieldType/RichText/embed:content_denied.html.twig'
+
+                            # Embed configuration, arbitrary configuration is allowed here.
+                            config:               ~
+
+                        # Configuration for RichText inline-level Content embed tags.
+                        content_inline:
+
+                            # Template used for rendering RichText inline-level Content embed tags.
+                            template:             ~ # Required, Example: 'MyBundle:FieldType/RichText/embed:content_inline.html.twig'
+
+                            # Embed configuration, arbitrary configuration is allowed here.
+                            config:               ~
+
+                        # Configuration for RichText inline-level Content embed tags when embed is not permitted.
+                        content_inline_denied:
+
+                            # Template used for rendering RichText inline-level Content embed tags when embed is not permitted.
+                            template:             ~ # Required, Example: 'MyBundle:FieldType/RichText/embed:content_inline_denied.html.twig'
+
+                            # Embed configuration, arbitrary configuration is allowed here.
+                            config:               ~
+
+                        # Configuration for RichText block-level Location embed tags.
+                        location:
+
+                            # Template used for rendering RichText block-level Location embed tags.
+                            template:             ~ # Required, Example: 'MyBundle:FieldType/RichText/embed:location.html.twig'
+
+                            # Embed configuration, arbitrary configuration is allowed here.
+                            config:               ~
+
+                        # Configuration for RichText block-level Location embed tags when embed is not permitted.
+                        location_denied:
+
+                            # Template used for rendering RichText block-level Location embed tags when embed is not permitted.
+                            template:             ~ # Required, Example: 'MyBundle:FieldType/RichText/embed:location_denied.html.twig'
+
+                            # Embed configuration, arbitrary configuration is allowed here.
+                            config:               ~
+
+                        # Configuration for RichText inline-level Location embed tags.
+                        location_inline:
+
+                            # Template used for rendering RichText inline-level Location embed tags.
+                            template:             ~ # Required, Example: 'MyBundle:FieldType/RichText/embed:location_inline.html.twig'
+
+                            # Embed configuration, arbitrary configuration is allowed here.
+                            config:               ~
+
+                        # Configuration for RichText inline-level Location embed tags when embed is not permitted.
+                        location_inline_denied:
+
+                            # Template used for rendering RichText inline-level Location embed tags when embed is not permitted.
+                            template:             ~ # Required, Example: 'MyBundle:FieldType/RichText/embed:location_inline_denied.html.twig'
+
+                            # Embed configuration, arbitrary configuration is allowed here.
+                            config:               ~
+
+                    # List of RichText Custom Tags enabled for the current scope. The Custom Tags must be defined in ezpublish.ezrichtext.custom_tags Node.
+                    custom_tags:          []
+
+                    # List of RichText Custom Styles enabled for the current scope. The Custom Styles must be defined in ezpublish.ezrichtext.custom_styles Node.
+                    custom_styles:        []
+
+                    # List of grouped Toolbars and Buttons enabled for current SiteAccess scope.
+                    toolbar:
+
+                        # Prototype
+                        group_name:
+
+                            # Is group visible on toolbar?
+                            visible:              true
+
+                            # Defines order in which group appear (255 .. -255).
+                            priority:             0
+                            buttons:
+
+                                # Prototype
+                                name:
+
+                                    # Is button visible on toolbar?
+                                    visible:              true
+
+                                    # Defines order in which buttons appear (255 .. -255).
+                                    priority:             0
+                    classes:
+
+                        # Prototype
+                        element:
+                            choices:              [] # Required
+                            required:             false
+                            default_value:        ~
+                            multiple:             true
+                    attributes:
+
+                        # Prototype
+                        element:              []
+
+            # Template selection settings when displaying a content
+            content_view:
+
+                # Prototype: View selection rulesets, grouped by view type. Key is the view type (e.g. 'full', 'line', ...)
+                key:
+
+                    # Prototype
+                    key:
+
+                        # Your template path, as MyBundle:subdir:my_template.html.twig
+                        template:             ~
+
+                        # Use custom controller instead of the default one to display a content matching your rules.
+                        # You can use the controller reference notation supported by Symfony.
+                        controller:           ~ # Example: 'MyBundle:MyControllerClass:view'
+
+                        # Condition matchers configuration
+                        match:                # Required
+
+                            # Prototype
+                            key:                  ~
+
+                        # Arbitrary params that will be passed in the ContentView object, manageable by ViewProviders.
+                        # Those params will NOT be passed to the resulting view template by default.
+                        params:
+
+                            # Examples:
+                            foo:                 '%some.parameter.reference%'
+                            osTypes:             [osx, linux, windows]
+
+                            # Prototype
+                            key:                  ~
+
+            # Template selection settings when displaying a location. Deprecated from 5.4.5/2015.09, use content_view instead.
+            location_view:
+
+                # Prototype: View selection rulesets, grouped by view type. Key is the view type (e.g. 'full', 'line', ...)
+                key:
+
+                    # Prototype
+                    key:
+
+                        # Your template path, as MyBundle:subdir:my_template.html.twig
+                        template:             ~
+
+                        # Use custom controller instead of the default one to display a content matching your rules.
+                        # You can use the controller reference notation supported by Symfony.
+                        controller:           ~ # Example: 'MyBundle:MyControllerClass:view'
+
+                        # Condition matchers configuration
+                        match:                # Required
+
+                            # Prototype
+                            key:                  ~
+
+                        # Arbitrary params that will be passed in the ContentView object, manageable by ViewProviders.
+                        # Those params will NOT be passed to the resulting view template by default.
+                        params:
+
+                            # Examples:
+                            foo:                 '%some.parameter.reference%'
+                            osTypes:             [osx, linux, windows]
+
+                            # Prototype
+                            key:                  ~
+
+            # The repository to use. Choose among ibexa.repositories.
+            repository:           ~
+
+            # DEPRECATED. Use ibexa.repositories / repository settings instead.
+            database:
+
+                # The database driver. Can be mysql, pgsql or sqlite.
+                type:                 ~ # One of "mysql"; "pgsql"; "sqlite"
+                server:               ~
+                port:                 ~
+                user:                 ~
+                password:             ~
+                database_name:        ~
+                charset:              utf8
+                socket:               ~
+
+                # Arbitrary options, supported by your DB driver ("driver-opts" in PDO)
+                options:
+
+                    # Examples:
+                    foo:                 bar
+                    someOptionName:      [one, two, three]
+
+                    # Prototype
+                    key:                  ~
+
+                # Full database DSN. Will replace settings above.
+                dsn:                  ~ # Example: 'mysql://root:root@localhost:3306/ezdemo'
+
+            # The cache pool service name to use for a siteaccess / siteaccess-group, *must* be present.
+            cache_service_name:   ~ # Example: cache.app
+
+            # The directory relative to web/ where files are stored. Default value is "var"
+            var_dir:              ~ # Example: var/ibexa_demo_site
+
+            # Collection of API keys
+            api_keys:
+
+                # Google Maps API Key, required as of Google Maps v3 to make sure maps show up correctly.
+                google_maps:          ~ # Deprecated (The child node "google_maps" at path "ibexa.system..api_keys" is no longer used and deprecated.)
+
+            # Directory where to place new files for storage, it's relative to var directory. Default value is 'storage'
+            storage_dir:          ~
+
+            # Directory where binary files (from ezbinaryfile field type) are stored. Default value is "original"
+            binary_dir:           ~
+
+            # DEPRECATED. Use session.name instead.
+            session_name:         ~
+
+            # Session options. Will override options defined in Symfony framework.session.*
+            session:
+
+                # The session name. If you want a session name per siteaccess, use "{siteaccess_hash}" token. Will override default session name from framework.session.name
+                name:                 ~ # Example: 'eZSESSID{siteaccess_hash}'
+                cookie_lifetime:      ~
+                cookie_path:          ~
+                cookie_domain:        ~
+                cookie_secure:        ~
+                cookie_httponly:      ~
+
+            # The default layout to use
+            pagelayout:           ~ # Deprecated (The "pagelayout" option is deprecated. Use "page_layout" instead.), Example: 'AppBundle::pagelayout.html.twig'
+
+            # The default layout to use
+            page_layout:          ~ # Example: 'AppBundle::page_layout.html.twig'
+
+            # The page that the index page will show. Default value is null.
+            index_page:           ~ # Example: /Getting-Started
+
+            # The default page to show, e.g. after user login this will be used for default redirection. If provided, will override "default_target_path" from security.yml.
+            default_page:         ~ # Example: /Getting-Started
+
+            # Settings related to Http cache
+            http_cache:
+
+                # Servers to use for Http PURGE (will NOT be used if ibexa.http_cache.purge_type is "local").
+                purge_servers:
+
+                    # Examples:
+                    - 'http://localhost/'
+                    - 'http://another.server/'
+
+                # Optional: Varnish Invalidation token for purge
+                varnish_invalidate_token: null
+                fastly:               # Required
+
+                    # Fastly service id
+                    service_id:           ~ # Required
+
+                    # Fastly auth token. Must have "purge_select" scope
+                    key:                  ~ # Required
+
+            # The ID of the user used for everyone who is not logged in.
+            anonymous_user_id:    ~ # Example: '10'
+            user:
+
+                # Layout template to use for user related actions. This is most likely the base pagelayout template of your site.
+                layout:               ~ # Example: pagelayout.html.twig
+
+                # Template to use for login form. Defaults to @IbexaCore/Security/login.html.twig
+                login_template:       ~ # Example: login.html.twig
+
+            # Content related configuration
+            content:
+                view_cache:           ~
+                ttl_cache:            ~
+
+                # Default value for TTL cache, in seconds
+                default_ttl:          ~
+                tree_root:
+
+                    # Root locationId for routing and link generation.
+                    # Useful for multisite apps with one repository.
+                    location_id:          ~ # Required
+
+                    # URI prefixes that are allowed to be outside the content tree
+                    # (useful for content sharing between multiple sites).
+                    # Prefixes are not case sensitive
+                    excluded_uri_prefixes:
+
+                        # Examples:
+                        - /media/images
+                        - /products
+                dam:                  []
+
+            # Template settings for fields rendered by the ibexa_render_field() Twig function
+            field_templates:
+
+                # Prototype
+                -
+
+                    # Template file where to find block definition to display fields
+                    template:             ~ # Required
+                    priority:             0
+
+            # Settings for field edit templates
+            field_edit_templates:
+
+                # Prototype
+                -
+
+                    # Template file where to find block definition to display fields
+                    template:             ~ # Required
+                    priority:             0
+
+            # Template settings for field definition settings rendered by the ibexa_render_field_definition_settings() Twig function
+            fielddefinition_settings_templates:
+
+                # Prototype
+                -
+
+                    # Template file where to find block definition to display field definition settings
+                    template:             ~ # Required
+                    priority:             0
+
+            # Settings for field definition templates
+            fielddefinition_edit_templates:
+
+                # Prototype
+                -
+
+                    # Template file where to find block definition to display field definition settings
+                    template:             ~ # Required
+                    priority:             0
+
+            # DEPRECATED.
+            imagemagick:
+
+                # Parameters that must be run BEFORE the filenames and filters
+                pre_parameters:       ~
+
+                # Parameters that must be run AFTER the filenames and filters
+                post_parameters:      ~
+
+            # Configuration for your image variations (aka "image aliases")
+            image_variations:
+
+                # Examples:
+                my_image_variation:  { reference: '~', filters: [{ name: geometry/scaledownonly, params: [400, 350] }] }
+                my_cropped_variation: { reference: my_image_variation, filters: [{ name: geometry/scalewidthdownonly, params: [300] }, { name: geometry/crop, params: [300, 300, 0, 0] }] }
+
+                # Prototype
+                variation_name:
+
+                    # Tells the system which original variation to use as reference image. Defaults to original
+                    reference:            ~ # Example: large
+
+                    # A list of filters to run, each filter must be supported by the active image converters
+                    filters:
+
+                        # Prototype: Array/Hash of parameters to pass to the filter
+                        name:
+
+                            # Prototype
+                            options:              ~
+
+                    # Post processors as defined in LiipImagineBundle. See https://github.com/liip/LiipImagineBundle/blob/master/Resources/doc/filters.md#post-processors
+                    post_processors:
+
+                        # Prototype
+                        name:
+
+                            # Prototype
+                            name:                 ~
+
+            # Images host. All system images URLs are prefixed with given host if configured.
+            image_host:           ~ # Example: 'https://ezplatform.com'
+
+            # Available languages, in order of precedence
+            languages:
+
+                # Examples:
+                - fre-FR
+                - eng-GB
+
+            # List of "translation siteaccesses" which can be used by language switcher.
+            translation_siteaccesses:
+
+                # Examples:
+                - french_siteaccess
+                - english_siteaccess
+
+            # Binary storage options
+            io:
+
+                # Handler uses to manipulate IO files metadata
+                metadata_handler:     ~ # Example: default
+
+                # Handler uses to manipulate IO files binarydata
+                binarydata_handler:   ~ # Example: default
+
+                # Prefix added to binary files uris. A host can also be added
+                url_prefix:           ~ # Example: '$var_dir$/$storage_dir$, http://static.example.com/'
+
+                # Permissions applied by the Local flysystem adapter when creating content files and directories in storage.
+                permissions:
+                    files:                '0644'
+                    directories:          '0755'
+            url_checker:
+                handlers:
+
+                    # Prototype
+                    name:                 ~
+
+            # Contextual Twig variables.
+            twig_variables:
+
+                # Examples:
+                some:                variable
+                nested:              { some: variable, other: 123 }
+
+                # Prototype
+                name:                 ~
+
+            # User Content Type identifier configuration.
+            user_content_type_identifier:
+
+                # Examples:
+                - user
+                - my_custom_user_identifier
+
+            # Content edit configuration.
+            content_edit:         # Deprecated (This key was deprecated in 2.1 and will be removed in 3.0. Please use siteaccess aware configuration.)
+
+                # Content edit templates.
+                templates:
+
+                    # Template to use for content edit form rendering.
+                    edit:                 ~
+
+                    # Template to use for content create form rendering.
+                    create:               ~
+
+                    # Template to use for content draft creation rendering.
+                    create_draft:         ~
+
+            # Content edit configuration
+            user_edit:
+
+                # Content edit templates.
+                templates:
+
+                    # Template to use for user edit form rendering.
+                    update:               ~
+
+                    # Template to use for user create form rendering.
+                    create:               ~
+
+            # Template selection settings when displaying a content edit form
+            content_edit_view:
+
+                # Prototype: View selection rulesets, grouped by view type. Key is the view type (e.g. 'full', 'line', ...)
+                key:
+
+                    # Prototype
+                    key:
+
+                        # Your template path, as MyBundle:subdir:my_template.html.twig
+                        template:             ~
+
+                        # Use custom controller instead of the default one to display a content matching your rules.
+                        # You can use the controller reference notation supported by Symfony.
+                        controller:           ~ # Example: 'MyBundle:MyControllerClass:view'
+
+                        # Condition matchers configuration
+                        match:                # Required
+
+                            # Prototype
+                            key:                  ~
+
+                        # Arbitrary params that will be passed in the ContentView object, manageable by ViewProviders.
+                        # Those params will NOT be passed to the resulting view template by default.
+                        params:
+
+                            # Examples:
+                            foo:                 '%some.parameter.reference%'
+                            osTypes:             [osx, linux, windows]
+
+                            # Prototype
+                            key:                  ~
+
+            # Template selection settings when displaying a content create form
+            content_create_view:
+
+                # Prototype: View selection rulesets, grouped by view type. Key is the view type (e.g. 'full', 'line', ...)
+                key:
+
+                    # Prototype
+                    key:
+
+                        # Your template path, as MyBundle:subdir:my_template.html.twig
+                        template:             ~
+
+                        # Use custom controller instead of the default one to display a content matching your rules.
+                        # You can use the controller reference notation supported by Symfony.
+                        controller:           ~ # Example: 'MyBundle:MyControllerClass:view'
+
+                        # Condition matchers configuration
+                        match:                # Required
+
+                            # Prototype
+                            key:                  ~
+
+                        # Arbitrary params that will be passed in the ContentView object, manageable by ViewProviders.
+                        # Those params will NOT be passed to the resulting view template by default.
+                        params:
+
+                            # Examples:
+                            foo:                 '%some.parameter.reference%'
+                            osTypes:             [osx, linux, windows]
+
+                            # Prototype
+                            key:                  ~
+
+            # Name of the design to use. Must be declared in "ibexa.design.list"
+            design:               ~
+
+            # System locations id configuration
+            location_ids:
+                content_structure:    ~ # Required
+                media:                ~ # Required
+                users:                ~ # Required
+
+            # Subitems module configuration
+            subitems_module:
+                limit:                10 # Required
+
+            # UDW module configuration
+            universal_discovery_widget_module:
+                configuration:        # Required
+
+                    # Prototype
+                    scope_name:           ~
+
+            # Content Tree module configuration
+            content_tree_module:
+
+                # Number of children to load in expand and load more operations
+                load_more_limit:      30
+
+                # Total limit of loaded children in single node
+                children_load_max_limit: 200
+
+                # Max depth of expanded tree
+                tree_max_depth:       10
+
+                # Location that will be used as a tree root. User won't be able to see ancestors of this location.
+                # 
+                # When set to 'null' SiteAccess 'content.tree_root.location_id' setting will be used.
+                tree_root_location_id: null
+
+                # List of Location IDs overriding 'tree_root_location_id' setting.
+                # 
+                # Tree Root is overriden when previewing those Locations in AdminUI.
+                contextual_tree_root_location_ids:
+
+                    # Examples:
+                    - '2 # Home'
+                    - '5 # Users'
+                    - '43 # Media'
+
+                # List of content type identifiers to show in Content Tree. 
+                # 
+                # Use string value '*' to display all content types. Empty array also means all content types will be displayed.
+                allowed_content_types: []
+
+                # List of content type identifiers to ignore in Content Tree.
+                # 
+                # This option is only useful when used with 'allowed_content_types = *'.
+                ignored_content_types: []
+
+            # System pagination configuration
+            pagination:
+                search_limit:         ~ # Required, Deprecated (Since ezsystems/ezplatform-admin-ui 2.1: The child node "search_limit" at path "ibexa.system..pagination" is deprecated. Use "search.pagination.limit" instead.)
+                trash_limit:          ~ # Required
+                section_limit:        ~ # Required
+                language_limit:       ~ # Required
+                role_limit:           ~ # Required
+                role_assignment_limit: ~ # Required
+                policy_limit:         ~ # Required
+                content_type_group_limit: ~ # Required
+                content_type_limit:   ~ # Required
+                version_draft_limit:  ~ # Required
+                reverse_relation_limit: ~ # Required
+                content_system_url_limit: ~ # Required
+                content_custom_url_limit: ~ # Required
+                content_role_limit:   ~ # Required
+                content_policy_limit: ~ # Required
+                notification_limit:   ~ # Required
+                content_draft_limit:  ~ # Required
+                location_limit:       ~ # Required
+
+            # System security configuration.
+            security:
+
+                # Token ttl as DateInterval. See http://php.net/manual/dateinterval.construct.php
+                token_interval_spec:  ~ # Required
+
+            # User Group Content Type identifier configuration.
+            user_group_content_type_identifier:
+
+                # Examples:
+                - user_group
+                - my_custom_user_group_identifier
+
+            # Subtree related operations configuration.
+            subtree_operations:
+                copy_subtree:
+
+                    # Number of items that can be copied at once, -1 for no limit, 0 to disable copying.
+                    limit:                ~ # Required
+
+            # AdminUI notifications configuration.
+            notifications:
+
+                # Prototype
+                type:
+
+                    # Time in milliseconds notifications should disappear after.
+                    timeout:              ~
+
+            # Template selection settings when displaying a content translate form
+            content_translate_view:
+
+                # Prototype: View selection rulesets, grouped by view type. Key is the view type (e.g. 'full', 'line', ...)
+                key:
+
+                    # Prototype
+                    key:
+
+                        # Your template path, as MyBundle:subdir:my_template.html.twig
+                        template:             ~
+
+                        # Use custom controller instead of the default one to display a content matching your rules.
+                        # You can use the controller reference notation supported by Symfony.
+                        controller:           ~ # Example: 'MyBundle:MyControllerClass:view'
+
+                        # Condition matchers configuration
+                        match:                # Required
+
+                            # Prototype
+                            key:                  ~
+
+                        # Arbitrary params that will be passed in the ContentView object, manageable by ViewProviders.
+                        # Those params will NOT be passed to the resulting view template by default.
+                        params:
+
+                            # Examples:
+                            foo:                 '%some.parameter.reference%'
+                            osTypes:             [osx, linux, windows]
+
+                            # Prototype
+                            key:                  ~
+
+            # Admin UI forms configuration settings
+            admin_ui_forms:
+
+                # Content Edit form configuration
+                content_edit:
+
+                    # A list of Content Edit (and create) default Twig form templates
+                    form_templates:       # Deprecated (Since ibexa/admin-ui 4.2.0: Setting "admin_ui.content_edit_form_templates" is deprecated. Use "admin_ui.content_edit.form_templates" instead.)
+
+                        # Prototype
+                        -
+                            template:             ~
+                            priority:             ~
+
+                    # Configuration for specific FieldTypes
+                    fieldtypes:
+
+                        # Prototype
+                        identifier:
+                            identifier:           ~
+
+                            # Make this fieldtype a part of Meta group
+                            meta:                 false
+
+                # Content Type Edit form configuration
+                content_type_edit:
+
+                    # Group name used to add meta field types
+                    default_meta_field_type_group: ~
+
+                    # Configuration for specific Field Types
+                    field_types:
+
+                        # Prototype
+                        identifier:
+                            identifier:           ~
+
+                            # Make this field_type a part of Meta group
+                            meta:                 false
+                            position:             ~
+            content_type:
+
+                # Prototype
+                identifier:
+                    thumbnail:            null
+
+            # Subtree paths configuration used as value of Subtree Query Criterion to load content on dashboard.
+            subtree_paths:
+
+                # Subtree path of Content to load proper Content on the Dashboard tabs
+                content:              /1/2/
+
+                # Subtree path of Media to load proper Content on the Dashboard tabs
+                media:                /1/43/
+
+            # Settings for limitation value templates
+            limitation_value_templates:
+
+                # Prototype
+                -
+
+                    # Template file where to find block definition to display limitation values
+                    template:             ~ # Required
+                    priority:             0
+            assets:
+                icon_sets:
+
+                    # Prototype
+                    name:                 ~
+                default_icon_set:     ~ # Required
+
+            # User change password configuration
+            user_change_password:
+
+                # User change password templates.
+                templates:
+
+                    # Template to use for change password form rendering.
+                    form:                 ~
+
+                    # Template to use for change password success view.
+                    success:              ~
+
+            # user related pagination configuration
+            pagination_user:
+                user_settings_limit:  ~ # Required
+
+            # User registration configuration
+            user_registration:
+
+                # Content type identifier used for registration.
+                user_type_identifier: user
+
+                # Content id of the user group where users who register are created.
+                group_id:             11
+
+                # User registration templates.
+                templates:
+
+                    # Template to use for registration form rendering.
+                    form:                 ~
+
+                    # Template to use for registration confirmation rendering.
+                    confirmation:         ~
+
+                # User registration form configuration.
+                form:
+                    allowed_field_definitions_identifiers:
+
+                        # Default:
+                        - user_account
+
+            # User Preferences configuration.
+            user_preferences:
+
+                # Additional translations to display on the preferred language list.
+                additional_translations:
+
+                    # Examples:
+                    - en_US
+                    - en_GB
+                full_datetime_format:
+
+                    # The date format
+                    date_format:          ~ # Example: dd/MM/yyyy
+
+                    # The time format
+                    time_format:          ~ # Example: 'hh:mm'
+                short_datetime_format:
+
+                    # The date format
+                    date_format:          ~ # Example: dd/MM/yyyy
+
+                    # The time format
+                    time_format:          ~ # Example: 'hh:mm'
+
+                # List of allowed short date formats.
+                allowed_short_date_formats:
+
+                    # Examples:
+                    label dd/MM/yyyy:    dd/MM/yyyy
+                    label for mm/dd/yyyy: 'mm/dd/yyyy '
+
+                # List of allowed short time formats.
+                allowed_short_time_formats:
+
+                    # Examples:
+                    label hh:mm:         'hh:mm'
+                    label for HH:mm:     'HH:mm'
+
+                # List of allowed full date formats.
+                allowed_full_date_formats:
+
+                    # Examples:
+                    label dd/MM/yyyy:    dd/MM/yyyy
+                    label for mm/dd/yyyy: 'mm/dd/yyyy '
+
+                # List of allowed full time formats.
+                allowed_full_time_formats:
+
+                    # Examples:
+                    label hh:mm:         'hh:mm'
+                    label for HH:mm:     'HH:mm'
+
+            # Template selection settings when displaying a user setting update form
+            user_settings_update_view:
+
+                # Prototype: View selection rulesets, grouped by view type. Key is the view type (e.g. 'full', 'line', ...)
+                key:
+
+                    # Prototype
+                    key:
+
+                        # Your template path, as MyBundle:subdir:my_template.html.twig
+                        template:             ~
+
+                        # Use custom controller instead of the default one to display a content matching your rules.
+                        # You can use the controller reference notation supported by Symfony.
+                        controller:           ~ # Example: 'MyBundle:MyControllerClass:view'
+
+                        # Condition matchers configuration
+                        match:                # Required
+
+                            # Prototype
+                            key:                  ~
+
+                        # Arbitrary params that will be passed in the ContentView object, manageable by ViewProviders.
+                        # Those params will NOT be passed to the resulting view template by default.
+                        params:
+
+                            # Examples:
+                            foo:                 '%some.parameter.reference%'
+                            osTypes:             [osx, linux, windows]
+
+                            # Prototype
+                            key:                  ~
+
+            # User forgot password configuration
+            user_forgot_password:
+                templates:
+
+                    # Template to use for forgot password form rendering.
+                    form:                 ~
+
+                    # Template to use for forgot password mail with reset link.
+                    mail:                 ~
+
+            # User forgot password success configuration
+            user_forgot_password_success:
+                templates:
+
+                    # Template to use for success forgot password form rendering.
+                    form:                 ~
+
+            # User forgot password with login configuration
+            user_forgot_password_login:
+                templates:
+
+                    # Template to use for forgot password with login form .
+                    form:                 ~
+
+            # User reset password configuration
+            user_reset_password:
+                templates:
+
+                    # Template to use for reset password form rendering.
+                    form:                 ~
+
+                    # Template to use for error with invalid reset link.
+                    invalid_link:         ~
+
+                    # Template to use for reset password success view.
+                    success:              ~
+
+            # User invitation configuration
+            user_invitation:
+                hash_expiration_time: P2D
+
+                # User invitation templates.
+                templates:
+
+                    # Template to use for registration form rendering.
+                    form:                 ~
+
+                    # Template to use for registration confirmation rendering.
+                    mail:                 ~
+
+            # Search configuration
+            search:
+
+                # Pagination related configuration
+                pagination:
+
+                    # Number of results per page
+                    limit:                ~
+
+            # Template for displaying main search form and results
+            search_view:
+
+                # Prototype: View selection rulesets, grouped by view type. Key is the view type (e.g. 'full', 'line', ...)
+                key:
+
+                    # Prototype
+                    key:
+
+                        # Your template path, as MyBundle:subdir:my_template.html.twig
+                        template:             ~
+
+                        # Use custom controller instead of the default one to display a content matching your rules.
+                        # You can use the controller reference notation supported by Symfony.
+                        controller:           ~ # Example: 'MyBundle:MyControllerClass:view'
+
+                        # Condition matchers configuration
+                        match:                # Required
+
+                            # Prototype
+                            key:                  ~
+
+                        # Arbitrary params that will be passed in the ContentView object, manageable by ViewProviders.
+                        # Those params will NOT be passed to the resulting view template by default.
+                        params:
+
+                            # Examples:
+                            foo:                 '%some.parameter.reference%'
+                            osTypes:             [osx, linux, windows]
+
+                            # Prototype
+                            key:                  ~
+
+            # Workflow configuration
+            workflows_config:
+
+                # Matcher templates configuration.
+                matcher_value_templates: # Required
+
+                    # Prototype
+                    -
+                        template:             ~
+                        priority:             ~
+
+                # Timeline entries templates
+                timeline_entry_templates: # Required
+
+                    # Prototype
+                    -
+                        template:             ~
+                        priority:             ~
+
+                # Pagination configuration.
+                pagination:
+                    workflow_limit:       ~ # Required
+                    suggested_reviewers_limit: ~ # Required
+
+            # Workflow configuration
+            workflows:
+
+                # Prototype
+                identifier:
+                    name:                 ~ # Required
+                    initial_stage:        null
+                    stages:               # Required
+
+                        # Prototype
+                        identifier:
+                            color:                null
+                            actions:
+
+                                # Prototype
+                                -
+                                    data:                 ~
+                                    condition:            []
+                            label:                ~ # Required
+
+                            # Flag indicating that workflow finished on this stage. When `last_stage` is `true`, content items at this stage won't be displayed on the Dashboard / Review Queue tab.
+                            last_stage:           false
+                    matchers:
+
+                        # Prototype
+                        identifier:           []
+                    transitions:          # Required
+
+                        # Prototype
+                        identifier:
+                            label:                ~ # Required
+                            icon:                 null
+                            color:                null
+                            reverse:              null
+                            from:                 []
+                            to:                   []
+                            actions:
+
+                                # Prototype
+                                -
+                                    data:                 ~
+                                    condition:            []
+                            reviewers:
+                                enabled:              true
+                                required:             false
+                                user_group:           null
+                            notification:
+
+                                # User group Id (or array of Ids) to receive notification
+                                user_group:           []
+
+                                # User Id (or array of Ids) to receive notification
+                                user:                 []
+
+                            # Enable/disable validate form before send
+                            validate:             false
+
+            # Calendar configuration
+            calendar:
+                event_types:
+
+                    # Prototype
+                    identifier:
+                        color:                null
+                        icon:                 null
+                        actions:
+
+                            # Prototype
+                            identifier:
+                                icon:                 null
+
+            # Settings for field comparison templates
+            field_comparison_templates:
+
+                # Prototype
+                -
+
+                    # Template file where to find block definition to display field comparison
+                    template:             ~ # Required
+                    priority:             0
+
+            # Template for displaying preview for DAM ImageAsset FieldType
+            image_asset_view:
+
+                # Prototype: View selection rulesets, grouped by view type. Key is the view type (e.g. 'full', 'line', ...)
+                key:
+
+                    # Prototype
+                    key:
+
+                        # Your template path, as MyBundle:subdir:my_template.html.twig
+                        template:             ~
+
+                        # Use custom controller instead of the default one to display a content matching your rules.
+                        # You can use the controller reference notation supported by Symfony.
+                        controller:           ~ # Example: 'MyBundle:MyControllerClass:view'
+
+                        # Condition matchers configuration
+                        match:                # Required
+
+                            # Prototype
+                            key:                  ~
+
+                        # Arbitrary params that will be passed in the ContentView object, manageable by ViewProviders.
+                        # Those params will NOT be passed to the resulting view template by default.
+                        params:
+
+                            # Examples:
+                            foo:                 '%some.parameter.reference%'
+                            osTypes:             [osx, linux, windows]
+
+                            # Prototype
+                            key:                  ~
+
+            # Personalization configuration
+            personalization:
+
+                # Site name for internal usage e.g. Displaying name of Personalization limitations
+                site_name:            ~ # Example: 'My site name'
+                authentication:
+
+                    # Personalization customer ID
+                    customer_id:          ~ # Required, Example: '12345'
+
+                    # Personalization license key
+                    license_key:          ~ # Required, Example: 1234-5678-9012-3456-7890
+
+                # Content types on which tracking code will be shown
+                included_item_types:
+
+                    # Examples:
+                    - article
+                    - blog_post
+
+                # HTTP base URI of the IBEXA DXP server
+                host_uri:             ~ # Example: 'http://site.com'
+
+                # Default content author
+                author_id:            ~ # Example: '14'
+                export:
+                    authentication:
+
+                        # Export authentication method
+                        method:               ~ # Example: 'basic / user / none'
+
+                        # Login for export authentication method
+                        login:                ~
+
+                        # Password for export authentication method
+                        password:             ~
+                    document_root:        '%kernel.project_dir%/public/var/export/'
+                user_api:
+
+                    # User API default source name
+                    default_source:       ~ # Example: source_name-en
+                api:
+                    admin:
+
+                        # Admin api endpoint
+                        endpoint:             ~ # Example: 'https://admin.net'
+                    recommendation:
+
+                        # Recommendation api endpoint
+                        endpoint:             ~ # Example: 'https://recommendation.net'
+
+                        # Recommendation consume timeout
+                        consume_timeout:      ~ # Example: '20'
+                    event_tracking:
+
+                        # Event API endpoint
+                        endpoint:             ~ # Example: 'https://events.net'
+
+                        # Tracking script url
+                        script_url:           ~ # Example: cdn.perso.ibexa.co/ibexa-tracker.js
+                    user:
+
+                        # User API endpoint
+                        endpoint:             ~ # Example: 'https://user.net'
+
+                # Pagination configuration
+                pagination:
+                    limit:                ~ # Required
+
+                # Recommendations preview items configuration
+                recommendations:
+                    limit:                ~
+                    max_value:            ~
+                    user_id:              ~
+                output_type_attributes:
+
+                    # Prototype
+                    -
+                        title:                ~
+                        description:          ~
+                        image:                ~
+                repository:
+                    content:
+
+                        # Use remote id instead of numeric content id to process recommendations
+                        use_remote_id:        ~
+            seo:
+                types:
+
+                    # Prototype
+                    type:                 ~
+            measurement:
+                types:
+
+                    # Prototype
+                    -                     []
+            image_editor:
+
+                # Image Editor output image quality
+                image_quality:        ~
+
+                # Image Editor Actions configuration
+                action_groups:
+
+                    # Prototype
+                    id:
+                        id:                   ~
+                        label:                ~
+                        actions:
+
+                            # Prototype
+                            id:
+                                id:                   ~
+                                label:                ~
+                                priority:             0
+                                visible:              true
+                                buttons:
+
+                                    # Prototype
+                                    id:
+                                        id:                   ~
+                                        label:                ~
+                                        priority:             0
+                                        visible:              true
+
+            # OAuth2 configuration
+            oauth2:
+                enabled:              false
+                clients:              []
+
+            # Commerce Site configuration settings
+            commerce:
+
+                # Enable Commerce features
+                enabled:              true
+            product_catalog:
+                assets:
+                    templates:
+
+                        # Prototype
+                        -
+                            template:             ~ # Required
+                            priority:             0
+                catalogs:
+                    default_filters:      []
+                    filter_preview_templates:
+
+                        # Prototype
+                        -
+                            template:             ~ # Required
+                            priority:             0
+                currencies:           []
+                completeness:
+                    tasks:
+
+                        # Prototype
+                        -
+                            template:             ~ # Required
+                            priority:             0
+                pagination:
+                    attribute_definitions_limit: 25 # Required
+                    attribute_groups_limit: 25 # Required
+                    customer_groups_limit: 25 # Required
+                    customer_group_users_limit: 25 # Required
+                    currencies_limit:     25 # Required
+                    products_limit:       25 # Required
+                    product_types_limit:  25 # Required
+                    product_view_custom_prices_limit: 3 # Required
+                    regions_limit:        25 # Required
+                    catalogs_limit:       25 # Required
+                regions:              []
+
+            # Configuration for Ibexa Taxonomy feature
+            taxonomy:
+                pagination:
+                    tab_assigned_content_limit: ~ # Required
+
+            # Page Builder configuration
+            page_builder:
+
+                # List of siteaccesses available for content preview in Page Builder.
+                siteaccess_list:      []
+
+                # List of siteaccesses hosts for content preview in Page Builder.
+                siteaccess_hosts:     []
+                inject_cross_origin_helper: true
+
+            # Admin UI forms configuration settings
+            page_builder_forms:
+
+                # A list of page builder Block Edit (and create) default Twig form templates
+                block_edit_form_templates:
+
+                    # Prototype
+                    -
+                        template:             ~
+                        priority:             ~
+
+            # Form Builder configuration
+            form_builder:
+
+                # Root location ID for the forms
+                forms_location_id:    55
+
+                # Default location used to store uploaded files
+                upload_location_id:   54
+
+                # Pagination configuration.
+                pagination:
+                    submission_limit:     ~ # Required
+
+                # Captcha configuration
+                captcha:
+
+                    # Use AJAX to fetch captcha. This could solve issues when site is behind varnish.
+                    use_ajax:             false
+
+            # Site Factory configuration
+            site_factory:
+
+                # Root Location ID for the sites
+                sites_location_id:    2
+
+                # Root Location ID for the site skeletons
+                site_skeletons_location_id: 56
+
+            # site factory related pagination configuration
+            pagination_site_factory:
+                sites_limit:          ~ # Required
+
+            # Segmentation configuration
+            segmentation:
+
+                # Pagination configuration.
+                pagination:
+                    segment_groups_limit: 10
+                    user_view_segments_limit: 10
+
+                # Segment Groups configuration
+                segment_groups:
+                    list:
+
+                        # Prototype
+                        -
+
+                            # Set this group as protected
+                            protected:            false # Required
+
+            # Corporate accounts related configuration
+            corporate_accounts:
+
+                # Roles identifiers used for corporate accounts. Case sensitive
+                roles:                []
+
+                # Predefined set of application stage reasons.
+                reasons:
+
+                    # Prototype
+                    -                     []
+                application:
+
+                    # States identifiers used for corporate account applications. Case sensitive
+                    states:               []
+
+                    # State used for new corporate account applications. Case sensitive
+                    default_state:        ~
+

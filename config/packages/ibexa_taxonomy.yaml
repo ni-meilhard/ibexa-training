@@ -1,0 +1,16 @@
+ibexa_taxonomy:
+    taxonomies:
+        tags:
+            parent_location_remote_id: taxonomy_tags_folder
+            content_type: tag
+            field_mappings:
+                identifier: identifier
+                parent: parent
+                name: name
+        genres:
+            parent_location_remote_id: 105
+            content_type: genre
+            field_mappings:
+                identifier: genre_identifier
+                parent: genres
+                name: name

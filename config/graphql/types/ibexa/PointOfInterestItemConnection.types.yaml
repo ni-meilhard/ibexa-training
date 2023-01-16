@@ -1,0 +1,9 @@
+PointOfInterestItemConnection:
+    type: relay-connection
+    config:
+        nodeType: PointOfInterestItem
+        connectionFields:
+            sliceSize:
+                type: Int!
+            orderBy:
+                type: String

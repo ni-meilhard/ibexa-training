@@ -1,0 +1,34 @@
+ProductPageItem:
+    type: object
+    inherits:
+        - AbstractItem
+    config:
+        interfaces:
+            - Item
+            - Node
+        fields:
+            title:
+                type: String
+                resolve: '@=resolver("ItemFieldValue", [value, "title", args])'
+                args:
+                    language: { type: RepositoryLanguage }
+            heroImage:
+                type: ImageFieldValue
+                resolve: '@=resolver("DomainImageAssetFieldValue", [resolver("ItemFieldValue", [value, "hero_image", args])])'
+                args:
+                    language: { type: RepositoryLanguage }
+            description:
+                type: RichTextFieldValue
+                resolve: '@=resolver("ItemFieldValue", [value, "description", args])'
+                args:
+                    language: { type: RepositoryLanguage }
+            contentItems:
+                type: '[ArticleItem]'
+                resolve: '@=resolver("RelationFieldValue", [resolver("ItemFieldValue", [value, "content_items", args]), true])'
+                args:
+                    language: { type: RepositoryLanguage }
+            field638e35d462951:
+                type: String
+                resolve: '@=resolver("ItemFieldValue", [value, "field_638e35d462951", args])'
+                args:
+                    language: { type: RepositoryLanguage }

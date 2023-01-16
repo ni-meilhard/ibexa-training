@@ -1,0 +1,32 @@
+PageBlocksList:
+    type: enum
+    config:
+        values:
+            targeting:
+                value: TargetingPageBlock
+            form:
+                value: FormPageBlock
+            tag:
+                value: TagPageBlock
+            contentlist:
+                value: ContentlistPageBlock
+            banner:
+                value: BannerPageBlock
+            collection:
+                value: CollectionPageBlock
+            embed:
+                value: EmbedPageBlock
+            gallery:
+                value: GalleryPageBlock
+            video:
+                value: VideoPageBlock
+            rss:
+                value: RssPageBlock
+            schedule:
+                value: SchedulePageBlock
+            richtext:
+                value: RichtextPageBlock
+            personalized:
+                value: PersonalizedPageBlock
+            dynamic_targeting:
+                value: DynamicTargetingPageBlock

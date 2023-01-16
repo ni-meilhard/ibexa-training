@@ -1,0 +1,284 @@
+@keyframes remove-field {
+  100% {
+    height: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@keyframes item-remove-pulse {
+  0% {
+    border-color: #f3f3f6;
+    box-shadow: 0 0 0 0 #f3f3f6;
+  }
+  10% {
+    border-color: #f3f3f6;
+    box-shadow: 0 0 0 0 #f3f3f6;
+  }
+  20% {
+    border-color: #f3f3f6;
+    box-shadow: 0 0 0 0.625rem #f3f3f6;
+  }
+  100% {
+    border-color: #f3f3f6;
+    box-shadow: 0 0 0 0 #f3f3f6;
+  }
+}
+@keyframes item-highlight-pulse {
+  0% {
+    border-color: #b3d3ff;
+    background-color: #ecf4ff;
+    box-shadow: 0 0 0 0 #ecf4ff;
+  }
+  10% {
+    border-color: #b3d3ff;
+    background-color: #ecf4ff;
+    box-shadow: 0 0 0 0 #ecf4ff;
+  }
+  20% {
+    border-color: #b3d3ff;
+    background-color: #ecf4ff;
+    box-shadow: 0 0 0 0.625rem #ecf4ff;
+  }
+  100% {
+    border-color: #b3d3ff;
+    background-color: #ecf4ff;
+    box-shadow: 0.25rem 0.125rem 1.0625rem 0 rgba(65, 145, 255, 0.05);
+  }
+}
+.ibexa-fb-form-field-config {
+  display: grid;
+  grid-template-areas: "tabs" "content" "actions";
+  grid-template-rows: auto auto 0.5rem;
+}
+.ibexa-fb-form-field-config__tabs {
+  grid-area: tabs;
+  background: #ffffff;
+  border: 0 none;
+  width: 100%;
+}
+.ibexa-fb-form-field-config__link {
+  line-height: 2.625rem;
+  padding: 0 1rem;
+  border: 0 none;
+}
+.ibexa-fb-form-field-config__content {
+  grid-area: content;
+  overflow: auto;
+  padding: 1.5rem;
+}
+.ibexa-fb-form-field-config__content .ibexa-label {
+  display: block;
+}
+.ibexa-fb-form-field-config__actions {
+  justify-content: flex-start;
+  padding: 1.5rem 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1.5rem;
+}
+.ibexa-fb-form-field-config__actions .btn {
+  margin: 0 1rem 0 0;
+}
+.ibexa-fb-form-field-config [data-open-udw] {
+  display: block;
+}
+.ibexa-fb-form-field-config__error {
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: #db0032;
+}
+.ibexa-fb-form-field-config__btn--open-udw {
+  display: flex;
+  align-items: center;
+}
+.ibexa-fb-form-field-config__btn--open-udw .ibexa-icon {
+  fill: #ffffff;
+  margin-right: 0.5rem;
+}
+.ibexa-fb-form-field-config__config-label {
+  font-size: 0.875rem;
+}
+.ibexa-fb-form-field-config__config-label--required:after {
+  content: "*:";
+}
+.ibexa-fb-form-field-config .ibexa-label {
+  float: none;
+}
+.ibexa-fb-form-field-config .form-group {
+  margin-bottom: 1.5rem;
+}
+.ibexa-fb-form-field-config .ibexa-fb-field-config__link, .ibexa-fb-form-field-config .ibexa-fb-field-config__link:hover {
+  border: none;
+}
+.ibexa-fb-form-field-config .ibexa-tab-content {
+  margin-bottom: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-width: 0.0625rem 0 0 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.ibexa-fb-form-field-config--default {
+  background: #ffffff;
+}
+.ibexa-fb-form-field-config--default .ibexa-fb-field-config__wrapper {
+  height: calc(100% - 3.8125rem);
+}
+.ibexa-fb-form-field-config--default .ibexa-main-container {
+  margin: 0;
+  padding: 0;
+}
+
+[name=field_configuration] {
+  height: 100%;
+  width: 100%;
+}
+
+.ibexa-fb-field-config-location {
+  padding: 1.5rem;
+  border: 0.0625rem solid #cfd1d3;
+  border-radius: 0.625rem;
+}
+.ibexa-fb-field-config-location__location-name {
+  padding-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.ibexa-fb-form-field-config-fieldset__value-input .ibexa-input-text-wrapper--type-number {
+  width: 5.25rem;
+}
+.ibexa-fb-form-field-config-fieldset__validator-input--number {
+  width: 5.25rem;
+  height: 3rem;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+}
+
+.ibexa-fb-form-field-config-content-item {
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+  border: 0.0625rem solid #cfd1d3;
+}
+.ibexa-fb-form-field-config-content-item__headline {
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+.ibexa-fb-form-field-config-content-item .ibexa-fb-form-field-config-selected-item {
+  border-top: 0.0625rem solid #cfd1d3;
+}
+.ibexa-fb-form-field-config-content-item .ibexa-fb-form-field-config-selected-item .ibexa-table__body .ibexa-table__cell {
+  font-size: 0.875rem;
+}
+.ibexa-fb-form-field-config-content-item .ibexa-fb-form-field-config-selected-item--hidden {
+  display: none;
+}
+
+.ibexa-fb-form-field-config-options {
+  padding: 1.5rem;
+  border: 0.0625rem solid #cfd1d3;
+  border-radius: 0.625rem;
+}
+.ibexa-fb-form-field-config-options__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem solid #cfd1d3;
+}
+.ibexa-fb-form-field-config-options__headline {
+  font-size: 0.875rem;
+}
+
+.ibexa-fb-form-field-config-option {
+  display: flex;
+  background: #f3f3f6;
+  margin-bottom: 0.5rem;
+  border-radius: 0.625rem;
+  margin-bottom: 0.5rem;
+}
+.ibexa-fb-form-field-config-option:hover:not(.ibexa-fb-form-field-config-option--is-non-interactive) .ibexa-fb-form-field-config-option__content {
+  border-color: #131c26;
+  transform: scale(1.02) translateX(-10px);
+  box-shadow: 0.25rem 1.375rem 2.9375rem 0 rgba(65, 145, 255, 0.2);
+}
+.ibexa-fb-form-field-config-option--is-dragging-out .ibexa-fb-form-field-config-option__content {
+  opacity: 0;
+}
+.ibexa-fb-form-field-config-option--highlighted .ibexa-fb-form-field-config-option__content {
+  border-color: #b3d3ff;
+  background-color: #ecf4ff;
+  animation: item-highlight-pulse 1s 1;
+}
+.ibexa-fb-form-field-config-option--is-removing .ibexa-fb-form-field-config-option__content {
+  border-color: #f3f3f6;
+  animation: item-remove-pulse 0.2s 1;
+  transform-origin: center;
+  pointer-events: none;
+}
+.ibexa-fb-form-field-config-option--is-removing .ibexa-fb-form-field-config-option__content:hover {
+  border-color: #f3f3f6;
+}
+.ibexa-fb-form-field-config-option--removed {
+  animation: remove-field 1s 1 forwards;
+}
+.ibexa-fb-form-field-config-option--error .ibexa-fb-form-field-config-option__content {
+  border-color: #db0032;
+}
+.ibexa-fb-form-field-config-option__content {
+  display: flex;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 0.0625rem solid #e0e0e8;
+  border-radius: 0.625rem;
+  box-shadow: 0.25rem 0.125rem 1.0625rem 0 rgba(65, 145, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.ibexa-fb-form-field-config-option__content[draggable=true] {
+  cursor: grab;
+}
+.ibexa-fb-form-field-config-option__left-col {
+  display: flex;
+  width: calc(100% - 4rem);
+}
+.ibexa-fb-form-field-config-option__right-col {
+  display: flex;
+  justify-content: flex-end;
+  width: 4rem;
+}
+.ibexa-fb-form-field-config-option__drag-handler {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  padding-right: 1rem;
+}
+.ibexa-fb-form-field-config-option__drag-handler .ibexa-icon {
+  fill: #cfd1d3;
+}
+.ibexa-fb-form-field-config-option__label {
+  padding-top: 0.25rem;
+}
+.ibexa-fb-form-field-config-option--invalid {
+  border-color: #db0032;
+}
+.ibexa-fb-form-field-config-option__input {
+  height: 2.1875rem;
+  font-size: 0.875rem;
+}
+
+.ibexa-fb-form-field-config-option-placeholder {
+  display: flex;
+  height: 0.25rem;
+  border-radius: 0.125rem;
+  background-color: #4191ff;
+  margin: 0 0 0.5rem 0;
+}
+.ibexa-fb-form-field-config-option-placeholder--anchored {
+  background-color: #f3f3f6;
+}
+.ibexa-fb-form-field-config-option-placeholder--hidden {
+  display: none;
+}

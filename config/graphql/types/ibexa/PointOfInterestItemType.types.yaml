@@ -1,0 +1,23 @@
+PointOfInterestItemType:
+    type: object
+    inherits:
+        - BaseItemType
+    config:
+        interfaces:
+            - ItemType
+        fields:
+            title:
+                type: TextLineFieldDefinition
+                resolve: '@=value.getFieldDefinition("title")'
+            description:
+                type: TextBlockFieldDefinition
+                resolve: '@=value.getFieldDefinition("description")'
+            photo:
+                type: BinaryFieldDefinition
+                resolve: '@=value.getFieldDefinition("photo")'
+            photoLegend:
+                type: TextBlockFieldDefinition
+                resolve: '@=value.getFieldDefinition("photo_legend")'
+            place:
+                type: MatrixFieldDefinition
+                resolve: '@=value.getFieldDefinition("place")'

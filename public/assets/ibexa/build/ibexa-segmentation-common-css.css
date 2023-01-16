@@ -1,0 +1,10 @@
+.ibexa-modal--create-segment-group .modal-dialog {
+  max-width: 40vw;
+}
+.ibexa-modal--create-segment-group .modal-body {
+  max-height: 31.25rem;
+  overflow: auto;
+}
+.ibexa-modal--create-segment-group .modal-body .form-group {
+  width: 60%;
+}

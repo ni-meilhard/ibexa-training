@@ -1,0 +1,31 @@
+{% set localization_country = app.request.cookies.get('localization_country') ? app.request.cookies.get('localization_country') : 'DE' %}
+
+{% set settings = {
+    'usd' : ["AF","AL","DZ","AO","AQ","AM","AZ","BH","BD","BY","BJ","BT","BA","BW","BV","IO","BN","BF","BI","KH","CM","CV","CF","TD","CX","CC","CG","CD","CK","CI","DJ","EG","GQ","ER","SZ","ET","FJ","PF","GA","GM","GE","GH","GU","GN","GW","HM","HK","IN","ID","IR","IQ","IL","JO","KZ","KE","KI","XK","KW","KG","LA","LB","LS","LR","LY","MO","MG","MW","MY","MV","ML","MR","MU","YT","FM","MD","MN","ME","MA","MZ","MM","NA","NR","NP","NC","NZ","NE","NG","NU","NF","MP","KP","MK","OM","PK","PW","PS","PG","PH","PN","QA","RU","RW","WS","ST","SA","SN","RS","SC","SL","SG","SX","SB","SO","ZA","KR","SS","LK","SH","MF","SD","SY","TW","TJ","TZ","TH","TL","TG","TK","TO","TN","TM","TC","TV","UG","UA","AE","UZ","VU","VN","WF","EH","YE","ZM","ZW","AS","AI","AG","AR","AW","BS","BB","BZ","BM","BO","BR","VG","BQ","KY","CL","CO","KM","CR","CU","CW","DM","DO","EC","SV","FK","GF","GD","GT","GY","HT","HN","JM","MH","MX","MS","NI","PA","PY","PE","PR","GS","KN","LC","VC","SR","TT","US","UY","UM","VI","VE"],
+    'eur' : ["AX","AD","AT","BE","BG","IC","HR","CY","CZ","DK","EE","FO","FI","TF","DE","GI","GR","GL","GP","GG","HU","IS","IE","IM","IT","JE","LV","LI","LT","LU","MT","MQ","MC","NL","NO","PL","PT","RE","RO","SM","SK","SI","ES","BL","PM","SJ","SE","TR","VA","FR"],
+    'aud' : ["AU"],
+    'chf' : ["CH"],
+    'gbp' : ["GB"],
+    'cad' : ["CA"],
+    'jpy' : ["JP"],
+    'cny' : ["CN"]
+    }
+%}
+
+{% set template = {
+    'usd' : "$%s",
+    'eur' : "%s €",
+    'aud' : "AU$ %s",
+    'chf' : "CHF %s",
+    'gbp' : "£%s",
+    'cad' : "CA$ %s",
+    'jpy' : "¥%s",
+    'cny' : "¥%s",
+  } 
+%}
+
+{% for l, v in settings %}
+  {% if ( localization_country in v ) %}
+    {{ template[l]|format(params[l]|format_number(locale= l == 'usd' ?  'US' : localization_country)) }}
+  {% endif %}
+{% endfor %}

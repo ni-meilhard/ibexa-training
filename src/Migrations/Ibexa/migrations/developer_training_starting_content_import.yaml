@@ -1,0 +1,436 @@
+-
+    type: content
+    mode: create
+    metadata:
+        contentType: folder
+        mainTranslation: eng-GB
+        creatorId: 14
+        modificationDate: '2022-01-13T09:42:46+01:00'
+        publicationDate: '2022-01-13T09:42:46+01:00'
+        remoteId: b5f526859e25c6800c892a2557ecdaff
+        alwaysAvailable: true
+        section:
+            id: 1
+            identifier: standard
+    location:
+        parentLocationId: 2
+        parentLocationRemoteId: null
+        locationRemoteId: 30b2cb9534a0ec48413165dfb5e0fa8c
+        hidden: false
+        sortField: 1
+        sortOrder: 1
+        priority: 0
+    fields:
+        -
+            fieldDefIdentifier: name
+            languageCode: eng-GB
+            value: 'All Rides'
+        -
+            fieldDefIdentifier: short_name
+            languageCode: eng-GB
+            value: null
+        -
+            fieldDefIdentifier: short_description
+            languageCode: eng-GB
+            value:
+                xml: |
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0-variant ezpublish-1.0"/>
+        -
+            fieldDefIdentifier: description
+            languageCode: eng-GB
+            value:
+                xml: |
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0-variant ezpublish-1.0"/>
+    references:
+        -
+            name: 'ref__content__folder__all_rides'
+            type: content_id
+        -
+            name: 'ref_location__folder__all_rides'
+            type: location_id
+        -
+            name: 'ref_path__folder__all_rides'
+            type: path
+-
+    type: content
+    mode: create
+    metadata:
+        contentType: folder
+        mainTranslation: eng-GB
+        creatorId: 14
+        modificationDate: '2022-01-13T10:13:56+01:00'
+        publicationDate: '2022-01-13T10:13:56+01:00'
+        remoteId: 2229a24ed1da18f50edcf5057d49069f
+        alwaysAvailable: true
+        section:
+            id: 1
+            identifier: standard
+    location:
+        parentLocationId: 2
+        parentLocationRemoteId: null
+        locationRemoteId: b3c1bbfc501c6038785b14c6f3d974e4
+        hidden: false
+        sortField: 1
+        sortOrder: 1
+        priority: 0
+    fields:
+        -
+            fieldDefIdentifier: name
+            languageCode: eng-GB
+            value: 'Points of Interest'
+        -
+            fieldDefIdentifier: short_name
+            languageCode: eng-GB
+            value: null
+        -
+            fieldDefIdentifier: short_description
+            languageCode: eng-GB
+            value:
+                xml: |
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0-variant ezpublish-1.0"/>
+        -
+            fieldDefIdentifier: description
+            languageCode: eng-GB
+            value:
+                xml: |
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0-variant ezpublish-1.0"/>
+    references:
+        -
+            name: 'ref__content__folder__points_of_interest'
+            type: content_id
+        -
+            name: 'ref_location__folder__points_of_interest'
+            type: location_id
+        -
+            name: 'ref_path__folder__points_of_interest'
+            type: path
+-
+    type: content
+    mode: create
+    metadata:
+        contentType: point_of_interest
+        mainTranslation: eng-GB
+        creatorId: 14
+        modificationDate: '2022-01-13T15:46:06+01:00'
+        publicationDate: '2022-01-13T11:09:31+01:00'
+        remoteId: 78062635932927d1e91d85e9ed2a191b
+        alwaysAvailable: true
+        section:
+            id: 1
+            identifier: standard
+    location:
+        parentLocationId: 'reference:ref_location__folder__points_of_interest'
+        parentLocationRemoteId: null
+        locationRemoteId: f70e70f3257536dd9ca4c1dc75fcb04a
+        hidden: false
+        sortField: 2
+        sortOrder: 0
+        priority: 0
+    fields:
+        -
+            fieldDefIdentifier: title
+            languageCode: eng-GB
+            value: 'Plateau de Vergongeat'
+        -
+            fieldDefIdentifier: description
+            languageCode: eng-GB
+            value:
+                xml: |
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0"><para>Plateau de Vergongeat</para></section>
+        -
+            fieldDefIdentifier: photo
+            languageCode: eng-GB
+            value:
+                id: vergongeat_full.jpg
+                path: 5/7/2/0/275-2-eng-GB/vergongeat_full.jpg
+                alternativeText: ''
+                fileName: vergongeat_full.jpg
+                fileSize: 29379
+                imageId: 59-275-2
+                uri: /var/site/storage/images/5/7/2/0/275-2-eng-GB/vergongeat_full.jpg
+                inputUri: null
+                width: '760'
+                height: '249'
+                additionalData: {  }
+        -
+            fieldDefIdentifier: photo_legend
+            languageCode: eng-GB
+            value:
+                xml: |
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0"><para>Plateau</para></section>
+        -
+            fieldDefIdentifier: place
+            languageCode: eng-GB
+            value:
+                latitude: 46.386592
+                longitude: 5.366116
+                address: 'Plateau de Vergongeat'
+    references:
+        -
+            name: 'ref__content__point_of_interest__plateau de vergongeat'
+            type: content_id
+        -
+            name: 'ref_location__point_of_interest__plateau de vergongeat'
+            type: location_id
+        -
+            name: 'ref_path__point_of_interest__plateau de vergongeat'
+            type: path
+-
+    type: content
+    mode: create
+    metadata:
+        contentType: bike_ride
+        mainTranslation: eng-GB
+        creatorId: 14
+        modificationDate: '2022-01-14T12:04:47+01:00'
+        publicationDate: '2022-01-14T12:04:47+01:00'
+        remoteId: 7669f50a07eb01e6b34c7148e574955c
+        alwaysAvailable: true
+        section:
+            id: 1
+            identifier: standard
+    location:
+        parentLocationId: 'reference:ref_location__folder__all_rides'
+        parentLocationRemoteId: null
+        locationRemoteId: 0fc7afacbdf69de6f514ea92c91463e5
+        hidden: false
+        sortField: 2
+        sortOrder: 0
+        priority: 0
+    fields:
+        -
+            fieldDefIdentifier: title
+            languageCode: eng-GB
+            value: 'Baby tour of the Battenkill'
+        -
+            fieldDefIdentifier: photo
+            languageCode: eng-GB
+            value:
+                id: battenkill.jpg
+                path: 9/7/2/0/279-1-eng-GB/battenkill.jpg
+                alternativeText: ''
+                fileName: battenkill.jpg
+                fileSize: 123057
+                imageId: 60-279-1
+                uri: /var/site/storage/images/9/7/2/0/279-1-eng-GB/battenkill.jpg
+                inputUri: null
+                width: '500'
+                height: '375'
+                additionalData: {  }
+        -
+            fieldDefIdentifier: description
+            languageCode: eng-GB
+            value:
+                xml: |
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0"><para>Track of the famous race in Washington County, NY.</para></section>
+        -
+            fieldDefIdentifier: difficulty
+            languageCode: eng-GB
+            value:
+                - 1
+        -
+            fieldDefIdentifier: starting_point
+            languageCode: eng-GB
+            value:
+                latitude: 43.100231
+                longitude: -73.581963
+                address: Schuylerville
+        -
+            fieldDefIdentifier: ending_point
+            languageCode: eng-GB
+            value:
+                latitude: 43.100231
+                longitude: -73.581963
+                address: Schuylerville
+        -
+            fieldDefIdentifier: length
+            languageCode: eng-GB
+            value: 27
+        -
+            fieldDefIdentifier: author
+            languageCode: eng-GB
+            value:
+                -
+                    id: '1'
+                    name: 'Jane Private'
+                    email: nospam@ez.no
+    references:
+        -
+            name: 'ref__content__bike_ride__baby tour of the battenkill'
+            type: content_id
+        -
+            name: 'ref_location__bike_ride__baby tour of the battenkill'
+            type: location_id
+        -
+            name: 'ref_path__bike_ride__baby tour of the battenkill'
+            type: path
+-
+    type: content
+    mode: create
+    metadata:
+        contentType: bike_ride
+        mainTranslation: eng-GB
+        creatorId: 14
+        modificationDate: '2022-01-14T12:06:09+01:00'
+        publicationDate: '2022-01-14T12:06:09+01:00'
+        remoteId: b98733bf24f31a683958cb2de7b9ef88
+        alwaysAvailable: true
+        section:
+            id: 1
+            identifier: standard
+    location:
+        parentLocationId: 'reference:ref_location__folder__all_rides'
+        parentLocationRemoteId: null
+        locationRemoteId: 7848fc97b5f0121a29f1c6c7e0dc3ef9
+        hidden: false
+        sortField: 2
+        sortOrder: 0
+        priority: 0
+    fields:
+        -
+            fieldDefIdentifier: title
+            languageCode: eng-GB
+            value: 'Meillonnas terrain track'
+        -
+            fieldDefIdentifier: photo
+            languageCode: eng-GB
+            value:
+                id: cabatane_full.jpg
+                path: 7/8/2/0/287-1-eng-GB/cabatane_full.jpg
+                alternativeText: ''
+                fileName: cabatane_full.jpg
+                fileSize: 142841
+                imageId: 61-287-1
+                uri: /var/site/storage/images/7/8/2/0/287-1-eng-GB/cabatane_full.jpg
+                inputUri: null
+                width: '760'
+                height: '760'
+                additionalData: {  }
+        -
+            fieldDefIdentifier: description
+            languageCode: eng-GB
+            value:
+                xml: |
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0"><para>Meillonnas to Coligny.</para></section>
+        -
+            fieldDefIdentifier: difficulty
+            languageCode: eng-GB
+            value:
+                - 0
+        -
+            fieldDefIdentifier: starting_point
+            languageCode: eng-GB
+            value:
+                latitude: 46.245135
+                longitude: 5.33833
+                address: Meillonnas
+        -
+            fieldDefIdentifier: ending_point
+            languageCode: eng-GB
+            value:
+                latitude: 46.388794
+                longitude: 5.330889
+                address: Coligny
+        -
+            fieldDefIdentifier: length
+            languageCode: eng-GB
+            value: 35
+        -
+            fieldDefIdentifier: author
+            languageCode: eng-GB
+            value:
+                -
+                    id: '1'
+                    name: 'Jane Doe'
+                    email: nospam@ez.no
+    references:
+        -
+            name: 'ref__content__bike_ride__meillonnas terrain track'
+            type: content_id
+        -
+            name: 'ref_location__bike_ride__meillonnas terrain track'
+            type: location_id
+        -
+            name: 'ref_path__bike_ride__meillonnas terrain track'
+            type: path
+-
+    type: content
+    mode: create
+    metadata:
+        contentType: point_of_interest
+        mainTranslation: eng-GB
+        creatorId: 14
+        modificationDate: '2022-01-14T12:17:00+01:00'
+        publicationDate: '2022-01-14T12:17:00+01:00'
+        remoteId: 7c9d9e55639f9670257b0a2517ff3f7a
+        alwaysAvailable: true
+        section:
+            id: 1
+            identifier: standard
+    location:
+        parentLocationId: 'reference:ref_location__folder__points_of_interest'
+        parentLocationRemoteId: null
+        locationRemoteId: e4098130641410f82adbba95c7eaa177
+        hidden: false
+        sortField: 2
+        sortOrder: 0
+        priority: 0
+    fields:
+        -
+            fieldDefIdentifier: title
+            languageCode: eng-GB
+            value: 'Cross above Tarcia'
+        -
+            fieldDefIdentifier: description
+            languageCode: eng-GB
+            value:
+                xml: |
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0"><para>This is the cross that's above Tarcia in the hills.</para></section>
+        -
+            fieldDefIdentifier: photo
+            languageCode: eng-GB
+            value:
+                id: cross-tarcia.jpg
+                path: 6/9/2/0/296-1-eng-GB/cross-tarcia.jpg
+                alternativeText: ''
+                fileName: cross-tarcia.jpg
+                fileSize: 465308
+                imageId: 62-296-1
+                uri: /var/site/storage/images/6/9/2/0/296-1-eng-GB/cross-tarcia.jpg
+                inputUri: null
+                width: '1536'
+                height: '864'
+                additionalData: {  }
+        -
+            fieldDefIdentifier: photo_legend
+            languageCode: eng-GB
+            value:
+                xml: |
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0"><para>Cross above Tarcia</para></section>
+        -
+            fieldDefIdentifier: place
+            languageCode: eng-GB
+            value:
+                latitude: 46.384895
+                longitude: 5.404414
+                address: Tarcia
+    references:
+        -
+            name: 'ref__content__point_of_interest__cross above tarcia'
+            type: content_id
+        -
+            name: 'ref_location__point_of_interest__cross above tarcia'
+            type: location_id
+        -
+            name: 'ref_path__point_of_interest__cross above tarcia'
+            type: path

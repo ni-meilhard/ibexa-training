@@ -1,0 +1,32 @@
+PointOfInterestItem:
+    type: object
+    inherits:
+        - AbstractItem
+    config:
+        interfaces:
+            - Item
+            - Node
+        fields:
+            title:
+                type: String
+                resolve: '@=resolver("ItemFieldValue", [value, "title", args])'
+                args:
+                    language: { type: RepositoryLanguage }
+            description:
+                type: String
+                resolve: '@=resolver("ItemFieldValue", [value, "description", args])'
+                args:
+                    language: { type: RepositoryLanguage }
+            photo:
+                type: ImageFieldValue
+                resolve: '@=resolver("ItemFieldValue", [value, "photo", args])'
+            photoLegend:
+                type: String
+                resolve: '@=resolver("ItemFieldValue", [value, "photo_legend", args])'
+                args:
+                    language: { type: RepositoryLanguage }
+            place:
+                type: MapLocationFieldValue
+                resolve: '@=resolver("ItemFieldValue", [value, "place", args])'
+                args:
+                    language: { type: RepositoryLanguage }

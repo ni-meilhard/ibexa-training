@@ -1,0 +1,253 @@
+@keyframes remove-field {
+  100% {
+    height: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@keyframes item-remove-pulse {
+  0% {
+    border-color: #f3f3f6;
+    box-shadow: 0 0 0 0 #f3f3f6;
+  }
+  10% {
+    border-color: #f3f3f6;
+    box-shadow: 0 0 0 0 #f3f3f6;
+  }
+  20% {
+    border-color: #f3f3f6;
+    box-shadow: 0 0 0 0.625rem #f3f3f6;
+  }
+  100% {
+    border-color: #f3f3f6;
+    box-shadow: 0 0 0 0 #f3f3f6;
+  }
+}
+@keyframes item-highlight-pulse {
+  0% {
+    border-color: #b3d3ff;
+    background-color: #ecf4ff;
+    box-shadow: 0 0 0 0 #ecf4ff;
+  }
+  10% {
+    border-color: #b3d3ff;
+    background-color: #ecf4ff;
+    box-shadow: 0 0 0 0 #ecf4ff;
+  }
+  20% {
+    border-color: #b3d3ff;
+    background-color: #ecf4ff;
+    box-shadow: 0 0 0 0.625rem #ecf4ff;
+  }
+  100% {
+    border-color: #b3d3ff;
+    background-color: #ecf4ff;
+    box-shadow: 0.25rem 0.125rem 1.0625rem 0 rgba(65, 145, 255, 0.05);
+  }
+}
+.ibexa-configuration-field--boolean .ibexa-data-source__value {
+  display: none;
+}
+
+.ibexa-configuration-field-array__item {
+  display: flex;
+}
+.ibexa-configuration-field-array__inputs {
+  width: calc(100% - 2.375rem);
+  display: flex;
+}
+.ibexa-configuration-field-array__input {
+  min-width: 13.75rem;
+  padding-right: 0.25rem;
+}
+.ibexa-configuration-field-array__actions {
+  width: 2.375rem;
+}
+
+.ibexa-ecommerce-configuration-settings__info {
+  margin-top: 0.0625rem;
+}
+.ibexa-ecommerce-configuration-settings__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-tabs--commerce-settings {
+  border-bottom: 0;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-card--commerce-configuration-group {
+  background: #ffffff;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-card--commerce-configuration-group.ibexa-card--collapsed .ibexa-card__body {
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-card--commerce-configuration-group.ibexa-card--collapsed .ibexa-card__body-display-toggler .ibexa-icon--caret-down {
+  display: none;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-card--commerce-configuration-group:not(.ibexa-card--collapsed) .ibexa-card__body-display-toggler .ibexa-icon--caret-next {
+  display: none;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-card--commerce-configuration-group .ibexa-card__header {
+  line-height: 2.5rem;
+  padding: 0 1.25rem;
+  display: flex;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-card--commerce-configuration-group .ibexa-card__header .ibexa-icon {
+  fill: #000000;
+  height: 1.5rem;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-card--commerce-configuration-group .ibexa-card__header .ibexa-label {
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #000000;
+  font-size: 1.0625rem;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-card--commerce-configuration-group .ibexa-card__header .ibexa-label:after {
+  display: none;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-card--commerce-configuration-group .ibexa-card__header .ibexa-card__body-display-toggler {
+  margin: 0.25rem 0 0.25rem auto;
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  cursor: pointer;
+  background: #ffffff;
+  transition: background 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-card--commerce-configuration-group .ibexa-card__header .ibexa-card__body-display-toggler:hover {
+  background: #d9d9d9;
+  outline: none;
+  box-shadow: none;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-card--commerce-configuration-group .ibexa-card__header .ibexa-card__body-display-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-card--commerce-configuration-group .ibexa-card__header .ibexa-card__body-display-toggler .ibexa-icon {
+  fill: #000000;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-table__cell {
+  vertical-align: top;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-table__cell--name {
+  width: 20%;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-table__cell--value {
+  width: 30%;
+}
+.ibexa-ecommerce-configuration-settings .ibexa-table__cell--description {
+  width: 50%;
+}
+
+.ibexa-product-management {
+  margin-bottom: 2rem;
+}
+.ibexa-product-management__title {
+  font-size: 1rem;
+}
+
+.ibexa-stock-update {
+  display: flex;
+}
+.ibexa-stock-update__item {
+  margin-right: 2rem;
+}
+.ibexa-stock-update__sku {
+  line-height: 2.375rem;
+}
+.ibexa-stock-update__label {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+.ibexa-stock-update__input {
+  width: 12.5rem;
+}
+.ibexa-stock-update .ibexa-btn {
+  margin-top: 2rem;
+}
+
+.ibexa-table--price-management, .ibexa-table--stock-update {
+  margin-bottom: 1.5rem;
+}
+.ibexa-table--price-management .ibexa-icon--trash, .ibexa-table--stock-update .ibexa-icon--trash {
+  fill: #ae1164;
+}
+
+.ibexa-table-header--price-management .ibexa-table-header__price-select {
+  margin-right: 0.5rem;
+}
+
+.ibexa-sku-search {
+  padding: 1.5rem 0.5rem;
+}
+.ibexa-sku-search__tools {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.ibexa-sku-search__results--hidden {
+  display: none;
+}
+.ibexa-sku-search__input {
+  width: 12.5rem;
+  margin-right: 0.75rem;
+}
+.ibexa-sku-search .ibexa-btn--search {
+  display: flex;
+  align-items: center;
+}
+.ibexa-sku-search .ibexa-btn--hidden {
+  display: none;
+}
+
+.ibexa-field-edit--ezprofiledata .ibexa-field-edit__data {
+  padding: 1.5rem;
+}
+.ibexa-field-edit--ezprofiledata .ibexa-card__header .ibexa-label {
+  margin: 0.5rem 0;
+}
+.ibexa-field-edit--ezprofiledata .ibexa-collapse {
+  border-radius: 0.625rem;
+  border: 0.0625rem solid #cfd1d3;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.ibexa-field-edit--ezprofiledata .ibexa-collapse__header {
+  height: auto;
+}
+.ibexa-field-edit--ezprofiledata .ibexa-collapse__header .ibexa-label {
+  margin: 0.5rem 0;
+}
+.ibexa-field-edit--ezprofiledata .ibexa-data-source {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+}
+.ibexa-field-edit--ezprofiledata .ibexa-data-source__input-wrapper .ibexa-input {
+  margin-bottom: 0;
+}
+.ibexa-field-edit--ezprofiledata .ibexa-data-source__label-wrapper .ibexa-label {
+  margin-top: 1rem;
+}
+.ibexa-field-edit--ezprofiledata .ibexa-data-source__label.required.required:after {
+  content: "* ";
+}
+
+.ibexa-profile-data__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.ibexa-profile-data__card {
+  width: 15.625rem;
+  height: 15rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}

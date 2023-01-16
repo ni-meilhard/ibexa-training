@@ -1,0 +1,458 @@
+.ibexa-commerce-product__product-availability {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.ibexa-commerce-product__product-availability .ibexa-commerce-product__label, .ibexa-commerce-product__product-availability .ibexa-commerce-product__value {
+  cursor: default;
+  display: inline-block;
+}
+.ibexa-commerce-product__basket {
+  border: 1px solid #878b90;
+  border-radius: 5px;
+  background-color: #f7f7f9;
+  padding: 20px;
+}
+.ibexa-commerce-product__basket-quantity label,
+.ibexa-commerce-product__basket-quantity input {
+  display: inline-block;
+}
+.ibexa-commerce-product__basket-quantity input {
+  width: 100px;
+}
+.ibexa-commerce-product__basket-button {
+  background-color: #878b90;
+  color: #fff;
+  width: 100%;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+.ibexa-commerce-product__basket-button:disabled, .ibexa-commerce-product__basket-button:disabled:hover {
+  background-color: #878b90;
+  color: #fff;
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.ibexa-commerce-product__basket-button:hover {
+  background-color: #131c26;
+  color: #fff;
+}
+.ibexa-commerce-product__variants {
+  padding-bottom: 20px;
+}
+.ibexa-commerce-product__variant-group {
+  padding-bottom: 10px;
+}
+.ibexa-commerce-product__variant-group input {
+  margin: 0;
+  min-width: 6ch;
+}
+.ibexa-commerce-product__variant-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ibexa-commerce-product__variant-option {
+  background-color: #878b90;
+  color: #fff;
+  padding: 8px 16px;
+  min-width: 50px;
+  margin-right: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+.ibexa-commerce-product__variant-option:disabled, .ibexa-commerce-product__variant-option:disabled:hover {
+  background-color: #878b90;
+  color: #fff;
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.ibexa-commerce-product__variant-option:hover, .ibexa-commerce-product__variant-option.ibexa-commerce-js--selected {
+  background-color: #131c26;
+  color: #fff;
+}
+.ibexa-commerce-product__price {
+  font-size: 14px;
+}
+
+.ibexa-commerce-price__value {
+  font-size: 30px;
+}
+
+.ibexa-commerce-basket-widget {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.3;
+}
+.ibexa-commerce-basket-widget__summary {
+  border: 1px solid #878b90;
+  padding: 8px;
+  font-size: 14px;
+  display: flex;
+  height: 56px;
+}
+.ibexa-commerce-basket-widget__summary, .ibexa-commerce-basket-widget__summary:hover {
+  color: #131c26;
+}
+.ibexa-commerce-basket-widget__column--labels {
+  width: calc(100% - 40px);
+  text-align: right;
+}
+.ibexa-commerce-basket-widget__column--icons {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ibexa-commerce-basket-widget__cart-icon {
+  width: 28px;
+  height: 28px;
+}
+.ibexa-commerce-basket-widget__header {
+  font-size: 16px;
+  margin: 0;
+}
+.ibexa-commerce-basket-widget__badge {
+  background-color: #ae1164;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.ibexa-commerce-basket-widget__dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  transform: translate(0, 100%);
+  background: #fff;
+  border: 1px solid #878b90;
+  width: 100vw;
+  max-width: 350px;
+}
+.ibexa-commerce-basket-widget__category {
+  padding: 8px;
+}
+.ibexa-commerce-basket-widget__category + .ibexa-commerce-basket-widget__category {
+  padding: 0 8px;
+}
+.ibexa-commerce-basket-widget__row {
+  display: flex;
+  justify-content: space-between;
+}
+.ibexa-commerce-basket-widget__row + .ibexa-commerce-basket-widget__row {
+  padding-top: 8px;
+}
+.ibexa-commerce-basket-widget__total {
+  border-top: 1px solid #878b90;
+  display: flex;
+  padding: 8px;
+  font-weight: 700;
+  justify-content: space-between;
+}
+.ibexa-commerce-basket-widget__actions {
+  padding: 0px 8px 8px;
+  display: flex;
+}
+.ibexa-commerce-basket-widget__button {
+  background-color: #878b90;
+  color: #fff;
+  width: 50%;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+.ibexa-commerce-basket-widget__button:hover {
+  background-color: #131c26;
+  color: #fff;
+}
+.ibexa-commerce-basket-widget__button + .ibexa-commerce-basket-widget__button {
+  margin-left: 8px;
+}
+.ibexa-commerce-basket-widget:hover .ibexa-commerce-basket-widget__summary {
+  border-bottom: 0;
+}
+.ibexa-commerce-basket-widget:hover .ibexa-commerce-basket-widget__dropdown {
+  display: block;
+}
+.ibexa-commerce-basket-widget[data-products-in-basket="0"]:hover .ibexa-commerce-basket-widget__summary {
+  border-bottom: 1px solid #878b90;
+}
+.ibexa-commerce-basket-widget[data-products-in-basket="0"]:hover .ibexa-commerce-basket-widget__dropdown {
+  display: none;
+}
+
+.f-topbar-fixed .ibexa-commerce-basket-widget__summary {
+  padding: 3px 8px;
+  height: 46px;
+}
+
+.ibexa-commerce-basket-page {
+  margin: 16px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+  width: 100%;
+}
+.ibexa-commerce-basket-page .ibexa-commerce-basket-page__error {
+  color: #fff;
+  background-color: #d92d42;
+  border-radius: 8px;
+  padding: 16px;
+}
+.ibexa-commerce-basket-page .ibexa-commerce-basket-page__table {
+  width: 100%;
+}
+.ibexa-commerce-basket-page .ibexa-commerce-basket-page__product-preview {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.ibexa-commerce-basket-page .ibexa-commerce-basket-page__product-image {
+  width: 30%;
+}
+.ibexa-commerce-basket-page .ibexa-commerce-basket-page__product-data {
+  padding-left: 8px;
+  width: 70%;
+}
+.ibexa-commerce-basket-page .ibexa-commerce-basket-page__quantity {
+  width: 100px;
+  margin: 0;
+}
+.ibexa-commerce-basket-page .ibexa-commerce-basket-page__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.ibexa-commerce-basket-page .ibexa-commerce-basket-page__action-button {
+  display: inline-block;
+  background-color: #878b90;
+  border-radius: 4px;
+  color: #fff;
+  padding: 8px 16px;
+  height: 40px;
+  outline: 0;
+  transition: background-color 0.3s ease-in-out;
+}
+.ibexa-commerce-basket-page .ibexa-commerce-basket-page__action-button--small {
+  padding: 4px 8px;
+  height: auto;
+  font-size: 12px;
+}
+.ibexa-commerce-basket-page .ibexa-commerce-basket-page__action-button:hover {
+  background-color: #131c26;
+  color: #fff;
+}
+.ibexa-commerce-basket-page .ibexa-commerce-basket-page__action-button + .ibexa-commerce-basket-page .ibexa-commerce-basket-page__action-button {
+  margin-left: 8px;
+}
+.ibexa-commerce-basket-page .ibexa-commerce-basket-page__summary {
+  width: 35%;
+}
+.ibexa-commerce-basket-page .ibexa-commerce-basket-page__checkout-actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+.ibexa-commerce-basket-summary {
+  padding-right: 8px;
+}
+.ibexa-commerce-basket-summary__row {
+  display: flex;
+  text-align: right;
+}
+.ibexa-commerce-basket-summary__row-label {
+  width: 75%;
+}
+.ibexa-commerce-basket-summary__row-value {
+  width: 25%;
+  font-weight: bold;
+}
+
+.ibexa-commerce-checkout {
+  margin: 16px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+}
+.ibexa-commerce-checkout__main {
+  width: 75%;
+  padding-right: 15px;
+}
+.ibexa-commerce-checkout__sidebar {
+  width: 25%;
+  padding-left: 15px;
+}
+.ibexa-commerce-checkout__step {
+  border: solid 1px #dddddd;
+  background-color: #fff;
+  margin-top: 16px;
+}
+.ibexa-commerce-checkout__step--done .ibexa-commerce-checkout__step-header {
+  background-color: #ae1164;
+  color: #fff;
+}
+.ibexa-commerce-checkout__step--done .ibexa-commerce-checkout__step-header h4 {
+  color: #fff;
+}
+.ibexa-commerce-checkout__step--done .ibexa-commerce-checkout__step-header .ibexa-commerce-checkout__step-action {
+  display: block;
+}
+.ibexa-commerce-checkout__step--active .ibexa-commerce-checkout__step-content {
+  display: block;
+}
+.ibexa-commerce-checkout__step-header {
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+}
+.ibexa-commerce-checkout__step-header h4 {
+  margin: 0;
+  flex: auto;
+  padding: 0 8px;
+}
+.ibexa-commerce-checkout__step-header .ibexa-commerce-checkout__step-action {
+  display: none;
+}
+.ibexa-commerce-checkout__step-number {
+  font-size: 23px;
+  font-weight: bold;
+}
+.ibexa-commerce-checkout__step-content {
+  display: none;
+  padding: 16px;
+}
+.ibexa-commerce-checkout__step-action {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 8px 16px;
+  height: 40px;
+  outline: 0;
+  transition: background-color 0.3s ease-in-out;
+}
+.ibexa-commerce-checkout__step-action, .ibexa-commerce-checkout__step-action:focus {
+  background-color: #878b90;
+  color: #fff;
+}
+.ibexa-commerce-checkout__step-action--small {
+  padding: 4px 8px;
+  height: auto;
+  font-size: 12px;
+}
+.ibexa-commerce-checkout__step-action:hover {
+  background-color: #131c26;
+  color: #fff;
+}
+.ibexa-commerce-checkout__step-action + .ibexa-commerce-checkout__step-action {
+  margin-left: 8px;
+}
+.ibexa-commerce-checkout__step-error-message {
+  color: #d92d42;
+  padding: 8px 0 16px;
+}
+.ibexa-commerce-checkout__step-error-message:empty {
+  display: none;
+}
+.ibexa-commerce-checkout__field-error-message {
+  color: #d92d42;
+}
+
+.ibexa-commerce-checkout-login {
+  display: flex;
+}
+.ibexa-commerce-checkout-login__column {
+  width: 50%;
+}
+.ibexa-commerce-checkout-login__column + .ibexa-commerce-checkout-login__column {
+  margin-left: 16px;
+}
+.ibexa-commerce-checkout-login__column p {
+  margin: 16px 2px 8px;
+}
+.ibexa-commerce-checkout-login__button {
+  display: inline-block;
+  background-color: #878b90;
+  border-radius: 4px;
+  color: #fff;
+  padding: 8px 16px;
+  height: 40px;
+  outline: 0;
+  border: 0;
+  transition: background-color 0.3s ease-in-out;
+}
+.ibexa-commerce-checkout-login__button:hover {
+  background-color: #131c26;
+  color: #fff;
+}
+
+.ibexa-commerce-existing-delivery-address {
+  width: 50%;
+  padding-bottom: 16px;
+  display: none;
+}
+.ibexa-commerce-existing-delivery-address--visible {
+  display: block;
+}
+.ibexa-commerce-existing-delivery-address__list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+.ibexa-commerce-existing-delivery-address__list ul {
+  margin-bottom: 8px;
+}
+
+.ibexa-commerce-checkout-summary__table {
+  width: 100%;
+}
+.ibexa-commerce-checkout-summary__product-preview {
+  display: flex;
+}
+.ibexa-commerce-checkout-summary__product-data {
+  padding-left: 8px;
+}
+
+.ibexa-commerce-order-confirmation {
+  margin: 16px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+  width: 100%;
+}
+.ibexa-commerce-order-confirmation__order-info {
+  display: flex;
+}
+.ibexa-commerce-order-confirmation__order-info > div {
+  width: 33.33%;
+}
+.ibexa-commerce-order-confirmation__order-info-list {
+  list-style-type: none;
+  margin-left: 8px;
+}
+.ibexa-commerce-order-confirmation__table {
+  width: 100%;
+}
+.ibexa-commerce-order-confirmation__product-preview {
+  display: flex;
+}
+.ibexa-commerce-order-confirmation__product-data {
+  padding-left: 8px;
+}
+
+.ibexa-commerce-sidebar-summary__header {
+  margin-top: 16px;
+  font-weight: bold;
+}
+.ibexa-commerce-sidebar-summary__list {
+  list-style-type: none;
+  margin-left: 8px;
+}
+.ibexa-commerce-sidebar-summary__row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+}

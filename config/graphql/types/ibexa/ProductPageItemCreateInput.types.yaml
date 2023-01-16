@@ -1,0 +1,14 @@
+ProductPageItemCreateInput:
+    type: input-object
+    config:
+        fields:
+            title:
+                type: String
+            heroImage:
+                type: String
+            description:
+                type: RichTextFieldInput
+            contentItems:
+                type: '[Int]'
+            field638e35d462951:
+                type: String

@@ -1,0 +1,9 @@
+.ibexa-fb-preview-form {
+  height: 100%;
+  background-color: #ffffff;
+  overflow: auto;
+}
+.ibexa-fb-preview-form .ibexa-main-container {
+  display: block;
+  height: auto;
+}

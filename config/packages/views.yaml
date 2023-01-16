@@ -1,0 +1,8 @@
+ibexa_design_engine:
+  design_list:
+      app_design: ['bike_ride']
+ibexa:
+  system:
+    site_group:
+      design: 'app_design'
+      page_layout: '@ibexadesign/pagelayout.html.twig'

@@ -1,0 +1,4456 @@
+{
+    "ibexa": {
+        "name": "Ibexa Experience",
+        "release": "4.3.0",
+        "isEnterprise": true,
+        "isCommerce": false,
+        "isEndOfMaintenance": true,
+        "endOfMaintenanceDate": null,
+        "isEndOfLife": true,
+        "endOfLifeDate": null,
+        "isTrial": false,
+        "lowestStability": "stable",
+        "stability": "stable",
+        "debug": true,
+        "composerInfo": {
+            "minimumStability": "stable"
+        }
+    },
+    "composer": {
+        "packages": {
+            "babdev\/pagerfanta-bundle": {
+                "name": "babdev\/pagerfanta-bundle",
+                "branch": "v2.11.0",
+                "alias": null,
+                "version": "2.11.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-08-01 16:42:35.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "98bd0756de82080ace1a2e41e66f618e469da943"
+            },
+            "behat\/transliterator": {
+                "name": "behat\/transliterator",
+                "branch": "v1.5.0",
+                "alias": null,
+                "version": "1.5.0",
+                "license": "Artistic-1.0",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-03-30 09:27:43.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "baac5873bac3749887d28ab68e2f74db3a4408af"
+            },
+            "clue\/stream-filter": {
+                "name": "clue\/stream-filter",
+                "branch": "v1.6.0",
+                "alias": null,
+                "version": "1.6.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-02-21 13:15:14.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/clue\/php-stream-filter",
+                "reference": "d6169430c7731d8509da7aecd0af756a5747b78e"
+            },
+            "composer\/package-versions-deprecated": {
+                "name": "composer\/package-versions-deprecated",
+                "branch": "1.11.99.5",
+                "alias": null,
+                "version": "1.11.99.5",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-01-17 14:14:24.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "b4f54f74ef3453349c24a845d22392cd31e65f1d"
+            },
+            "composer\/semver": {
+                "name": "composer\/semver",
+                "branch": "3.3.2",
+                "alias": null,
+                "version": "3.3.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-04-01 19:23:25.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "3953f23262f2bff1919fc82183ad9acb13ff62c9"
+            },
+            "cron\/cron": {
+                "name": "cron\/cron",
+                "branch": "1.6.0",
+                "alias": null,
+                "version": "1.6.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-12-29 12:06:58.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "103d8562aca8a5fd135c69b3fe93aad0b5b701d4"
+            },
+            "defuse\/php-encryption": {
+                "name": "defuse\/php-encryption",
+                "branch": "v2.3.1",
+                "alias": null,
+                "version": "2.3.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-04-09 23:57:26.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "77880488b9954b7884c25555c2a0ea9e7053f9d2"
+            },
+            "doctrine\/annotations": {
+                "name": "doctrine\/annotations",
+                "branch": "1.13.3",
+                "alias": null,
+                "version": "1.13.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-02 10:48:51.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org\/projects\/annotations.html",
+                "reference": "648b0343343565c4a056bfc8392201385e8d89f0"
+            },
+            "doctrine\/cache": {
+                "name": "doctrine\/cache",
+                "branch": "2.2.0",
+                "alias": null,
+                "version": "2.2.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-05-20 20:07:39.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org\/projects\/cache.html",
+                "reference": "1ca8f21980e770095a31456042471a57bc4c68fb"
+            },
+            "doctrine\/collections": {
+                "name": "doctrine\/collections",
+                "branch": "1.8.0",
+                "alias": null,
+                "version": "1.8.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-01 20:12:10.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org\/projects\/collections.html",
+                "reference": "2b44dd4cbca8b5744327de78bafef5945c7e7b5e"
+            },
+            "doctrine\/common": {
+                "name": "doctrine\/common",
+                "branch": "3.4.3",
+                "alias": null,
+                "version": "3.4.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-09 11:47:59.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org\/projects\/common.html",
+                "reference": "8b5e5650391f851ed58910b3e3d48a71062eeced"
+            },
+            "doctrine\/dbal": {
+                "name": "doctrine\/dbal",
+                "branch": "2.13.9",
+                "alias": null,
+                "version": "2.13.9",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-05-02 20:28:55.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org\/projects\/dbal.html",
+                "reference": "c480849ca3ad6706a39c970cdfe6888fa8a058b8"
+            },
+            "doctrine\/deprecations": {
+                "name": "doctrine\/deprecations",
+                "branch": "v0.5.3",
+                "alias": null,
+                "version": "0.5.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-03-21 12:59:47.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org\/",
+                "reference": "9504165960a1f83cc1480e2be1dd0a0478561314"
+            },
+            "doctrine\/doctrine-bundle": {
+                "name": "doctrine\/doctrine-bundle",
+                "branch": "2.7.1",
+                "alias": null,
+                "version": "2.7.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-23 09:47:06.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org",
+                "reference": "a2dcad48741c9d12fd6040398cf075025030096e"
+            },
+            "doctrine\/doctrine-migrations-bundle": {
+                "name": "doctrine\/doctrine-migrations-bundle",
+                "branch": "3.2.2",
+                "alias": null,
+                "version": "3.2.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-02-01 18:08:07.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org",
+                "reference": "3393f411ba25ade21969c33f2053220044854d01"
+            },
+            "doctrine\/event-manager": {
+                "name": "doctrine\/event-manager",
+                "branch": "1.2.0",
+                "alias": null,
+                "version": "1.2.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-12 20:51:15.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org\/projects\/event-manager.html",
+                "reference": "95aa4cb529f1e96576f3fda9f5705ada4056a520"
+            },
+            "doctrine\/inflector": {
+                "name": "doctrine\/inflector",
+                "branch": "2.0.6",
+                "alias": null,
+                "version": "2.0.6",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-20 09:10:12.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org\/projects\/inflector.html",
+                "reference": "d9d313a36c872fd6ee06d9a6cbcf713eaa40f024"
+            },
+            "doctrine\/instantiator": {
+                "name": "doctrine\/instantiator",
+                "branch": "1.4.1",
+                "alias": null,
+                "version": "1.4.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-03-03 08:28:38.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org\/projects\/instantiator.html",
+                "reference": "10dcfce151b967d20fde1b34ae6640712c3891bc"
+            },
+            "doctrine\/lexer": {
+                "name": "doctrine\/lexer",
+                "branch": "1.2.3",
+                "alias": null,
+                "version": "1.2.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-02-28 11:07:21.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org\/projects\/lexer.html",
+                "reference": "c268e882d4dbdd85e36e4ad69e02dc284f89d229"
+            },
+            "doctrine\/migrations": {
+                "name": "doctrine\/migrations",
+                "branch": "3.4.2",
+                "alias": null,
+                "version": "3.4.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-04-01 06:38:22.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org\/projects\/migrations.html",
+                "reference": "f9b4c8032276460afd9dfa62fb215734b4380d90"
+            },
+            "doctrine\/orm": {
+                "name": "doctrine\/orm",
+                "branch": "2.13.3",
+                "alias": null,
+                "version": "2.13.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-07 06:37:17.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org\/projects\/orm.html",
+                "reference": "e750360bd52b080c4cbaaee1b48b80f7dc873b36"
+            },
+            "doctrine\/persistence": {
+                "name": "doctrine\/persistence",
+                "branch": "3.0.4",
+                "alias": null,
+                "version": "3.0.4",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-13 07:34:14.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.doctrine-project.org\/projects\/persistence.html",
+                "reference": "05612da375f8a3931161f435f91d6704926e6ec5"
+            },
+            "doctrine\/sql-formatter": {
+                "name": "doctrine\/sql-formatter",
+                "branch": "1.1.3",
+                "alias": null,
+                "version": "1.1.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-05-23 21:33:49.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/doctrine\/sql-formatter\/",
+                "reference": "25a06c7bf4c6b8218f47928654252863ffc890a5"
+            },
+            "egulias\/email-validator": {
+                "name": "egulias\/email-validator",
+                "branch": "3.2.1",
+                "alias": null,
+                "version": "3.2.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-06-18 20:57:19.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/egulias\/EmailValidator",
+                "reference": "f88dcf4b14af14a98ad96b14b2b317969eab6715"
+            },
+            "elasticsearch\/elasticsearch": {
+                "name": "elasticsearch\/elasticsearch",
+                "branch": "v7.17.1",
+                "alias": null,
+                "version": "7.17.1",
+                "license": "Apache-2.0",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-30 12:28:55.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "f1b8918f411b837ce5f6325e829a73518fd50367"
+            },
+            "erusev\/parsedown": {
+                "name": "erusev\/parsedown",
+                "branch": "1.7.4",
+                "alias": null,
+                "version": "1.7.4",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2019-12-30 22:54:17.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/parsedown.org",
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3"
+            },
+            "excelwebzone\/recaptcha-bundle": {
+                "name": "excelwebzone\/recaptcha-bundle",
+                "branch": "v1.5.35",
+                "alias": null,
+                "version": "1.5.35",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-04-22 16:52:19.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/excelwebzone\/EWZRecaptchaBundle",
+                "reference": "8dad97a2017dcb650c18ff17ff1b8c54c1847dac"
+            },
+            "ezimuel\/guzzlestreams": {
+                "name": "ezimuel\/guzzlestreams",
+                "branch": "3.1.0",
+                "alias": null,
+                "version": "3.1.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-24 12:58:50.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/guzzlephp.org\/",
+                "reference": "b4b5a025dfee70d6cd34c780e07330eb93d5b997"
+            },
+            "ezimuel\/ringphp": {
+                "name": "ezimuel\/ringphp",
+                "branch": "1.2.1",
+                "alias": null,
+                "version": "1.2.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-25 12:54:22.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "8d00384f9e5c04713ef8448adf47824265791b50"
+            },
+            "ezsystems\/apache-tika-bundle": {
+                "name": "ezsystems\/apache-tika-bundle",
+                "branch": "v2.1.0",
+                "alias": null,
+                "version": "2.1.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-12-14 10:04:21.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/jolicode\/ApacheTikaBundle",
+                "reference": "93f50600232e6cb89d31ca67d3581eb6fe8cf2d1"
+            },
+            "ezsystems\/comment-bundle": {
+                "name": "ezsystems\/comment-bundle",
+                "branch": "v3.2.0",
+                "alias": null,
+                "version": "3.2.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-12-14 10:04:42.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/friendsofsymfony.github.com",
+                "reference": "58beca5c9402ef1c4bb2bb86f38b9a89a0c9859c"
+            },
+            "ezsystems\/diff": {
+                "name": "ezsystems\/diff",
+                "branch": "3.2.0",
+                "alias": null,
+                "version": "3.2.0",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-12-16 07:46:35.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/diff",
+                "reference": "6459cfbb3beafafda30bb068dd53c37dfffc32e8"
+            },
+            "ezsystems\/job-queue-bundle": {
+                "name": "ezsystems\/job-queue-bundle",
+                "branch": "v4.0.2",
+                "alias": null,
+                "version": "4.0.2",
+                "license": "Apache-2.0",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-06-20 10:17:40.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/jmsyst.com\/bundles\/JMSJobQueueBundle",
+                "reference": "dd3eefc52c7fff3e757bf76a7c8d7fbf82250c6b"
+            },
+            "ezsystems\/payment-core-bundle": {
+                "name": "ezsystems\/payment-core-bundle",
+                "branch": "v3.0.2",
+                "alias": null,
+                "version": "3.0.2",
+                "license": "Apache-2.0",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-05-31 14:23:09.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/jmspaymentcorebundle.readthedocs.io",
+                "reference": "0321be452b53c9981047e5259c0e7bc9fd73d28d"
+            },
+            "ezsystems\/stash-bundle": {
+                "name": "ezsystems\/stash-bundle",
+                "branch": "v0.9.1",
+                "alias": null,
+                "version": "0.9.1",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-05-31 10:28:45.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/github.com\/tedious\/TedivmStashBundle",
+                "reference": "f3ec371fd53c5d8e143260c52d256a774019c10e"
+            },
+            "friendsofphp\/proxy-manager-lts": {
+                "name": "friendsofphp\/proxy-manager-lts",
+                "branch": "v1.0.13",
+                "alias": null,
+                "version": "1.0.13",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-17 19:48:16.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/FriendsOfPHP\/proxy-manager-lts",
+                "reference": "88354616f4cf4f6620910fd035e282173ba453e8"
+            },
+            "friendsofsymfony\/http-cache": {
+                "name": "friendsofsymfony\/http-cache",
+                "branch": "2.14.2",
+                "alias": null,
+                "version": "2.14.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-02 15:07:20.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/friendsofsymfony\/FOSHttpCache",
+                "reference": "ec878d68b8444077612942ffcdda59538e99579d"
+            },
+            "friendsofsymfony\/http-cache-bundle": {
+                "name": "friendsofsymfony\/http-cache-bundle",
+                "branch": "2.13.0",
+                "alias": null,
+                "version": "2.13.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-01 10:31:14.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/FriendsOfSymfony\/FOSHttpCacheBundle",
+                "reference": "1e8a135d3dcb088952f5ab8655e273c423dbe0a2"
+            },
+            "friendsofsymfony\/jsrouting-bundle": {
+                "name": "friendsofsymfony\/jsrouting-bundle",
+                "branch": "2.8.0",
+                "alias": null,
+                "version": "2.8.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-12-15 08:51:04.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/friendsofsymfony.github.com",
+                "reference": "c978fabc6a21a77052ff3fe927b41111ec944f0d"
+            },
+            "friendsofsymfony\/rest-bundle": {
+                "name": "friendsofsymfony\/rest-bundle",
+                "branch": "3.4.0",
+                "alias": null,
+                "version": "3.4.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-18 04:54:54.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/friendsofsymfony.github.com",
+                "reference": "b888195589d245002880d07073ef23ab60e3795d"
+            },
+            "gedmo\/doctrine-extensions": {
+                "name": "gedmo\/doctrine-extensions",
+                "branch": "v3.9.0",
+                "alias": null,
+                "version": "3.9.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-22 02:37:53.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/gediminasm.org\/",
+                "reference": "d869cf11f12995b27fa6486ec2a860cc76c46988"
+            },
+            "google\/recaptcha": {
+                "name": "google\/recaptcha",
+                "branch": "1.2.4",
+                "alias": null,
+                "version": "1.2.4",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-03-31 17:50:54.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.google.com\/recaptcha\/",
+                "reference": "614f25a9038be4f3f2da7cbfd778dc5b357d2419"
+            },
+            "gregwar\/captcha": {
+                "name": "gregwar\/captcha",
+                "branch": "v1.1.9",
+                "alias": null,
+                "version": "1.1.9",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-03-24 14:39:05.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/Gregwar\/Captcha",
+                "reference": "4bb668e6b40e3205a020ca5ee4ca8cff8b8780c5"
+            },
+            "gregwar\/captcha-bundle": {
+                "name": "gregwar\/captcha-bundle",
+                "branch": "v2.1.5",
+                "alias": null,
+                "version": "2.1.5",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-04-20 07:20:37.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/Gregwar\/CaptchaBundle",
+                "reference": "2f96c759abae9c914856b9b9fc909268ba98a625"
+            },
+            "guzzlehttp\/guzzle": {
+                "name": "guzzlehttp\/guzzle",
+                "branch": "6.5.8",
+                "alias": null,
+                "version": "6.5.8",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-06-20 22:16:07.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/guzzlephp.org\/",
+                "reference": "a52f0440530b54fa079ce76e8c5d196a42cad981"
+            },
+            "guzzlehttp\/promises": {
+                "name": "guzzlehttp\/promises",
+                "branch": "1.5.2",
+                "alias": null,
+                "version": "1.5.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-08-28 14:55:35.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "b94b2807d85443f9719887892882d0329d1e2598"
+            },
+            "guzzlehttp\/psr7": {
+                "name": "guzzlehttp\/psr7",
+                "branch": "1.9.0",
+                "alias": null,
+                "version": "1.9.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-06-20 21:43:03.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "e98e3e6d4f86621a9b75f623996e6bbdeb4b9318"
+            },
+            "ibexa\/admin-ui": {
+                "name": "ibexa\/admin-ui",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:53:43.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "2d65c84037fe95b8a3751c2f0b08f0f42e984f2a"
+            },
+            "ibexa\/admin-ui-assets": {
+                "name": "ibexa\/admin-ui-assets",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-09 12:11:18.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "d3caf10f9c70535f637b183d44fab9432326e0a7"
+            },
+            "ibexa\/calendar": {
+                "name": "ibexa\/calendar",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:53:48.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "ed096dab549e115de42b631d69bfe9cda85c86fa"
+            },
+            "ibexa\/commerce-base-design": {
+                "name": "ibexa\/commerce-base-design",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:50:21.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.ibexa.co\/",
+                "reference": "ca0b6a3a58d767496be61cdb8af17415d460b3f1"
+            },
+            "ibexa\/commerce-checkout": {
+                "name": "ibexa\/commerce-checkout",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:50:26.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "edaf51d1a9e30c63d98cb045826a0a27ec51db7e"
+            },
+            "ibexa\/commerce-fieldtypes": {
+                "name": "ibexa\/commerce-fieldtypes",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:50:36.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "b556cde13c400fa6cc7e3b641652ffaa67f8275e"
+            },
+            "ibexa\/commerce-price-engine": {
+                "name": "ibexa\/commerce-price-engine",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:50:49.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.ibexa.co\/",
+                "reference": "0a98b5d6f058d0556486b35acbfc5667f581dc24"
+            },
+            "ibexa\/commerce-shop": {
+                "name": "ibexa\/commerce-shop",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:53:22.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.ibexa.co\/",
+                "reference": "5e06e72215b08455acb0e43a403bb5ce92621e43"
+            },
+            "ibexa\/commerce-shop-ui": {
+                "name": "ibexa\/commerce-shop-ui",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:53:27.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "4ff032550ebefd63ca0da11944d87b1d075a30a6"
+            },
+            "ibexa\/connector-dam": {
+                "name": "ibexa\/connector-dam",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:53:52.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "74eae339824ca1b8921e1d789ee7a8dbc77606ce"
+            },
+            "ibexa\/content": {
+                "name": "ibexa\/content",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 16:03:33.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "35989425773b2894962b4515dddb57d3da25020d"
+            },
+            "ibexa\/content-forms": {
+                "name": "ibexa\/content-forms",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:54:01.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "28d646f14c034192d104477c9c59a7eda277aacf"
+            },
+            "ibexa\/content-tree": {
+                "name": "ibexa\/content-tree",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:57:14.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "1d0845234d8ec9dea77e8e9c3409883095f5f348"
+            },
+            "ibexa\/core": {
+                "name": "ibexa\/core",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "(GPL-2.0-only or proprietary)",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:55:05.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/ibexa.co",
+                "reference": "c97dcb478b6cbc09078fa96ae924dcd81123dd39"
+            },
+            "ibexa\/corporate-account": {
+                "name": "ibexa\/corporate-account",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:57:46.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "c30694b7e98d5c2c700ad44bbd91f1ecb941dc98"
+            },
+            "ibexa\/cron": {
+                "name": "ibexa\/cron",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:54:06.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "a09e9a4802467c0d7227d0a26a55d86a1be6abbe"
+            },
+            "ibexa\/design-engine": {
+                "name": "ibexa\/design-engine",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:54:10.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "86eb5cdd4df35267e4d55458e407510befc8c63a"
+            },
+            "ibexa\/doctrine-schema": {
+                "name": "ibexa\/doctrine-schema",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:50:07.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "81fc9e029b114feaa341293ad8828fb39aca4eeb"
+            },
+            "ibexa\/elasticsearch": {
+                "name": "ibexa\/elasticsearch",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:54:15.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "2768fb9cffc396072f441a0c70bd7a51fec4ddac"
+            },
+            "ibexa\/experience": {
+                "name": "ibexa\/experience",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 16:08:16.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "63c9f916ce2d89fff2a267d9f3a9bb10c826e73a"
+            },
+            "ibexa\/fastly": {
+                "name": "ibexa\/fastly",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:54:36.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "ccf3a3ef57ea31c2ba42ddcf4abcd0f196a94e20"
+            },
+            "ibexa\/fieldtype-address": {
+                "name": "ibexa\/fieldtype-address",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:57:51.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "5c35a9feeaafef6804b7492b25deea1966786c3b"
+            },
+            "ibexa\/fieldtype-matrix": {
+                "name": "ibexa\/fieldtype-matrix",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:55:10.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "0b15fe22f82ca11cb03caff5a2c19af93a8ed8f5"
+            },
+            "ibexa\/fieldtype-page": {
+                "name": "ibexa\/fieldtype-page",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:55:22.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "16eab4410da71cd6857212c9a65cf587f4563fca"
+            },
+            "ibexa\/fieldtype-query": {
+                "name": "ibexa\/fieldtype-query",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:55:37.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "6eeff598e378b28103cca681d90d436540912834"
+            },
+            "ibexa\/fieldtype-richtext": {
+                "name": "ibexa\/fieldtype-richtext",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:55:48.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "28de8ce6112577d87a8c5a8d6426d065f7ca934e"
+            },
+            "ibexa\/form-builder": {
+                "name": "ibexa\/form-builder",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:54:20.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "8fc834a7e1f162e9fec86427f4edb5e90a92c4a4"
+            },
+            "ibexa\/graphql": {
+                "name": "ibexa\/graphql",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:54:26.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "2fde436434bfdb44f2c677683a9d5adaea26af8d"
+            },
+            "ibexa\/http-cache": {
+                "name": "ibexa\/http-cache",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:54:31.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "8c5bec80f47153ab978bfde8f961d51ee14d055b"
+            },
+            "ibexa\/i18n": {
+                "name": "ibexa\/i18n",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "(GPL-2.0-only or proprietary)",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:57:30.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "249d6465a316a7c8f9f3349d56fa1c10b63ec092"
+            },
+            "ibexa\/icons": {
+                "name": "ibexa\/icons",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:54:42.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "d737d6a11b89a287e74977eaa42d0ce112a9ce44"
+            },
+            "ibexa\/image-editor": {
+                "name": "ibexa\/image-editor",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:56:32.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "2d237f2d49385e25cc0e51b0e7e7c08d2c6e125a"
+            },
+            "ibexa\/installer": {
+                "name": "ibexa\/installer",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:56:36.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "4997077fe3cab8e6dcac3b64b7b98a47d74a23be"
+            },
+            "ibexa\/measurement": {
+                "name": "ibexa\/measurement",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:57:40.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "3b3c46da2b7117fe522fa4a45873a3ba3dd184d9"
+            },
+            "ibexa\/migrations": {
+                "name": "ibexa\/migrations",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:56:43.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "c4373731813c29d9bd068a672117c348f554c6a3"
+            },
+            "ibexa\/oauth2-client": {
+                "name": "ibexa\/oauth2-client",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:56:47.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "6ed9537a5c2c5ff832cc0870e8733f107cc3a3c8"
+            },
+            "ibexa\/oss": {
+                "name": "ibexa\/oss",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "(GPL-2.0-only or proprietary)",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:59:42.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "a3948300499de70d1e26cb24198795dabaaa0559"
+            },
+            "ibexa\/page-builder": {
+                "name": "ibexa\/page-builder",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:55:17.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "2350494bb3f2482a4476d68f735019f1cffcb391"
+            },
+            "ibexa\/permissions": {
+                "name": "ibexa\/permissions",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:55:26.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "fcfff14ba61fb1ea5ff33e00c533220c9b424839"
+            },
+            "ibexa\/personalization": {
+                "name": "ibexa\/personalization",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:55:33.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "af7287d91d0e0297ff3060f1d93a444340ee2d45"
+            },
+            "ibexa\/post-install": {
+                "name": "ibexa\/post-install",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:56:52.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "feeaf25340f6c32f401fafc6778e3ddec349c393"
+            },
+            "ibexa\/product-catalog": {
+                "name": "ibexa\/product-catalog",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:56:59.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "d76a14bb33821e0d4c4ef99dc122d99509822178"
+            },
+            "ibexa\/rest": {
+                "name": "ibexa\/rest",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:55:43.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "21a411f27523f8af88e6f1bc03ce69dccabcb6cb"
+            },
+            "ibexa\/scheduler": {
+                "name": "ibexa\/scheduler",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:50:03.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "8e24d8da1c9d3b2e63fbd55241e49538fa5a1299"
+            },
+            "ibexa\/search": {
+                "name": "ibexa\/search",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:55:53.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "850cf5a27f9c4d6ce7ec6fe78d26e97767f83ccf"
+            },
+            "ibexa\/segmentation": {
+                "name": "ibexa\/segmentation",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:55:58.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "8f97da40c5a938db325fea8731b449c7b91cf03f"
+            },
+            "ibexa\/seo": {
+                "name": "ibexa\/seo",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:57:55.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "7d1fc8be183ef08a7e8ae9f3db220b5b19af6e74"
+            },
+            "ibexa\/site-factory": {
+                "name": "ibexa\/site-factory",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:56:03.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "f47299bb35bbee2aa5abd224933bc5312c5c6630"
+            },
+            "ibexa\/solr": {
+                "name": "ibexa\/solr",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:56:08.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "199c0f6475f4f50c2c7bec2fd6ea6f951ba26ba4"
+            },
+            "ibexa\/standard-design": {
+                "name": "ibexa\/standard-design",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:56:12.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "3875c6d23bc388e7d6fc10805d37b992b05a9fb6"
+            },
+            "ibexa\/system-info": {
+                "name": "ibexa\/system-info",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:50:12.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "4e10440871de8988f21d91244462ed9af319de59"
+            },
+            "ibexa\/taxonomy": {
+                "name": "ibexa\/taxonomy",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:57:09.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "17ec43d999bf24b6cb39899f0034a62775e48235"
+            },
+            "ibexa\/templated-uri-bundle": {
+                "name": "ibexa\/templated-uri-bundle",
+                "branch": "v3.3.2.2",
+                "alias": null,
+                "version": "3.3.2.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-29 14:34:17.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/www.hautelooktech.com\/",
+                "reference": "53dadbc0bfcaa32b526bb0528e6f44d652994cb5"
+            },
+            "ibexa\/templated-uri-router": {
+                "name": "ibexa\/templated-uri-router",
+                "branch": "v3.3.0",
+                "alias": null,
+                "version": "3.3.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-09-10 08:34:30.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/www.hautelooktech.com\/",
+                "reference": "fe8248db2b98ddb83eaaca821e995113ccd15a2c"
+            },
+            "ibexa\/tree-builder": {
+                "name": "ibexa\/tree-builder",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:57:19.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "aa1cdf6949320c600a28084fca2e31fc64a34f57"
+            },
+            "ibexa\/user": {
+                "name": "ibexa\/user",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "GPL-2.0-only",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:56:17.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "ff8b66269b19356abcd9569d7b189769f5909d26"
+            },
+            "ibexa\/version-comparison": {
+                "name": "ibexa\/version-comparison",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:56:22.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "beb7f9ee8f261d7017ff473b925de6516d4b6b5f"
+            },
+            "ibexa\/workflow": {
+                "name": "ibexa\/workflow",
+                "branch": "v4.3.0",
+                "alias": null,
+                "version": "4.3.0",
+                "license": "proprietary",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-10 15:56:27.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "10d28470655abc622ed8c90cae060f5c10b36e36"
+            },
+            "imagine\/imagine": {
+                "name": "imagine\/imagine",
+                "branch": "1.3.2",
+                "alias": null,
+                "version": "1.3.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-04-01 11:58:30.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/imagine.readthedocs.org\/",
+                "reference": "ae864f26afbf8859ebd2e2b9df92d77ee175dc13"
+            },
+            "jms\/metadata": {
+                "name": "jms\/metadata",
+                "branch": "2.7.0",
+                "alias": null,
+                "version": "2.7.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-13 19:18:27.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "283c714831d272d78ddd6e52e08ac16d76be30fd"
+            },
+            "jms\/serializer": {
+                "name": "jms\/serializer",
+                "branch": "3.18.2",
+                "alias": null,
+                "version": "3.18.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-12 08:40:16.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/jmsyst.com\/libs\/serializer",
+                "reference": "329e29c323fb1e5c65b4ae4c77ba747678755a6c"
+            },
+            "jms\/serializer-bundle": {
+                "name": "jms\/serializer-bundle",
+                "branch": "3.10.0",
+                "alias": null,
+                "version": "3.10.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-08-06 12:12:38.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/jmsyst.com\/bundles\/JMSSerializerBundle",
+                "reference": "1a030ecaf913b7a895eeaab04191cd7ff1810b46"
+            },
+            "jms\/translation-bundle": {
+                "name": "jms\/translation-bundle",
+                "branch": "1.6.2",
+                "alias": null,
+                "version": "1.6.2",
+                "license": "Apache-2.0",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-02-15 08:17:38.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/jmsyst.com\/bundles\/JMSTranslationBundle",
+                "reference": "abb7df81fc5066368bbd50b2a80c12901e84561d"
+            },
+            "knplabs\/knp-menu": {
+                "name": "knplabs\/knp-menu",
+                "branch": "v3.3.0",
+                "alias": null,
+                "version": "3.3.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-10-23 15:01:04.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/knplabs.com",
+                "reference": "8bd3dc2afa22c65617c563c5e25e62d6e23e98c7"
+            },
+            "knplabs\/knp-menu-bundle": {
+                "name": "knplabs\/knp-menu-bundle",
+                "branch": "v3.2.0",
+                "alias": null,
+                "version": "3.2.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-10-24 07:53:34.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "a0b4224f872d74ae939589eb1ccf0e11291370a9"
+            },
+            "knpuniversity\/oauth2-client-bundle": {
+                "name": "knpuniversity\/oauth2-client-bundle",
+                "branch": "v2.10.1",
+                "alias": null,
+                "version": "2.10.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-05-24 17:36:38.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfonycasts.com",
+                "reference": "0f4b238f16793ea6d2225044cfeae41b148a5c49"
+            },
+            "laminas\/laminas-code": {
+                "name": "laminas\/laminas-code",
+                "branch": "4.7.0",
+                "alias": null,
+                "version": "4.7.0",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-13 10:33:30.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/laminas.dev",
+                "reference": "0337d9265bc2e6376babad8c511500821620cb30"
+            },
+            "lcobucci\/clock": {
+                "name": "lcobucci\/clock",
+                "branch": "2.0.0",
+                "alias": null,
+                "version": "2.0.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-08-27 18:56:02.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "353d83fe2e6ae95745b16b3d911813df6a05bfb3"
+            },
+            "lcobucci\/jwt": {
+                "name": "lcobucci\/jwt",
+                "branch": "4.2.1",
+                "alias": null,
+                "version": "4.2.1",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-08-19 23:14:07.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "72ac6d807ee51a70ad376ee03a2387e8646e10f3"
+            },
+            "league\/flysystem": {
+                "name": "league\/flysystem",
+                "branch": "1.1.10",
+                "alias": null,
+                "version": "1.1.10",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-04 09:16:37.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "3239285c825c152bcc315fe0e87d6b55f5972ed1"
+            },
+            "league\/mime-type-detection": {
+                "name": "league\/mime-type-detection",
+                "branch": "1.11.0",
+                "alias": null,
+                "version": "1.11.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-04-17 13:12:02.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "ff6248ea87a9f116e78edd6002e39e5128a0d4dd"
+            },
+            "league\/oauth2-client": {
+                "name": "league\/oauth2-client",
+                "branch": "2.6.1",
+                "alias": null,
+                "version": "2.6.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-12-22 16:42:49.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "2334c249907190c132364f5dae0287ab8666aa19"
+            },
+            "lexik\/jwt-authentication-bundle": {
+                "name": "lexik\/jwt-authentication-bundle",
+                "branch": "v2.16.0",
+                "alias": null,
+                "version": "2.16.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-06-12 16:22:12.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/lexik\/LexikJWTAuthenticationBundle",
+                "reference": "0a0922a2442c52724c09deb099b263300cc12d54"
+            },
+            "liip\/imagine-bundle": {
+                "name": "liip\/imagine-bundle",
+                "branch": "2.9.0",
+                "alias": null,
+                "version": "2.9.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-06 06:33:35.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/liip.ch",
+                "reference": "ba164fef7be638f28d298f9c89b5a8364c3e0a4d"
+            },
+            "mck89\/peast": {
+                "name": "mck89\/peast",
+                "branch": "v1.15.0",
+                "alias": null,
+                "version": "1.15.0",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-13 15:56:53.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "733cd8f62dcb8239094688063a92766bbfcbf523"
+            },
+            "mhujer\/breadcrumbs-bundle": {
+                "name": "mhujer\/breadcrumbs-bundle",
+                "branch": "1.5.8",
+                "alias": null,
+                "version": "1.5.8",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-12-20 18:13:52.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/mhujer\/BreadcrumbsBundle",
+                "reference": "2a262e182d7baead37e64408081bd17e53938c06"
+            },
+            "moneyphp\/money": {
+                "name": "moneyphp\/money",
+                "branch": "v3.3.3",
+                "alias": null,
+                "version": "3.3.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-21 07:43:36.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/moneyphp.org",
+                "reference": "0dc40e3791c67e8793e3aa13fead8cf4661ec9cd"
+            },
+            "monolog\/monolog": {
+                "name": "monolog\/monolog",
+                "branch": "2.8.0",
+                "alias": null,
+                "version": "2.8.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-24 11:55:47.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/Seldaek\/monolog",
+                "reference": "720488632c590286b88b80e62aa3d3d551ad4a50"
+            },
+            "murtukov\/php-code-generator": {
+                "name": "murtukov\/php-code-generator",
+                "branch": "v0.1.6",
+                "alias": null,
+                "version": "0.1.6",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-05-04 16:39:00.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "89b6063daa42870bc08e4ce6e670f2ae62634bba"
+            },
+            "myclabs\/deep-copy": {
+                "name": "myclabs\/deep-copy",
+                "branch": "1.11.0",
+                "alias": null,
+                "version": "1.11.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-03-03 13:19:32.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "14daed4296fae74d9e3201d2c4925d1acb7aa614"
+            },
+            "namshi\/jose": {
+                "name": "namshi\/jose",
+                "branch": "7.2.3",
+                "alias": null,
+                "version": "7.2.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2016-12-05 07:27:31.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "89a24d7eb3040e285dd5925fcad992378b82bcff"
+            },
+            "nelmio\/cors-bundle": {
+                "name": "nelmio\/cors-bundle",
+                "branch": "2.2.0",
+                "alias": null,
+                "version": "2.2.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-12-01 09:34:27.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "0ee5ee30b0ee08ea122d431ae6e0ddeb87f035c0"
+            },
+            "nelmio\/solarium-bundle": {
+                "name": "nelmio\/solarium-bundle",
+                "branch": "v5.0.0",
+                "alias": null,
+                "version": "5.0.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-11-16 10:10:36.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "8272b87ab33bc8721c290dacc86ddd9d8cd249a1"
+            },
+            "netgen\/query-translator": {
+                "name": "netgen\/query-translator",
+                "branch": "1.1.0",
+                "alias": null,
+                "version": "1.1.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-01-13 09:24:37.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/netgen\/query-translator",
+                "reference": "d38e4e4d947aa205ff81594d302b1080e96b79f6"
+            },
+            "nicmart\/tree": {
+                "name": "nicmart\/tree",
+                "branch": "v0.2.7",
+                "alias": null,
+                "version": "0.2.7",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2015-08-20 20:50:35.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "0616b54bb49938e1a816141d7943db48ebf76938"
+            },
+            "nikic\/php-parser": {
+                "name": "nikic\/php-parser",
+                "branch": "v4.15.1",
+                "alias": null,
+                "version": "4.15.1",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-04 07:30:47.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "0ef6c55a3f47f89d7a374e6f835197a0b5fcf900"
+            },
+            "onesky\/api-library-php5": {
+                "name": "onesky\/api-library-php5",
+                "branch": "v1.0.5",
+                "alias": null,
+                "version": "1.0.5",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2015-06-09 02:00:31.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/onesky\/api-library-php5",
+                "reference": "0b2907a4c62def5fc7590af467d8ec7574494b5a"
+            },
+            "oneup\/flysystem-bundle": {
+                "name": "oneup\/flysystem-bundle",
+                "branch": "3.7.1",
+                "alias": null,
+                "version": "3.7.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-08-02 12:11:02.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/1up.io",
+                "reference": "7c9483c1eb21d80ed487d87cdc2a9b359fb8e8f4"
+            },
+            "overblog\/graphiql-bundle": {
+                "name": "overblog\/graphiql-bundle",
+                "branch": "v0.2.1",
+                "alias": null,
+                "version": "0.2.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-02-03 16:17:50.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "3161762574dcc6b264e1b6046e5fd2769e4e87c4"
+            },
+            "overblog\/graphql-bundle": {
+                "name": "overblog\/graphql-bundle",
+                "branch": "v0.14.3",
+                "alias": null,
+                "version": "0.14.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-03-11 16:04:56.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "5e3d1d0d1e996d35ade7918e3041bcf24125eaaa"
+            },
+            "pagerfanta\/pagerfanta": {
+                "name": "pagerfanta\/pagerfanta",
+                "branch": "v2.7.3",
+                "alias": null,
+                "version": "2.7.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-03-03 00:01:24.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "5f2aa1f1c9d1a6520f459e84b63e2bc25e9eea5b"
+            },
+            "paragonie\/random_compat": {
+                "name": "paragonie\/random_compat",
+                "branch": "v9.99.100",
+                "alias": null,
+                "version": "9.99.100",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-10-15 08:29:30.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
+            },
+            "phar-io\/manifest": {
+                "name": "phar-io\/manifest",
+                "branch": "2.0.3",
+                "alias": null,
+                "version": "2.0.3",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-07-20 11:28:43.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "97803eca37d319dfa7826cc2437fc020857acb53"
+            },
+            "phar-io\/version": {
+                "name": "phar-io\/version",
+                "branch": "3.2.1",
+                "alias": null,
+                "version": "3.2.1",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-02-21 01:04:05.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "4f7fd7836c6f332bb2933569e566a0d6c4cbed74"
+            },
+            "php-http\/client-common": {
+                "name": "php-http\/client-common",
+                "branch": "2.6.0",
+                "alias": null,
+                "version": "2.6.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-29 09:59:43.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/httplug.io",
+                "reference": "45db684cd4e186dcdc2b9c06b22970fe123796c0"
+            },
+            "php-http\/curl-client": {
+                "name": "php-http\/curl-client",
+                "branch": "2.2.1",
+                "alias": null,
+                "version": "2.2.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-12-10 18:02:07.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/php-http.org",
+                "reference": "2ed4245a817d859dd0c1d51c7078cdb343cf5233"
+            },
+            "php-http\/discovery": {
+                "name": "php-http\/discovery",
+                "branch": "1.14.3",
+                "alias": null,
+                "version": "1.14.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-11 14:04:40.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/php-http.org",
+                "reference": "31d8ee46d0215108df16a8527c7438e96a4d7735"
+            },
+            "php-http\/guzzle6-adapter": {
+                "name": "php-http\/guzzle6-adapter",
+                "branch": "v2.0.2",
+                "alias": null,
+                "version": "2.0.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-03-02 10:52:33.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/httplug.io",
+                "reference": "9d1a45eb1c59f12574552e81fb295e9e53430a56"
+            },
+            "php-http\/httplug": {
+                "name": "php-http\/httplug",
+                "branch": "2.3.0",
+                "alias": null,
+                "version": "2.3.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-02-21 09:52:22.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/httplug.io",
+                "reference": "f640739f80dfa1152533976e3c112477f69274eb"
+            },
+            "php-http\/message": {
+                "name": "php-http\/message",
+                "branch": "1.13.0",
+                "alias": null,
+                "version": "1.13.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-02-11 13:41:14.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/php-http.org",
+                "reference": "7886e647a30a966a1a8d1dad1845b71ca8678361"
+            },
+            "php-http\/message-factory": {
+                "name": "php-http\/message-factory",
+                "branch": "v1.0.2",
+                "alias": null,
+                "version": "1.0.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2015-12-19 14:08:53.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/php-http.org",
+                "reference": "a478cb11f66a6ac48d8954216cfed9aa06a501a1"
+            },
+            "php-http\/promise": {
+                "name": "php-http\/promise",
+                "branch": "1.1.0",
+                "alias": null,
+                "version": "1.1.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-07-07 09:29:14.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/httplug.io",
+                "reference": "4c4c1f9b7289a2ec57cde7f1e9762a5789506f88"
+            },
+            "phpdocumentor\/reflection-common": {
+                "name": "phpdocumentor\/reflection-common",
+                "branch": "2.2.0",
+                "alias": null,
+                "version": "2.2.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-06-27 09:03:43.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/www.phpdoc.org",
+                "reference": "1d01c49d4ed62f25aa84a747ad35d5a16924662b"
+            },
+            "phpdocumentor\/reflection-docblock": {
+                "name": "phpdocumentor\/reflection-docblock",
+                "branch": "5.3.0",
+                "alias": null,
+                "version": "5.3.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-10-19 17:43:47.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "622548b623e81ca6d78b721c5e029f4ce664f170"
+            },
+            "phpdocumentor\/type-resolver": {
+                "name": "phpdocumentor\/type-resolver",
+                "branch": "1.5.1",
+                "alias": null,
+                "version": "1.5.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-10-02 14:08:47.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "a12f7e301eb7258bb68acd89d4aefa05c2906cae"
+            },
+            "phpoption\/phpoption": {
+                "name": "phpoption\/phpoption",
+                "branch": "1.9.0",
+                "alias": null,
+                "version": "1.9.0",
+                "license": "Apache-2.0",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-30 15:51:26.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "dc5ff11e274a90cc1c743f66c9ad700ce50db9ab"
+            },
+            "phpstan\/phpdoc-parser": {
+                "name": "phpstan\/phpdoc-parser",
+                "branch": "1.13.0",
+                "alias": null,
+                "version": "1.13.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-21 09:57:39.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "33aefcdab42900e36366d0feab6206e2dd68f947"
+            },
+            "phpunit\/php-code-coverage": {
+                "name": "phpunit\/php-code-coverage",
+                "branch": "9.2.18",
+                "alias": null,
+                "version": "9.2.18",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-27 13:35:33.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/php-code-coverage",
+                "reference": "12fddc491826940cf9b7e88ad9664cf51f0f6d0a"
+            },
+            "phpunit\/php-file-iterator": {
+                "name": "phpunit\/php-file-iterator",
+                "branch": "3.0.6",
+                "alias": null,
+                "version": "3.0.6",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-12-02 12:48:52.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/php-file-iterator\/",
+                "reference": "cf1c2e7c203ac650e352f4cc675a7021e7d1b3cf"
+            },
+            "phpunit\/php-invoker": {
+                "name": "phpunit\/php-invoker",
+                "branch": "3.1.1",
+                "alias": null,
+                "version": "3.1.1",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-09-28 05:58:55.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/php-invoker\/",
+                "reference": "5a10147d0aaf65b58940a0b72f71c9ac0423cc67"
+            },
+            "phpunit\/php-text-template": {
+                "name": "phpunit\/php-text-template",
+                "branch": "2.0.4",
+                "alias": null,
+                "version": "2.0.4",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-10-26 05:33:50.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/php-text-template\/",
+                "reference": "5da5f67fc95621df9ff4c4e5a84d6a8a2acf7c28"
+            },
+            "phpunit\/php-timer": {
+                "name": "phpunit\/php-timer",
+                "branch": "5.0.3",
+                "alias": null,
+                "version": "5.0.3",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-10-26 13:16:10.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/php-timer\/",
+                "reference": "5a63ce20ed1b5bf577850e2c4e87f4aa902afbd2"
+            },
+            "phpunit\/phpunit": {
+                "name": "phpunit\/phpunit",
+                "branch": "9.5.26",
+                "alias": null,
+                "version": "9.5.26",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-28 06:00:21.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/phpunit.de\/",
+                "reference": "851867efcbb6a1b992ec515c71cdcf20d895e9d2"
+            },
+            "platformsh\/config-reader": {
+                "name": "platformsh\/config-reader",
+                "branch": "2.4.0",
+                "alias": null,
+                "version": "2.4.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-12-10 20:50:12.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "5511abfdb673ccfcf0eac9eaf65204f73edd90fd"
+            },
+            "platformsh\/symfonyflex-bridge": {
+                "name": "platformsh\/symfonyflex-bridge",
+                "branch": "2.7.2",
+                "alias": null,
+                "version": "2.7.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-14 12:34:58.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "47812e13f25a9bb88e530c5d5f37b4a4f1cc2cf5"
+            },
+            "psr\/cache": {
+                "name": "psr\/cache",
+                "branch": "1.0.1",
+                "alias": null,
+                "version": "1.0.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2016-08-06 20:24:11.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8"
+            },
+            "psr\/container": {
+                "name": "psr\/container",
+                "branch": "1.1.2",
+                "alias": null,
+                "version": "1.1.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-11-05 16:50:12.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/php-fig\/container",
+                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea"
+            },
+            "psr\/event-dispatcher": {
+                "name": "psr\/event-dispatcher",
+                "branch": "1.0.0",
+                "alias": null,
+                "version": "1.0.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2019-01-08 18:20:26.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "dbefd12671e8a14ec7f180cab83036ed26714bb0"
+            },
+            "psr\/http-client": {
+                "name": "psr\/http-client",
+                "branch": "1.0.1",
+                "alias": null,
+                "version": "1.0.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-06-29 06:28:15.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/php-fig\/http-client",
+                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621"
+            },
+            "psr\/http-factory": {
+                "name": "psr\/http-factory",
+                "branch": "1.0.1",
+                "alias": null,
+                "version": "1.0.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2019-04-30 12:38:16.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be"
+            },
+            "psr\/http-message": {
+                "name": "psr\/http-message",
+                "branch": "1.0.1",
+                "alias": null,
+                "version": "1.0.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2016-08-06 14:39:51.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/php-fig\/http-message",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "psr\/link": {
+                "name": "psr\/link",
+                "branch": "1.0.0",
+                "alias": null,
+                "version": "1.0.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2016-10-28 16:06:13.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "eea8e8662d5cd3ae4517c9b864493f59fca95562"
+            },
+            "psr\/log": {
+                "name": "psr\/log",
+                "branch": "1.1.4",
+                "alias": null,
+                "version": "1.1.4",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-05-03 11:20:27.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/php-fig\/log",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "ralouphie\/getallheaders": {
+                "name": "ralouphie\/getallheaders",
+                "branch": "3.0.3",
+                "alias": null,
+                "version": "3.0.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2019-03-08 08:55:37.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822"
+            },
+            "ramsey\/uuid": {
+                "name": "ramsey\/uuid",
+                "branch": "3.9.6",
+                "alias": null,
+                "version": "3.9.6",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-09-25 23:07:42.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/ramsey\/uuid",
+                "reference": "ffa80ab953edd85d5b6c004f96181a538aad35a3"
+            },
+            "react\/promise": {
+                "name": "react\/promise",
+                "branch": "v2.9.0",
+                "alias": null,
+                "version": "2.9.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-02-11 10:27:51.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "234f8fd1023c9158e2314fa9d7d0e6a83db42910"
+            },
+            "scssphp\/scssphp": {
+                "name": "scssphp\/scssphp",
+                "branch": "v1.11.0",
+                "alias": null,
+                "version": "1.11.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-02 21:24:55.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/scssphp.github.io\/scssphp\/",
+                "reference": "33749d12c2569bb24071f94e9af828662dabb068"
+            },
+            "sebastian\/cli-parser": {
+                "name": "sebastian\/cli-parser",
+                "branch": "1.0.1",
+                "alias": null,
+                "version": "1.0.1",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-09-28 06:08:49.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/cli-parser",
+                "reference": "442e7c7e687e42adc03470c7b668bc4b2402c0b2"
+            },
+            "sebastian\/code-unit": {
+                "name": "sebastian\/code-unit",
+                "branch": "1.0.8",
+                "alias": null,
+                "version": "1.0.8",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-10-26 13:08:54.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/code-unit",
+                "reference": "1fc9f64c0927627ef78ba436c9b17d967e68e120"
+            },
+            "sebastian\/code-unit-reverse-lookup": {
+                "name": "sebastian\/code-unit-reverse-lookup",
+                "branch": "2.0.3",
+                "alias": null,
+                "version": "2.0.3",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-09-28 05:30:19.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/code-unit-reverse-lookup\/",
+                "reference": "ac91f01ccec49fb77bdc6fd1e548bc70f7faa3e5"
+            },
+            "sebastian\/comparator": {
+                "name": "sebastian\/comparator",
+                "branch": "4.0.8",
+                "alias": null,
+                "version": "4.0.8",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-14 12:41:17.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/comparator",
+                "reference": "fa0f136dd2334583309d32b62544682ee972b51a"
+            },
+            "sebastian\/complexity": {
+                "name": "sebastian\/complexity",
+                "branch": "2.0.2",
+                "alias": null,
+                "version": "2.0.2",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-10-26 15:52:27.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/complexity",
+                "reference": "739b35e53379900cc9ac327b2147867b8b6efd88"
+            },
+            "sebastian\/environment": {
+                "name": "sebastian\/environment",
+                "branch": "5.1.4",
+                "alias": null,
+                "version": "5.1.4",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-04-03 09:37:03.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/www.github.com\/sebastianbergmann\/environment",
+                "reference": "1b5dff7bb151a4db11d49d90e5408e4e938270f7"
+            },
+            "sebastian\/exporter": {
+                "name": "sebastian\/exporter",
+                "branch": "4.0.5",
+                "alias": null,
+                "version": "4.0.5",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-14 06:03:37.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.github.com\/sebastianbergmann\/exporter",
+                "reference": "ac230ed27f0f98f597c8a2b6eb7ac563af5e5b9d"
+            },
+            "sebastian\/global-state": {
+                "name": "sebastian\/global-state",
+                "branch": "5.0.5",
+                "alias": null,
+                "version": "5.0.5",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-02-14 08:28:10.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/www.github.com\/sebastianbergmann\/global-state",
+                "reference": "0ca8db5a5fc9c8646244e629625ac486fa286bf2"
+            },
+            "sebastian\/lines-of-code": {
+                "name": "sebastian\/lines-of-code",
+                "branch": "1.0.3",
+                "alias": null,
+                "version": "1.0.3",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-11-28 06:42:11.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/lines-of-code",
+                "reference": "c1c2e997aa3146983ed888ad08b15470a2e22ecc"
+            },
+            "sebastian\/object-enumerator": {
+                "name": "sebastian\/object-enumerator",
+                "branch": "4.0.4",
+                "alias": null,
+                "version": "4.0.4",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-10-26 13:12:34.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/object-enumerator\/",
+                "reference": "5c9eeac41b290a3712d88851518825ad78f45c71"
+            },
+            "sebastian\/object-reflector": {
+                "name": "sebastian\/object-reflector",
+                "branch": "2.0.4",
+                "alias": null,
+                "version": "2.0.4",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-10-26 13:14:26.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/object-reflector\/",
+                "reference": "b4f479ebdbf63ac605d183ece17d8d7fe49c15c7"
+            },
+            "sebastian\/recursion-context": {
+                "name": "sebastian\/recursion-context",
+                "branch": "4.0.4",
+                "alias": null,
+                "version": "4.0.4",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-10-26 13:17:30.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/www.github.com\/sebastianbergmann\/recursion-context",
+                "reference": "cd9d8cf3c5804de4341c283ed787f099f5506172"
+            },
+            "sebastian\/resource-operations": {
+                "name": "sebastian\/resource-operations",
+                "branch": "3.0.3",
+                "alias": null,
+                "version": "3.0.3",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-09-28 06:45:17.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/www.github.com\/sebastianbergmann\/resource-operations",
+                "reference": "0f4443cb3a1d92ce809899753bc0d5d5a8dd19a8"
+            },
+            "sebastian\/type": {
+                "name": "sebastian\/type",
+                "branch": "3.2.0",
+                "alias": null,
+                "version": "3.2.0",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-12 14:47:03.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/type",
+                "reference": "fb3fe09c5f0bae6bc27ef3ce933a1e0ed9464b6e"
+            },
+            "sebastian\/version": {
+                "name": "sebastian\/version",
+                "branch": "3.0.2",
+                "alias": null,
+                "version": "3.0.2",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-09-28 06:39:44.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/sebastianbergmann\/version",
+                "reference": "c6c1022351a901512170118436c764e473f6de8c"
+            },
+            "sensio\/framework-extra-bundle": {
+                "name": "sensio\/framework-extra-bundle",
+                "branch": "v6.2.9",
+                "alias": null,
+                "version": "6.2.9",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-01 17:17:13.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "dcfac94d6bdcf95c126e8ccac2104917c7c8f135"
+            },
+            "silversolutions\/xsd-to-php": {
+                "name": "silversolutions\/xsd-to-php",
+                "branch": "v3.6.0",
+                "alias": null,
+                "version": "3.6.0",
+                "license": "Apache-2.0",
+                "stability": null,
+                "dateTime": {
+                    "date": "2018-10-29 15:59:31.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/www.silversolutions.de\/Produkte",
+                "reference": "f0a884f9ac7315b1d0f2a6cf9c066dfb84fa0dde"
+            },
+            "solarium\/solarium": {
+                "name": "solarium\/solarium",
+                "branch": "6.2.7",
+                "alias": null,
+                "version": "6.2.7",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-12 09:20:39.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/www.solarium-project.org",
+                "reference": "6d6d13b4eda222e7bdb9616545aa67efbe8c6cec"
+            },
+            "soundasleep\/html2text": {
+                "name": "soundasleep\/html2text",
+                "branch": "1.1.0",
+                "alias": null,
+                "version": "1.1.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2019-02-15 01:44:54.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/soundasleep\/html2text",
+                "reference": "3243a7107878a61685d2eccf99918d6479e039fc"
+            },
+            "spatie\/image-optimizer": {
+                "name": "spatie\/image-optimizer",
+                "branch": "1.6.2",
+                "alias": null,
+                "version": "1.6.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-12-21 10:08:05.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/spatie\/image-optimizer",
+                "reference": "6db75529cbf8fa84117046a9d513f277aead90a0"
+            },
+            "stof\/doctrine-extensions-bundle": {
+                "name": "stof\/doctrine-extensions-bundle",
+                "branch": "v1.7.1",
+                "alias": null,
+                "version": "1.7.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-30 11:52:24.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/stof\/StofDoctrineExtensionsBundle",
+                "reference": "fa650e60e174afa06c09e28a54fb1854af04c7fe"
+            },
+            "swiftmailer\/swiftmailer": {
+                "name": "swiftmailer\/swiftmailer",
+                "branch": "v6.3.0",
+                "alias": null,
+                "version": "6.3.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-10-18 15:26:12.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/swiftmailer.symfony.com",
+                "reference": "8a5d5072dca8f48460fce2f4131fcc495eec654c"
+            },
+            "symfony-cmf\/routing": {
+                "name": "symfony-cmf\/routing",
+                "branch": "2.3.4",
+                "alias": null,
+                "version": "2.3.4",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-11-08 16:33:10.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/cmf.symfony.com",
+                "reference": "bbcdf2f6301d740454ba9ebb8adaefd436c36a6b"
+            },
+            "symfony\/asset": {
+                "name": "symfony\/asset",
+                "branch": "v5.4.13",
+                "alias": null,
+                "version": "5.4.13",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-08-31 08:17:19.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "9aa867206711cb6fcca51ef127ba52a018170be9"
+            },
+            "symfony\/browser-kit": {
+                "name": "symfony\/browser-kit",
+                "branch": "v5.4.11",
+                "alias": null,
+                "version": "5.4.11",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-27 15:50:05.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "081fe28a26b6bd671dea85ef3a4b5003f3c88027"
+            },
+            "symfony\/cache": {
+                "name": "symfony\/cache",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-27 07:55:40.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "60e87188abbacd29ccde44d69c5392a33e888e98"
+            },
+            "symfony\/cache-contracts": {
+                "name": "symfony\/cache-contracts",
+                "branch": "v2.5.2",
+                "alias": null,
+                "version": "2.5.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-01-02 09:53:40.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "64be4a7acb83b6f2bf6de9a02cee6dad41277ebc"
+            },
+            "symfony\/config": {
+                "name": "symfony\/config",
+                "branch": "v5.4.11",
+                "alias": null,
+                "version": "5.4.11",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-20 13:00:38.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "ec79e03125c1d2477e43dde8528535d90cc78379"
+            },
+            "symfony\/console": {
+                "name": "symfony\/console",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-26 21:41:52.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "ea59bb0edfaf9f28d18d8791410ee0355f317669"
+            },
+            "symfony\/dependency-injection": {
+                "name": "symfony\/dependency-injection",
+                "branch": "v5.4.13",
+                "alias": null,
+                "version": "5.4.13",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-08-30 19:10:13.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "24cf522668845391c0542bc1de496366072a6d0e"
+            },
+            "symfony\/deprecation-contracts": {
+                "name": "symfony\/deprecation-contracts",
+                "branch": "v2.5.2",
+                "alias": null,
+                "version": "2.5.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-01-02 09:53:40.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "e8b495ea28c1d97b5e0c121748d6f9b53d075c66"
+            },
+            "symfony\/doctrine-bridge": {
+                "name": "symfony\/doctrine-bridge",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-14 11:25:13.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "d25538867d961bb0ce8a71a1b6ff92758cf01d25"
+            },
+            "symfony\/dom-crawler": {
+                "name": "symfony\/dom-crawler",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-27 08:04:35.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "b8fd0ff9a0f00d944f1534f6d21e84f92eda7258"
+            },
+            "symfony\/dotenv": {
+                "name": "symfony\/dotenv",
+                "branch": "v5.4.5",
+                "alias": null,
+                "version": "5.4.5",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-02-15 17:04:12.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "83a2310904a4f5d4f42526227b5a578ac82232a9"
+            },
+            "symfony\/error-handler": {
+                "name": "symfony\/error-handler",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-27 06:32:25.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "539cf1428b8442303c6e876ad7bf5a7babd91091"
+            },
+            "symfony\/event-dispatcher": {
+                "name": "symfony\/event-dispatcher",
+                "branch": "v5.4.9",
+                "alias": null,
+                "version": "5.4.9",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-05-05 16:45:39.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "8e6ce1cc0279e3ff3c8ff0f43813bc88d21ca1bc"
+            },
+            "symfony\/event-dispatcher-contracts": {
+                "name": "symfony\/event-dispatcher-contracts",
+                "branch": "v2.5.2",
+                "alias": null,
+                "version": "2.5.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-01-02 09:53:40.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "f98b54df6ad059855739db6fcbc2d36995283fe1"
+            },
+            "symfony\/expression-language": {
+                "name": "symfony\/expression-language",
+                "branch": "v5.4.14",
+                "alias": null,
+                "version": "5.4.14",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-07 08:01:20.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "2f27d5b1e7926bba18e87719af75f696977cd58b"
+            },
+            "symfony\/filesystem": {
+                "name": "symfony\/filesystem",
+                "branch": "v5.4.13",
+                "alias": null,
+                "version": "5.4.13",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-21 19:53:16.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "ac09569844a9109a5966b9438fc29113ce77cf51"
+            },
+            "symfony\/finder": {
+                "name": "symfony\/finder",
+                "branch": "v5.4.11",
+                "alias": null,
+                "version": "5.4.11",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-29 07:37:50.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "7872a66f57caffa2916a584db1aa7f12adc76f8c"
+            },
+            "symfony\/flex": {
+                "name": "symfony\/flex",
+                "branch": "v1.19.3",
+                "alias": null,
+                "version": "1.19.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-08-07 09:39:08.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "ab0453b16029e131c112df1a76e59eb2a47e1f67"
+            },
+            "symfony\/form": {
+                "name": "symfony\/form",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-23 10:30:41.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "e6a97a09c7672b3b3d26335ca66f366734f6df56"
+            },
+            "symfony\/framework-bundle": {
+                "name": "symfony\/framework-bundle",
+                "branch": "v5.4.14",
+                "alias": null,
+                "version": "5.4.14",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-07 08:01:20.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "00ac4d7e31597f6a49759bd925d83fc87d4ade68"
+            },
+            "symfony\/http-client": {
+                "name": "symfony\/http-client",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-25 16:22:13.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "8f29b0f06c9ff48c8431e78eb90c8bd6f82cb12b"
+            },
+            "symfony\/http-client-contracts": {
+                "name": "symfony\/http-client-contracts",
+                "branch": "v2.5.2",
+                "alias": null,
+                "version": "2.5.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-04-12 15:48:08.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "ba6a9f0e8f3edd190520ee3b9a958596b6ca2e70"
+            },
+            "symfony\/http-foundation": {
+                "name": "symfony\/http-foundation",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-12 09:43:19.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "75bd663ff2db90141bfb733682459d5bbe9e29c3"
+            },
+            "symfony\/http-kernel": {
+                "name": "symfony\/http-kernel",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-28 17:52:18.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "fc63c8c3e1036d424820cc993a4ea163778dc5c7"
+            },
+            "symfony\/intl": {
+                "name": "symfony\/intl",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-19 14:28:49.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "2cb39da7f6e7b7344d7d5317dbee8db9d12cc714"
+            },
+            "symfony\/lock": {
+                "name": "symfony\/lock",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-27 07:55:40.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "109a20faa6119578b46457ef8cffb9389e20e5ca"
+            },
+            "symfony\/mailer": {
+                "name": "symfony\/mailer",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-27 07:55:40.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "926f4deddb60d40024e6058fd8f94e70e4024930"
+            },
+            "symfony\/mime": {
+                "name": "symfony\/mime",
+                "branch": "v5.4.14",
+                "alias": null,
+                "version": "5.4.14",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-07 08:01:20.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "1c118b253bb3495d81e95a6e3ec6c2766a98a0c4"
+            },
+            "symfony\/monolog-bridge": {
+                "name": "symfony\/monolog-bridge",
+                "branch": "v5.4.10",
+                "alias": null,
+                "version": "5.4.10",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-06-19 12:03:50.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "b3b0890e76e7eb626f27b165a5c501f2754dfbbd"
+            },
+            "symfony\/monolog-bundle": {
+                "name": "symfony\/monolog-bundle",
+                "branch": "v3.8.0",
+                "alias": null,
+                "version": "3.8.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-05-10 14:24:36.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "a41bbcdc1105603b6d73a7d9a43a3788f8e0fb7d"
+            },
+            "symfony\/notifier": {
+                "name": "symfony\/notifier",
+                "branch": "v5.4.8",
+                "alias": null,
+                "version": "5.4.8",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-04-12 16:02:29.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "c5df5af88278e8c15020dd1f95f30eebf280f895"
+            },
+            "symfony\/options-resolver": {
+                "name": "symfony\/options-resolver",
+                "branch": "v5.4.11",
+                "alias": null,
+                "version": "5.4.11",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-20 13:00:38.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "54f14e36aa73cb8f7261d7686691fd4d75ea2690"
+            },
+            "symfony\/orm-pack": {
+                "name": "symfony\/orm-pack",
+                "branch": "v1.0.8",
+                "alias": null,
+                "version": "1.0.8",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-02-10 18:03:48.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "c9bcc08102061f406dc908192c0f33524a675666"
+            },
+            "symfony\/password-hasher": {
+                "name": "symfony\/password-hasher",
+                "branch": "v5.4.11",
+                "alias": null,
+                "version": "5.4.11",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-20 13:00:38.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "b0169ed8f09a4ae39eb119218ea1685079a9b179"
+            },
+            "symfony\/polyfill-intl-grapheme": {
+                "name": "symfony\/polyfill-intl-grapheme",
+                "branch": "v1.27.0",
+                "alias": null,
+                "version": "1.27.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-03 14:55:06.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "511a08c03c1960e08a883f4cffcacd219b758354"
+            },
+            "symfony\/polyfill-intl-icu": {
+                "name": "symfony\/polyfill-intl-icu",
+                "branch": "v1.27.0",
+                "alias": null,
+                "version": "1.27.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-03 14:55:06.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "a3d9148e2c363588e05abbdd4ee4f971f0a5330c"
+            },
+            "symfony\/polyfill-intl-idn": {
+                "name": "symfony\/polyfill-intl-idn",
+                "branch": "v1.27.0",
+                "alias": null,
+                "version": "1.27.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-03 14:55:06.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "639084e360537a19f9ee352433b84ce831f3d2da"
+            },
+            "symfony\/polyfill-intl-normalizer": {
+                "name": "symfony\/polyfill-intl-normalizer",
+                "branch": "v1.27.0",
+                "alias": null,
+                "version": "1.27.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-03 14:55:06.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "19bd1e4fcd5b91116f14d8533c57831ed00571b6"
+            },
+            "symfony\/polyfill-mbstring": {
+                "name": "symfony\/polyfill-mbstring",
+                "branch": "v1.27.0",
+                "alias": null,
+                "version": "1.27.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-03 14:55:06.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "8ad114f6b39e2c98a8b0e3bd907732c207c2b534"
+            },
+            "symfony\/polyfill-php56": {
+                "name": "symfony\/polyfill-php56",
+                "branch": "v1.20.0",
+                "alias": null,
+                "version": "1.20.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-10-23 14:02:19.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "54b8cd7e6c1643d78d011f3be89f3ef1f9f4c675"
+            },
+            "symfony\/polyfill-php73": {
+                "name": "symfony\/polyfill-php73",
+                "branch": "v1.27.0",
+                "alias": null,
+                "version": "1.27.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-03 14:55:06.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "9e8ecb5f92152187c4799efd3c96b78ccab18ff9"
+            },
+            "symfony\/polyfill-php80": {
+                "name": "symfony\/polyfill-php80",
+                "branch": "v1.27.0",
+                "alias": null,
+                "version": "1.27.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-03 14:55:06.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "7a6ff3f1959bb01aefccb463a0f2cd3d3d2fd936"
+            },
+            "symfony\/polyfill-php81": {
+                "name": "symfony\/polyfill-php81",
+                "branch": "v1.27.0",
+                "alias": null,
+                "version": "1.27.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-11-03 14:55:06.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "707403074c8ea6e2edaf8794b0157a0bfa52157a"
+            },
+            "symfony\/process": {
+                "name": "symfony\/process",
+                "branch": "v5.4.11",
+                "alias": null,
+                "version": "5.4.11",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-06-27 16:58:25.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "6e75fe6874cbc7e4773d049616ab450eff537bf1"
+            },
+            "symfony\/property-access": {
+                "name": "symfony\/property-access",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-27 07:55:40.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "0f3e8f40a1d3da90f674b3dd772e4777ccde4273"
+            },
+            "symfony\/property-info": {
+                "name": "symfony\/property-info",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-27 07:55:40.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "3ef5e026a71a39345da241292c153979893033c2"
+            },
+            "symfony\/proxy-manager-bridge": {
+                "name": "symfony\/proxy-manager-bridge",
+                "branch": "v5.4.6",
+                "alias": null,
+                "version": "5.4.6",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-03-02 12:42:23.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "e6936de1cc8f4e6e3b2264aef186ca21695aee8e"
+            },
+            "symfony\/rate-limiter": {
+                "name": "symfony\/rate-limiter",
+                "branch": "v5.4.11",
+                "alias": null,
+                "version": "5.4.11",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-20 13:00:38.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "1a3a43eeb498290100e4a1559f4a48be14900bc2"
+            },
+            "symfony\/routing": {
+                "name": "symfony\/routing",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-13 14:10:41.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "5c9b129efe9abce9470e384bf65d8a7e262eee69"
+            },
+            "symfony\/runtime": {
+                "name": "symfony\/runtime",
+                "branch": "v5.4.11",
+                "alias": null,
+                "version": "5.4.11",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-06-27 16:58:25.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "c32ac27a8abebe4e6375cd12a4f78ba78e9c742f"
+            },
+            "symfony\/security-bundle": {
+                "name": "symfony\/security-bundle",
+                "branch": "v5.4.11",
+                "alias": null,
+                "version": "5.4.11",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-20 13:00:38.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "86b49feb056b840f2b79a03fcfa2d378d6d34234"
+            },
+            "symfony\/security-core": {
+                "name": "symfony\/security-core",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-23 10:30:41.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "4ef922cd626a43b570522cb1616e3d678664c9a0"
+            },
+            "symfony\/security-csrf": {
+                "name": "symfony\/security-csrf",
+                "branch": "v5.4.11",
+                "alias": null,
+                "version": "5.4.11",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-20 13:00:38.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "b97ab244b6dda80abb84a4a236d682871695db4a"
+            },
+            "symfony\/security-guard": {
+                "name": "symfony\/security-guard",
+                "branch": "v5.4.13",
+                "alias": null,
+                "version": "5.4.13",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-28 13:19:49.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "83f647fcdc17aa14908f0e02a302d3d9d0f63fbc"
+            },
+            "symfony\/security-http": {
+                "name": "symfony\/security-http",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-23 10:30:41.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "142d48153a453dbd49e880eef6bc77e4ba162dff"
+            },
+            "symfony\/serializer": {
+                "name": "symfony\/serializer",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-23 09:52:07.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "e80871599f6f0929bb349afc3d9ecaba783e68bd"
+            },
+            "symfony\/serializer-pack": {
+                "name": "symfony\/serializer-pack",
+                "branch": "v1.1.0",
+                "alias": null,
+                "version": "1.1.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-11-30 16:37:42.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "d6b1aca1e4f853d0d1ad3da24576e4dd9ab22510"
+            },
+            "symfony\/service-contracts": {
+                "name": "symfony\/service-contracts",
+                "branch": "v2.5.2",
+                "alias": null,
+                "version": "2.5.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-05-30 19:17:29.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "4b426aac47d6427cc1a1d0f7e2ac724627f5966c"
+            },
+            "symfony\/stopwatch": {
+                "name": "symfony\/stopwatch",
+                "branch": "v5.4.13",
+                "alias": null,
+                "version": "5.4.13",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-28 13:19:49.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "6df7a3effde34d81717bbef4591e5ffe32226d69"
+            },
+            "symfony\/string": {
+                "name": "symfony\/string",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-05 15:16:54.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "571334ce9f687e3e6af72db4d3b2a9431e4fd9ed"
+            },
+            "symfony\/swiftmailer-bundle": {
+                "name": "symfony\/swiftmailer-bundle",
+                "branch": "v3.5.4",
+                "alias": null,
+                "version": "3.5.4",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-02-06 08:03:40.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/symfony.com",
+                "reference": "9daab339f226ac958192bf89836cb3378cc0e652"
+            },
+            "symfony\/templating": {
+                "name": "symfony\/templating",
+                "branch": "v5.4.11",
+                "alias": null,
+                "version": "5.4.11",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-06-27 16:58:25.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "3933eaad08c7f83672c53f635d7c3988252a658a"
+            },
+            "symfony\/translation": {
+                "name": "symfony\/translation",
+                "branch": "v5.4.14",
+                "alias": null,
+                "version": "5.4.14",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-07 08:01:20.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "f0ed07675863aa6e3939df8b1bc879450b585cab"
+            },
+            "symfony\/translation-contracts": {
+                "name": "symfony\/translation-contracts",
+                "branch": "v2.5.2",
+                "alias": null,
+                "version": "2.5.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-06-27 16:58:25.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "136b19dd05cdf0709db6537d058bcab6dd6e2dbe"
+            },
+            "symfony\/twig-bridge": {
+                "name": "symfony\/twig-bridge",
+                "branch": "v5.4.14",
+                "alias": null,
+                "version": "5.4.14",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-11 12:49:22.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "60db1cc3f5b098eb194c00a10489148a03861371"
+            },
+            "symfony\/twig-bundle": {
+                "name": "symfony\/twig-bundle",
+                "branch": "v5.4.8",
+                "alias": null,
+                "version": "5.4.8",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-04-03 13:03:10.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "c992b4474c3a31f3c40a1ca593d213833f91b818"
+            },
+            "symfony\/validator": {
+                "name": "symfony\/validator",
+                "branch": "v5.4.15",
+                "alias": null,
+                "version": "5.4.15",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-27 08:04:35.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "0fb0c50f18f4517a8ea59d1cc87bff231402a7e3"
+            },
+            "symfony\/var-dumper": {
+                "name": "symfony\/var-dumper",
+                "branch": "v5.4.14",
+                "alias": null,
+                "version": "5.4.14",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-07 08:01:20.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "6894d06145fefebd9a4c7272baa026a1c394a430"
+            },
+            "symfony\/var-exporter": {
+                "name": "symfony\/var-exporter",
+                "branch": "v5.4.10",
+                "alias": null,
+                "version": "5.4.10",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-05-27 12:56:18.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "8fc03ee75eeece3d9be1ef47d26d79bea1afb340"
+            },
+            "symfony\/web-link": {
+                "name": "symfony\/web-link",
+                "branch": "v5.4.3",
+                "alias": null,
+                "version": "5.4.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-01-02 09:53:40.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "8b9b073390359549fec5f5d797f23bbe9e2997a5"
+            },
+            "symfony\/webpack-encore-bundle": {
+                "name": "symfony\/webpack-encore-bundle",
+                "branch": "v1.16.0",
+                "alias": null,
+                "version": "1.16.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-18 15:21:06.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "bb399930c0299866258b616a74a27b50b94c5d45"
+            },
+            "symfony\/workflow": {
+                "name": "symfony\/workflow",
+                "branch": "v5.4.11",
+                "alias": null,
+                "version": "5.4.11",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-11 15:34:21.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "c70047328e4b3229fb770c09ac6463d5ee88fbfc"
+            },
+            "symfony\/yaml": {
+                "name": "symfony\/yaml",
+                "branch": "v5.4.14",
+                "alias": null,
+                "version": "5.4.14",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-10-03 15:15:50.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/symfony.com",
+                "reference": "e83fe9a72011f07c662da46a05603d66deeeb487"
+            },
+            "tedivm\/stash": {
+                "name": "tedivm\/stash",
+                "branch": "v0.17.6",
+                "alias": null,
+                "version": "0.17.6",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-26 14:15:03.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/github.com\/tedious\/Stash",
+                "reference": "a2c9df16c77b13e1f90462f30597a772166eea8f"
+            },
+            "theseer\/tokenizer": {
+                "name": "theseer\/tokenizer",
+                "branch": "1.2.1",
+                "alias": null,
+                "version": "1.2.1",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-07-28 10:34:58.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "34a41e998c2183e22995f158c581e7b5e755ab9e"
+            },
+            "toflar\/psr6-symfony-http-cache-store": {
+                "name": "toflar\/psr6-symfony-http-cache-store",
+                "branch": "3.0.1",
+                "alias": null,
+                "version": "3.0.1",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-11-23 21:38:47.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "0a6dd0da8dcce37efd3f3ac12e6f435dcd8fe244"
+            },
+            "twig\/extra-bundle": {
+                "name": "twig\/extra-bundle",
+                "branch": "v3.4.0",
+                "alias": null,
+                "version": "3.4.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-01-04 13:58:53.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/twig.symfony.com",
+                "reference": "2e58256b0e9fe52f30149347c0547e4633304765"
+            },
+            "twig\/intl-extra": {
+                "name": "twig\/intl-extra",
+                "branch": "v3.4.2",
+                "alias": null,
+                "version": "3.4.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-06-10 08:33:05.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/twig.symfony.com",
+                "reference": "151e50fad9c7915bd56f0adf3f0cb3c47e6ed28a"
+            },
+            "twig\/string-extra": {
+                "name": "twig\/string-extra",
+                "branch": "v3.4.0",
+                "alias": null,
+                "version": "3.4.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-01-02 10:02:25.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/twig.symfony.com",
+                "reference": "03608ae2e9c270a961e8cf1b75751e8635ad3e3c"
+            },
+            "twig\/twig": {
+                "name": "twig\/twig",
+                "branch": "v3.4.3",
+                "alias": null,
+                "version": "3.4.3",
+                "license": "BSD-3-Clause",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-28 08:42:51.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/twig.symfony.com",
+                "reference": "c38fd6b0b7f370c198db91ffd02e23b517426b58"
+            },
+            "vaites\/php-apache-tika": {
+                "name": "vaites\/php-apache-tika",
+                "branch": "v0.9.3",
+                "alias": null,
+                "version": "0.9.3",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2020-07-26 01:14:36.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "d8574afe3219a7883c0196ed1636c9cdb7dbaefa"
+            },
+            "webmozart\/assert": {
+                "name": "webmozart\/assert",
+                "branch": "1.11.0",
+                "alias": null,
+                "version": "1.11.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-06-03 18:03:27.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991"
+            },
+            "webonyx\/graphql-php": {
+                "name": "webonyx\/graphql-php",
+                "branch": "v14.11.8",
+                "alias": null,
+                "version": "14.11.8",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-09-21 15:35:03.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/webonyx\/graphql-php",
+                "reference": "04a48693acd785330eefd3b0e4fa67df8dfee7c3"
+            },
+            "willdurand\/js-translation-bundle": {
+                "name": "willdurand\/js-translation-bundle",
+                "branch": "4.0.2",
+                "alias": null,
+                "version": "4.0.2",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-08-04 14:51:10.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "6cbaa477f5b76c9208b3c28145777481b734ccf6"
+            },
+            "willdurand\/jsonp-callback-validator": {
+                "name": "willdurand\/jsonp-callback-validator",
+                "branch": "v1.1.0",
+                "alias": null,
+                "version": "1.1.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2014-01-20 22:35:06.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "",
+                "reference": "1a7d388bb521959e612ef50c5c7b1691b097e909"
+            },
+            "willdurand\/negotiation": {
+                "name": "willdurand\/negotiation",
+                "branch": "3.1.0",
+                "alias": null,
+                "version": "3.1.0",
+                "license": "MIT",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-01-30 20:08:53.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "http:\/\/williamdurand.fr\/Negotiation\/",
+                "reference": "68e9ea0553ef6e2ee8db5c1d98829f111e623ec2"
+            },
+            "zetacomponents\/base": {
+                "name": "zetacomponents\/base",
+                "branch": "1.9.3",
+                "alias": null,
+                "version": "1.9.3",
+                "license": "Apache-2.0",
+                "stability": null,
+                "dateTime": {
+                    "date": "2021-07-25 15:46:08.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/zetacomponents",
+                "reference": "2f432f4117a5aa2164d4fb1784f84db91dbdd3b8"
+            },
+            "zetacomponents\/feed": {
+                "name": "zetacomponents\/feed",
+                "branch": "1.4.3",
+                "alias": null,
+                "version": "1.4.3",
+                "license": "Apache-2.0",
+                "stability": null,
+                "dateTime": {
+                    "date": "2022-07-19 17:08:10.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/zetacomponents",
+                "reference": "cbbf29782bc1c6511204e2aa085301fafaac37c3"
+            },
+            "zetacomponents\/system-information": {
+                "name": "zetacomponents\/system-information",
+                "branch": "1.1.1",
+                "alias": null,
+                "version": "1.1.1",
+                "license": "Apache-2.0",
+                "stability": null,
+                "dateTime": {
+                    "date": "2016-10-23 21:18:48.000000",
+                    "timezone_type": 1,
+                    "timezone": "+00:00"
+                },
+                "homepage": "https:\/\/github.com\/zetacomponents",
+                "reference": "314ea9b2c98b3c20321a8d05ea8ba976479d8f88"
+            }
+        },
+        "minimumStability": "stable",
+        "repositoryUrls": [
+            "https:\/\/updates.ibexa.co"
+        ]
+    },
+    "repository": {
+        "type": "mysql",
+        "name": "ibexa",
+        "host": "127.0.0.1",
+        "username": "ibexa-user",
+        "repositoryMetrics": {
+            "publishedCount": 38,
+            "usersCount": 2,
+            "draftsCount": 8,
+            "versionsCount": 48,
+            "contentTypesCount": 17
+        }
+    },
+    "hardware": {
+        "cpuType": null,
+        "cpuSpeed": null,
+        "cpuCount": null,
+        "memorySize": null
+    },
+    "php": {
+        "version": "7.4.30",
+        "acceleratorEnabled": true,
+        "acceleratorName": "Zend OPcache",
+        "acceleratorURL": "http:\/\/www.php.net\/opcache",
+        "acceleratorVersion": "7.4.30"
+    },
+    "symfony_kernel": {
+        "environment": "dev",
+        "debugMode": true,
+        "version": "5.4.15",
+        "bundles": {
+            "ApacheTikaBundle": "Joli\\ApacheTikaBundle\\ApacheTikaBundle",
+            "BabDevPagerfantaBundle": "BabDev\\PagerfantaBundle\\BabDevPagerfantaBundle",
+            "BazingaJsTranslationBundle": "Bazinga\\Bundle\\JsTranslationBundle\\BazingaJsTranslationBundle",
+            "DebugBundle": "Symfony\\Bundle\\DebugBundle\\DebugBundle",
+            "DoctrineBundle": "Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle",
+            "DoctrineMigrationsBundle": "Doctrine\\Bundle\\MigrationsBundle\\DoctrineMigrationsBundle",
+            "DoctrineSchemaBundle": "Ibexa\\Bundle\\DoctrineSchema\\DoctrineSchemaBundle",
+            "EWZRecaptchaBundle": "EWZ\\Bundle\\RecaptchaBundle\\EWZRecaptchaBundle",
+            "FOSCommentBundle": "FOS\\CommentBundle\\FOSCommentBundle",
+            "FOSHttpCacheBundle": "FOS\\HttpCacheBundle\\FOSHttpCacheBundle",
+            "FOSJsRoutingBundle": "FOS\\JsRoutingBundle\\FOSJsRoutingBundle",
+            "FOSRestBundle": "FOS\\RestBundle\\FOSRestBundle",
+            "FrameworkBundle": "Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle",
+            "GregwarCaptchaBundle": "Gregwar\\CaptchaBundle\\GregwarCaptchaBundle",
+            "HautelookTemplatedUriBundle": "Hautelook\\TemplatedUriBundle\\HautelookTemplatedUriBundle",
+            "IbexaAdminUiAssetsBundle": "Ibexa\\Bundle\\AdminUiAssets\\IbexaAdminUiAssetsBundle",
+            "IbexaAdminUiBundle": "Ibexa\\Bundle\\AdminUi\\IbexaAdminUiBundle",
+            "IbexaCalendarBundle": "Ibexa\\Bundle\\Calendar\\IbexaCalendarBundle",
+            "IbexaCommerceBaseDesignBundle": "Ibexa\\Bundle\\Commerce\\BaseDesign\\IbexaCommerceBaseDesignBundle",
+            "IbexaCommerceCheckoutBundle": "Ibexa\\Bundle\\Commerce\\Checkout\\IbexaCommerceCheckoutBundle",
+            "IbexaCommerceEshopBundle": "Ibexa\\Bundle\\Commerce\\Eshop\\IbexaCommerceEshopBundle",
+            "IbexaCommerceFieldTypesBundle": "Ibexa\\Bundle\\Commerce\\FieldTypes\\IbexaCommerceFieldTypesBundle",
+            "IbexaCommercePaymentBundle": "Ibexa\\Bundle\\Commerce\\Payment\\IbexaCommercePaymentBundle",
+            "IbexaCommercePriceBundle": "Ibexa\\Bundle\\Commerce\\Price\\IbexaCommercePriceBundle",
+            "IbexaCommercePriceEngineBundle": "Ibexa\\Bundle\\Commerce\\PriceEngine\\IbexaCommercePriceEngineBundle",
+            "IbexaCommerceSearchBundle": "Ibexa\\Bundle\\Commerce\\Search\\IbexaCommerceSearchBundle",
+            "IbexaCommerceShopToolsBundle": "Ibexa\\Bundle\\Commerce\\ShopTools\\IbexaCommerceShopToolsBundle",
+            "IbexaCommerceShopUiBundle": "Ibexa\\Bundle\\Commerce\\ShopUi\\IbexaCommerceShopUiBundle",
+            "IbexaCommerceSpecificationsTypeBundle": "Ibexa\\Bundle\\Commerce\\SpecificationsType\\IbexaCommerceSpecificationsTypeBundle",
+            "IbexaCommerceToolsBundle": "Ibexa\\Bundle\\Commerce\\Tools\\IbexaCommerceToolsBundle",
+            "IbexaCommerceTranslationBundle": "Ibexa\\Bundle\\Commerce\\Translation\\IbexaCommerceTranslationBundle",
+            "IbexaConnectorDamBundle": "Ibexa\\Bundle\\Connector\\Dam\\IbexaConnectorDamBundle",
+            "IbexaContentFormsBundle": "Ibexa\\Bundle\\ContentForms\\IbexaContentFormsBundle",
+            "IbexaContentTreeBundle": "Ibexa\\Bundle\\ContentTree\\IbexaContentTreeBundle",
+            "IbexaCoreBundle": "Ibexa\\Bundle\\Core\\IbexaCoreBundle",
+            "IbexaCorporateAccountBundle": "Ibexa\\Bundle\\CorporateAccount\\IbexaCorporateAccountBundle",
+            "IbexaCronBundle": "Ibexa\\Bundle\\Cron\\IbexaCronBundle",
+            "IbexaDebugBundle": "Ibexa\\Bundle\\Debug\\IbexaDebugBundle",
+            "IbexaDesignEngineBundle": "Ibexa\\Bundle\\DesignEngine\\IbexaDesignEngineBundle",
+            "IbexaElasticsearchBundle": "Ibexa\\Bundle\\Elasticsearch\\IbexaElasticsearchBundle",
+            "IbexaFastlyBundle": "Ibexa\\Bundle\\Fastly\\IbexaFastlyBundle",
+            "IbexaFieldTypeAddressBundle": "Ibexa\\Bundle\\FieldTypeAddress\\IbexaFieldTypeAddressBundle",
+            "IbexaFieldTypeMatrixBundle": "Ibexa\\Bundle\\FieldTypeMatrix\\IbexaFieldTypeMatrixBundle",
+            "IbexaFieldTypePageBundle": "Ibexa\\Bundle\\FieldTypePage\\IbexaFieldTypePageBundle",
+            "IbexaFieldTypeQueryBundle": "Ibexa\\Bundle\\FieldTypeQuery\\IbexaFieldTypeQueryBundle",
+            "IbexaFieldTypeRichTextBundle": "Ibexa\\Bundle\\FieldTypeRichText\\IbexaFieldTypeRichTextBundle",
+            "IbexaFormBuilderBundle": "Ibexa\\Bundle\\FormBuilder\\IbexaFormBuilderBundle",
+            "IbexaGraphQLBundle": "Ibexa\\Bundle\\GraphQL\\IbexaGraphQLBundle",
+            "IbexaHttpCacheBundle": "Ibexa\\Bundle\\HttpCache\\IbexaHttpCacheBundle",
+            "IbexaIconsBundle": "Ibexa\\Bundle\\Icons\\IbexaIconsBundle",
+            "IbexaImageEditorBundle": "Ibexa\\Bundle\\ImageEditor\\IbexaImageEditorBundle",
+            "IbexaInstallerBundle": "Ibexa\\Bundle\\Installer\\IbexaInstallerBundle",
+            "IbexaIOBundle": "Ibexa\\Bundle\\IO\\IbexaIOBundle",
+            "IbexaLegacySearchEngineBundle": "Ibexa\\Bundle\\LegacySearchEngine\\IbexaLegacySearchEngineBundle",
+            "IbexaMeasurementBundle": "Ibexa\\Bundle\\Measurement\\IbexaMeasurementBundle",
+            "IbexaMigrationBundle": "Ibexa\\Bundle\\Migration\\IbexaMigrationBundle",
+            "IbexaOAuth2ClientBundle": "Ibexa\\Bundle\\OAuth2Client\\IbexaOAuth2ClientBundle",
+            "IbexaPageBuilderBundle": "Ibexa\\Bundle\\PageBuilder\\IbexaPageBuilderBundle",
+            "IbexaPermissionsBundle": "Ibexa\\Bundle\\Permissions\\IbexaPermissionsBundle",
+            "IbexaPersonalizationBundle": "Ibexa\\Bundle\\Personalization\\IbexaPersonalizationBundle",
+            "IbexaProductCatalogBundle": "Ibexa\\Bundle\\ProductCatalog\\IbexaProductCatalogBundle",
+            "IbexaRepositoryInstallerBundle": "Ibexa\\Bundle\\RepositoryInstaller\\IbexaRepositoryInstallerBundle",
+            "IbexaRestBundle": "Ibexa\\Bundle\\Rest\\IbexaRestBundle",
+            "IbexaSchedulerBundle": "Ibexa\\Bundle\\Scheduler\\IbexaSchedulerBundle",
+            "IbexaSearchBundle": "Ibexa\\Bundle\\Search\\IbexaSearchBundle",
+            "IbexaSegmentationBundle": "Ibexa\\Bundle\\Segmentation\\IbexaSegmentationBundle",
+            "IbexaSeoBundle": "Ibexa\\Bundle\\Seo\\IbexaSeoBundle",
+            "IbexaSiteFactoryBundle": "Ibexa\\Bundle\\SiteFactory\\IbexaSiteFactoryBundle",
+            "IbexaSolrBundle": "Ibexa\\Bundle\\Solr\\IbexaSolrBundle",
+            "IbexaStandardDesignBundle": "Ibexa\\Bundle\\StandardDesign\\IbexaStandardDesignBundle",
+            "IbexaSystemInfoBundle": "Ibexa\\Bundle\\SystemInfo\\IbexaSystemInfoBundle",
+            "IbexaTaxonomyBundle": "Ibexa\\Bundle\\Taxonomy\\IbexaTaxonomyBundle",
+            "IbexaTreeBuilderBundle": "Ibexa\\Bundle\\TreeBuilder\\IbexaTreeBuilderBundle",
+            "IbexaUserBundle": "Ibexa\\Bundle\\User\\IbexaUserBundle",
+            "IbexaVersionComparisonBundle": "Ibexa\\Bundle\\VersionComparison\\IbexaVersionComparisonBundle",
+            "IbexaWorkflowBundle": "Ibexa\\Bundle\\Workflow\\IbexaWorkflowBundle",
+            "JMSJobQueueBundle": "JMS\\JobQueueBundle\\JMSJobQueueBundle",
+            "JMSPaymentCoreBundle": "JMS\\Payment\\CoreBundle\\JMSPaymentCoreBundle",
+            "JMSSerializerBundle": "JMS\\SerializerBundle\\JMSSerializerBundle",
+            "JMSTranslationBundle": "JMS\\TranslationBundle\\JMSTranslationBundle",
+            "KnpMenuBundle": "Knp\\Bundle\\MenuBundle\\KnpMenuBundle",
+            "KnpUOAuth2ClientBundle": "KnpU\\OAuth2ClientBundle\\KnpUOAuth2ClientBundle",
+            "LexikJWTAuthenticationBundle": "Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle",
+            "LiipImagineBundle": "Liip\\ImagineBundle\\LiipImagineBundle",
+            "MakerBundle": "Symfony\\Bundle\\MakerBundle\\MakerBundle",
+            "MonologBundle": "Symfony\\Bundle\\MonologBundle\\MonologBundle",
+            "NelmioCorsBundle": "Nelmio\\CorsBundle\\NelmioCorsBundle",
+            "NelmioSolariumBundle": "Nelmio\\SolariumBundle\\NelmioSolariumBundle",
+            "OneupFlysystemBundle": "Oneup\\FlysystemBundle\\OneupFlysystemBundle",
+            "OverblogGraphiQLBundle": "Overblog\\GraphiQLBundle\\OverblogGraphiQLBundle",
+            "OverblogGraphQLBundle": "Overblog\\GraphQLBundle\\OverblogGraphQLBundle",
+            "SecurityBundle": "Symfony\\Bundle\\SecurityBundle\\SecurityBundle",
+            "SensioFrameworkExtraBundle": "Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle",
+            "StofDoctrineExtensionsBundle": "Stof\\DoctrineExtensionsBundle\\StofDoctrineExtensionsBundle",
+            "SwiftmailerBundle": "Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle",
+            "TedivmStashBundle": "Tedivm\\StashBundle\\TedivmStashBundle",
+            "TwigBundle": "Symfony\\Bundle\\TwigBundle\\TwigBundle",
+            "TwigExtraBundle": "Twig\\Extra\\TwigExtraBundle\\TwigExtraBundle",
+            "WebpackEncoreBundle": "Symfony\\WebpackEncoreBundle\\WebpackEncoreBundle",
+            "WebProfilerBundle": "Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle",
+            "WhiteOctoberBreadcrumbsBundle": "WhiteOctober\\BreadcrumbsBundle\\WhiteOctoberBreadcrumbsBundle"
+        },
+        "projectDir": "\/Users\/marc.eilhard\/projects\/ibexa-training",
+        "cacheDir": "\/Users\/marc.eilhard\/projects\/ibexa-training\/var\/cache\/dev",
+        "logDir": "\/Users\/marc.eilhard\/projects\/ibexa-training\/var\/log",
+        "charset": "UTF-8"
+    },
+    "services": {}
+}

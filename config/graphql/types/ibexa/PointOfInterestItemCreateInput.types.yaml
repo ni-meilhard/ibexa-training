@@ -1,0 +1,14 @@
+PointOfInterestItemCreateInput:
+    type: input-object
+    config:
+        fields:
+            title:
+                type: String!
+            description:
+                type: String
+            photo:
+                type: ImageFieldInput
+            photoLegend:
+                type: String
+            place:
+                type: MapLocationFieldInput

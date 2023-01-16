@@ -1,0 +1,20 @@
+BikeRideItemCreateInput:
+    type: input-object
+    config:
+        fields:
+            title:
+                type: String!
+            photo:
+                type: ImageFieldInput
+            description:
+                type: RichTextFieldInput!
+            difficulty:
+                type: '[Int]!'
+            startingPoint:
+                type: MapLocationFieldInput!
+            endingPoint:
+                type: MapLocationFieldInput!
+            length:
+                type: Int!
+            author:
+                type: '[AuthorInput]!'

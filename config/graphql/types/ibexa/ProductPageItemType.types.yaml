@@ -1,0 +1,23 @@
+ProductPageItemType:
+    type: object
+    inherits:
+        - BaseItemType
+    config:
+        interfaces:
+            - ItemType
+        fields:
+            title:
+                type: TextLineFieldDefinition
+                resolve: '@=value.getFieldDefinition("title")'
+            heroImage:
+                type: MatrixFieldDefinition
+                resolve: '@=value.getFieldDefinition("hero_image")'
+            description:
+                type: MatrixFieldDefinition
+                resolve: '@=value.getFieldDefinition("description")'
+            contentItems:
+                type: RelationListFieldDefinition
+                resolve: '@=value.getFieldDefinition("content_items")'
+            field638e35d462951:
+                type: MatrixFieldDefinition
+                resolve: '@=value.getFieldDefinition("field_638e35d462951")'

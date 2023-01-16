@@ -1,0 +1,9 @@
+ProductPageItemConnection:
+    type: relay-connection
+    config:
+        nodeType: ProductPageItem
+        connectionFields:
+            sliceSize:
+                type: Int!
+            orderBy:
+                type: String

@@ -1,0 +1,32 @@
+BikeRideItemType:
+    type: object
+    inherits:
+        - BaseItemType
+    config:
+        interfaces:
+            - ItemType
+        fields:
+            title:
+                type: TextLineFieldDefinition
+                resolve: '@=value.getFieldDefinition("title")'
+            photo:
+                type: BinaryFieldDefinition
+                resolve: '@=value.getFieldDefinition("photo")'
+            description:
+                type: MatrixFieldDefinition
+                resolve: '@=value.getFieldDefinition("description")'
+            difficulty:
+                type: SelectionFieldDefinition
+                resolve: '@=value.getFieldDefinition("difficulty")'
+            startingPoint:
+                type: MatrixFieldDefinition
+                resolve: '@=value.getFieldDefinition("starting_point")'
+            endingPoint:
+                type: MatrixFieldDefinition
+                resolve: '@=value.getFieldDefinition("ending_point")'
+            length:
+                type: IntegerFieldDefinition
+                resolve: '@=value.getFieldDefinition("length")'
+            author:
+                type: MatrixFieldDefinition
+                resolve: '@=value.getFieldDefinition("author")'

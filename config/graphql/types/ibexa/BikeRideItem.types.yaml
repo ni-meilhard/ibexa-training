@@ -1,0 +1,41 @@
+BikeRideItem:
+    type: object
+    inherits:
+        - AbstractItem
+    config:
+        interfaces:
+            - Item
+            - Node
+        fields:
+            title:
+                type: String
+                resolve: '@=resolver("ItemFieldValue", [value, "title", args])'
+                args:
+                    language: { type: RepositoryLanguage }
+            photo:
+                type: ImageFieldValue
+                resolve: '@=resolver("ItemFieldValue", [value, "photo", args])'
+            description:
+                type: RichTextFieldValue
+                resolve: '@=resolver("ItemFieldValue", [value, "description", args])'
+                args:
+                    language: { type: RepositoryLanguage }
+            difficulty:
+                type: String
+                resolve: '@=resolver("SelectionFieldValue", [resolver("ItemFieldValue", [value, "difficulty", args]), value.getContent()])'
+                args:
+                    language: { type: RepositoryLanguage }
+            startingPoint:
+                type: MapLocationFieldValue
+                resolve: '@=resolver("ItemFieldValue", [value, "starting_point", args])'
+            endingPoint:
+                type: MapLocationFieldValue
+                resolve: '@=resolver("ItemFieldValue", [value, "ending_point", args])'
+            length:
+                type: Int
+                resolve: '@=resolver("ItemFieldValue", [value, "length", args]).value'
+            author:
+                type: '[AuthorFieldValue]'
+                resolve: '@=resolver("ItemFieldValue", [value, "author", args]).authors'
+                args:
+                    language: { type: RepositoryLanguage }
